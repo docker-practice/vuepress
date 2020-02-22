@@ -19,7 +19,7 @@
       "attributes": {
         "width": "600"
       },
-      "caption": "图 _PAGE_LEVEL_._PAGE_IMAGE_NUMBER_ - _CAPTION_"
+      "caption": "图 _PAGE_LEVEL_._PAGEimAGE_NUMBER_ - _CAPTION_"
     },
     "github": {
       "url": "https://github.com/yeasy/docker_practice"
