@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://vuepress.mirror.docker-practice.comsitemap.xml
+Sitemap: https://vuepress.mirror.docker-practice.com/sitemap.xml
