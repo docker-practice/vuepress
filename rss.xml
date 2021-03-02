@@ -6,8 +6,8 @@
     <link>https://vuepress.mirror.docker-practice.com/</link>
     <description></description>
     <language>zh-CN</language>
-    <pubDate>Sat, 06 Feb 2021 16:04:03 GMT</pubDate>
-    <lastBuildDate>Sat, 06 Feb 2021 16:04:03 GMT</lastBuildDate>
+    <pubDate>Tue, 02 Mar 2021 16:15:33 GMT</pubDate>
+    <lastBuildDate>Tue, 02 Mar 2021 16:15:33 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <item>
@@ -841,49 +841,6 @@ DNAT       tcp  --  <span>0.0</span>.0.0/0            <span>0.0</span>.0.0/0    
 <span>}</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>示例：创建一个点到点连接</title>
-      <link>https://vuepress.mirror.docker-practice.com/advanced_network/ptp/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/advanced_network/ptp/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">示例：创建一个点到点连接</source>
-      <content:encoded><![CDATA[<h1 id="示例-创建一个点到点连接"> 示例：创建一个点到点连接</h1>
-<p>默认情况下，Docker 会将所有容器连接到由 <code>docker0</code> 提供的虚拟子网中。
-<AdSenseTitle/></p>
-<p>用户有时候需要两个容器之间可以直连通信，而不用通过主机网桥进行桥接。</p>
-<p>解决办法很简单：创建一对 <code>peer</code> 接口，分别放到两个容器中，配置成点到点链路类型即可。</p>
-<p>首先启动 2 个容器：</p>
-<div><pre><code>$ docker run -i -t --rm --net<span>=</span>none base /bin/bash
-root@1f1f4c1f931a:/<span>#</span>
-$ docker run -i -t --rm --net<span>=</span>none base /bin/bash
-root@12e343489d2f:/<span>#</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>找到进程号，然后创建网络命名空间的跟踪文件。</p>
-<div><pre><code>$ docker inspect -f <span>'{{.State.Pid}}'</span> 1f1f4c1f931a
-<span>2989</span>
-$ docker inspect -f <span>'{{.State.Pid}}'</span> 12e343489d2f
-<span>3004</span>
-$ <span>sudo</span> <span>mkdir</span> -p /var/run/netns
-$ <span>sudo</span> <span>ln</span> -s /proc/2989/ns/net /var/run/netns/2989
-$ <span>sudo</span> <span>ln</span> -s /proc/3004/ns/net /var/run/netns/3004
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>创建一对 <code>peer</code> 接口，然后配置路由</p>
-<div><pre><code>$ <span>sudo</span> <span>ip</span> <span>link</span> <span>add</span> A <span>type</span> veth peer name B
-
-$ <span>sudo</span> <span>ip</span> <span>link</span> <span>set</span> A netns <span>2989</span>
-$ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>2989</span> <span>ip</span> addr <span>add</span> <span>10.1</span>.1.1/32 dev A
-$ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>2989</span> <span>ip</span> <span>link</span> <span>set</span> A up
-$ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>2989</span> <span>ip</span> route <span>add</span> <span>10.1</span>.1.2/32 dev A
-
-$ <span>sudo</span> <span>ip</span> <span>link</span> <span>set</span> B netns <span>3004</span>
-$ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>3004</span> <span>ip</span> addr <span>add</span> <span>10.1</span>.1.2/32 dev B
-$ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>3004</span> <span>ip</span> <span>link</span> <span>set</span> B up
-$ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>3004</span> <span>ip</span> route <span>add</span> <span>10.1</span>.1.1/32 dev B
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>现在这 2 个容器就可以相互 ping 通，并成功建立连接。点到点链路不需要子网和子网掩码。</p>
-<p>此外，也可以不指定 <code>--net=none</code> 来创建点到点链路。这样容器还可以通过原先的网络来通信。</p>
-<p>利用类似的办法，可以创建一个只跟主机通信的容器。但是一般情况下，更推荐使用 <code>--icc=false</code> 来关闭容器之间的通信。</p>
-]]></content:encoded>
     </item>
     <item>
       <title>快速配置指南</title>
@@ -2238,7 +2195,7 @@ Linux buildkitsandbox <span>4.9</span>.125-linuxkit <span>#1 SMP Fri Sep 7 08:20
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br></div></div><h2 id="参考资料"> 参考资料</h2>
 <ul>
-<li><a href="https://docs.github.com/en/free-pro-team@latest/actions" target="_blank" rel="noopener noreferrer">Actions Docs</a></li>
+<li><a href="https://docs.github.com/en/actions" target="_blank" rel="noopener noreferrer">Actions Docs</a></li>
 </ul>
 ]]></content:encoded>
     </item>
@@ -2418,6 +2375,49 @@ $ <span>git</span> push origin master
       <enclosure url="https://docs.drone.io/screenshots/github_application_create.png" type="image/png"/>
     </item>
     <item>
+      <title>示例：创建一个点到点连接</title>
+      <link>https://vuepress.mirror.docker-practice.com/advanced_network/ptp/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/advanced_network/ptp/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">示例：创建一个点到点连接</source>
+      <content:encoded><![CDATA[<h1 id="示例-创建一个点到点连接"> 示例：创建一个点到点连接</h1>
+<p>默认情况下，Docker 会将所有容器连接到由 <code>docker0</code> 提供的虚拟子网中。
+<AdSenseTitle/></p>
+<p>用户有时候需要两个容器之间可以直连通信，而不用通过主机网桥进行桥接。</p>
+<p>解决办法很简单：创建一对 <code>peer</code> 接口，分别放到两个容器中，配置成点到点链路类型即可。</p>
+<p>首先启动 2 个容器：</p>
+<div><pre><code>$ docker run -i -t --rm --net<span>=</span>none base /bin/bash
+root@1f1f4c1f931a:/<span>#</span>
+$ docker run -i -t --rm --net<span>=</span>none base /bin/bash
+root@12e343489d2f:/<span>#</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>找到进程号，然后创建网络命名空间的跟踪文件。</p>
+<div><pre><code>$ docker inspect -f <span>'{{.State.Pid}}'</span> 1f1f4c1f931a
+<span>2989</span>
+$ docker inspect -f <span>'{{.State.Pid}}'</span> 12e343489d2f
+<span>3004</span>
+$ <span>sudo</span> <span>mkdir</span> -p /var/run/netns
+$ <span>sudo</span> <span>ln</span> -s /proc/2989/ns/net /var/run/netns/2989
+$ <span>sudo</span> <span>ln</span> -s /proc/3004/ns/net /var/run/netns/3004
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>创建一对 <code>peer</code> 接口，然后配置路由</p>
+<div><pre><code>$ <span>sudo</span> <span>ip</span> <span>link</span> <span>add</span> A <span>type</span> veth peer name B
+
+$ <span>sudo</span> <span>ip</span> <span>link</span> <span>set</span> A netns <span>2989</span>
+$ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>2989</span> <span>ip</span> addr <span>add</span> <span>10.1</span>.1.1/32 dev A
+$ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>2989</span> <span>ip</span> <span>link</span> <span>set</span> A up
+$ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>2989</span> <span>ip</span> route <span>add</span> <span>10.1</span>.1.2/32 dev A
+
+$ <span>sudo</span> <span>ip</span> <span>link</span> <span>set</span> B netns <span>3004</span>
+$ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>3004</span> <span>ip</span> addr <span>add</span> <span>10.1</span>.1.2/32 dev B
+$ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>3004</span> <span>ip</span> <span>link</span> <span>set</span> B up
+$ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>3004</span> <span>ip</span> route <span>add</span> <span>10.1</span>.1.1/32 dev B
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><p>现在这 2 个容器就可以相互 ping 通，并成功建立连接。点到点链路不需要子网和子网掩码。</p>
+<p>此外，也可以不指定 <code>--net=none</code> 来创建点到点链路。这样容器还可以通过原先的网络来通信。</p>
+<p>利用类似的办法，可以创建一个只跟主机通信的容器。但是一般情况下，更推荐使用 <code>--icc=false</code> 来关闭容器之间的通信。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>操作系统</title>
       <link>https://vuepress.mirror.docker-practice.com/cases/os/</link>
       <guid>https://vuepress.mirror.docker-practice.com/cases/os/</guid>
@@ -2428,59 +2428,6 @@ $ <span>git</span> push origin master
 <p>前者以自带软件包版本较新而出名；后者则宣称运行更稳定一些。选择哪个操作系统取决于读者的具体需求。</p>
 <p>使用 Docker，读者只需要一个命令就能快速获取一个 Linux 发行版镜像，这是以往包括各种虚拟化技术都难以实现的。这些镜像一般都很精简，但是可以支持完整 Linux 系统的大部分功能。</p>
 <p>本章将介绍如何使用 Docker 安装和使用 <code>Busybox</code>、<code>Alphine</code>、<code>Debian/Ubuntu</code>、<code>CentOS/Fedora</code> 等操作系统。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Alpine</title>
-      <link>https://vuepress.mirror.docker-practice.com/cases/os/alpine/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/cases/os/alpine/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">Alpine</source>
-      <content:encoded><![CDATA[<h1 id="alpine"> Alpine</h1>
-<AdSenseTitle/>
-<h2 id="简介"> 简介</h2>
-<p><img src="./_images/alpinelinux-logo.png" alt="Alpine Linux 操作系统"></p>
-<p><code>Alpine</code> 操作系统是一个面向安全的轻型 <code>Linux</code> 发行版。它不同于通常 <code>Linux</code> 发行版，<code>Alpine</code> 采用了 <code>musl libc</code> 和 <code>busybox</code> 以减小系统的体积和运行时资源消耗，但功能上比 <code>busybox</code> 又完善的多，因此得到开源社区越来越多的青睐。在保持瘦身的同时，<code>Alpine</code> 还提供了自己的包管理工具 <code>apk</code>，可以通过 <code>https://pkgs.alpinelinux.org/packages</code> 网站上查询包信息，也可以直接通过 <code>apk</code> 命令直接查询和安装各种软件。</p>
-<p><code>Alpine</code> 由非商业组织维护的，支持广泛场景的 <code>Linux</code>发行版，它特别为资深/重度<code>Linux</code>用户而优化，关注安全，性能和资源效能。<code>Alpine</code> 镜像可以适用于更多常用场景，并且是一个优秀的可以适用于生产的基础系统/环境。</p>
-<p><code>Alpine</code> Docker 镜像也继承了 <code>Alpine Linux</code> 发行版的这些优势。相比于其他 <code>Docker</code> 镜像，它的容量非常小，仅仅只有 <strong>5 MB</strong> 左右（对比 <code>Ubuntu</code> 系列镜像接近 <code>200 MB</code>），且拥有非常友好的包管理机制。官方镜像来自 <code>docker-alpine</code> 项目。</p>
-<p>目前 Docker 官方已开始推荐使用 <code>Alpine</code> 替代之前的 <code>Ubuntu</code> 做为基础镜像环境。这样会带来多个好处。包括镜像下载速度加快，镜像安全性提高，主机之间的切换更方便，占用更少磁盘空间等。</p>
-<p>下表是官方镜像的大小比较：</p>
-<div><pre><code>REPOSITORY          TAG           IMAGE ID          VIRTUAL SIZE
-alpine              latest        4e38e38c8ce0      <span>4.799</span> MB
-debian              latest        4d6ce913b130      <span>84.98</span> MB
-ubuntu              latest        b39b81afc8ca      <span>188.3</span> MB
-centos              latest        8efe422e6104      <span>210</span> MB
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="获取并使用官方镜像"> 获取并使用官方镜像</h2>
-<p>由于镜像很小，下载时间往往很短，读者可以直接使用 <code>docker run</code> 指令直接运行一个 <code>Alpine</code> 容器，并指定运行的 Linux 指令，例如：</p>
-<div><pre><code>$ docker run alpine <span>echo</span> <span>'123'</span>
-<span>123</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h2 id="迁移至-alpine-基础镜像"> 迁移至 <code>Alpine</code> 基础镜像</h2>
-<p>目前，大部分 Docker 官方镜像都已经支持 <code>Alpine</code> 作为基础镜像，可以很容易进行迁移。</p>
-<p>例如：</p>
-<ul>
-<li><code>ubuntu/debian</code> -&gt; <code>alpine</code></li>
-<li><code>python:3</code> -&gt; <code>python:3-alpine</code></li>
-<li><code>ruby:2.6</code> -&gt; <code>ruby:2.6-alpine</code></li>
-</ul>
-<p>另外，如果使用 <code>Alpine</code> 镜像替换 <code>Ubuntu</code> 基础镜像，安装软件包时需要用 <code>apk</code> 包管理器替换 <code>apt</code> 工具，如</p>
-<div><pre><code>$ apk <span>add</span> --no-cache <span>&lt;</span>package<span>></span>
-</code></pre>
-<div><span>1</span><br></div></div><p><code>Alpine</code> 中软件安装包的名字可能会与其他发行版有所不同，可以在 <code>https://pkgs.alpinelinux.org/packages</code> 网站搜索并确定安装包名称。如果需要的安装包不在主索引内，但是在测试或社区索引中。那么可以按照以下方法使用这些安装包。</p>
-<div><pre><code>$ <span>echo</span> <span>"http://dl-cdn.alpinelinux.org/alpine/edge/testing"</span> <span>>></span> /etc/apk/repositories
-$ apk --update <span>add</span> --no-cache <span>&lt;</span>package<span>></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>由于在国内访问 <code>apk</code> 仓库较缓慢，建议在使用 <code>apk</code> 之前先替换仓库地址为国内镜像。</p>
-<div><pre><code><span>RUN</span> sed <span>-</span>i <span>"s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g"</span> /etc/apk/repositories \
-      &amp;&amp; apk add <span>-</span><span>-</span>no<span>-</span>cache &lt;package<span>></span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h2 id="相关资源"> 相关资源</h2>
-<ul>
-<li><code>Alpine</code> 官网：https://www.alpinelinux.org/</li>
-<li><code>Alpine</code> 官方仓库：https://github.com/alpinelinux</li>
-<li><code>Alpine</code> 官方镜像：https://hub.docker.com/_/alpine/</li>
-<li><code>Alpine</code> 官方镜像仓库：https://github.com/gliderlabs/docker-alpine</li>
-</ul>
 ]]></content:encoded>
     </item>
     <item>
@@ -2596,6 +2543,59 @@ tmpfs on /sys/firmware <span>type</span> tmpfs <span>(</span>ro,relatime<span>)<
 <li><code>Busybox</code> 官方仓库：https://git.busybox.net/busybox/</li>
 <li><code>Busybox</code> 官方镜像：https://hub.docker.com/_/busybox/</li>
 <li><code>Busybox</code> 官方仓库：https://github.com/docker-library/busybox</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>Alpine</title>
+      <link>https://vuepress.mirror.docker-practice.com/cases/os/alpine/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/cases/os/alpine/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">Alpine</source>
+      <content:encoded><![CDATA[<h1 id="alpine"> Alpine</h1>
+<AdSenseTitle/>
+<h2 id="简介"> 简介</h2>
+<p><img src="./_images/alpinelinux-logo.png" alt="Alpine Linux 操作系统"></p>
+<p><code>Alpine</code> 操作系统是一个面向安全的轻型 <code>Linux</code> 发行版。它不同于通常 <code>Linux</code> 发行版，<code>Alpine</code> 采用了 <code>musl libc</code> 和 <code>busybox</code> 以减小系统的体积和运行时资源消耗，但功能上比 <code>busybox</code> 又完善的多，因此得到开源社区越来越多的青睐。在保持瘦身的同时，<code>Alpine</code> 还提供了自己的包管理工具 <code>apk</code>，可以通过 <code>https://pkgs.alpinelinux.org/packages</code> 网站上查询包信息，也可以直接通过 <code>apk</code> 命令直接查询和安装各种软件。</p>
+<p><code>Alpine</code> 由非商业组织维护的，支持广泛场景的 <code>Linux</code>发行版，它特别为资深/重度<code>Linux</code>用户而优化，关注安全，性能和资源效能。<code>Alpine</code> 镜像可以适用于更多常用场景，并且是一个优秀的可以适用于生产的基础系统/环境。</p>
+<p><code>Alpine</code> Docker 镜像也继承了 <code>Alpine Linux</code> 发行版的这些优势。相比于其他 <code>Docker</code> 镜像，它的容量非常小，仅仅只有 <strong>5 MB</strong> 左右（对比 <code>Ubuntu</code> 系列镜像接近 <code>200 MB</code>），且拥有非常友好的包管理机制。官方镜像来自 <code>docker-alpine</code> 项目。</p>
+<p>目前 Docker 官方已开始推荐使用 <code>Alpine</code> 替代之前的 <code>Ubuntu</code> 做为基础镜像环境。这样会带来多个好处。包括镜像下载速度加快，镜像安全性提高，主机之间的切换更方便，占用更少磁盘空间等。</p>
+<p>下表是官方镜像的大小比较：</p>
+<div><pre><code>REPOSITORY          TAG           IMAGE ID          VIRTUAL SIZE
+alpine              latest        4e38e38c8ce0      <span>4.799</span> MB
+debian              latest        4d6ce913b130      <span>84.98</span> MB
+ubuntu              latest        b39b81afc8ca      <span>188.3</span> MB
+centos              latest        8efe422e6104      <span>210</span> MB
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="获取并使用官方镜像"> 获取并使用官方镜像</h2>
+<p>由于镜像很小，下载时间往往很短，读者可以直接使用 <code>docker run</code> 指令直接运行一个 <code>Alpine</code> 容器，并指定运行的 Linux 指令，例如：</p>
+<div><pre><code>$ docker run alpine <span>echo</span> <span>'123'</span>
+<span>123</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h2 id="迁移至-alpine-基础镜像"> 迁移至 <code>Alpine</code> 基础镜像</h2>
+<p>目前，大部分 Docker 官方镜像都已经支持 <code>Alpine</code> 作为基础镜像，可以很容易进行迁移。</p>
+<p>例如：</p>
+<ul>
+<li><code>ubuntu/debian</code> -&gt; <code>alpine</code></li>
+<li><code>python:3</code> -&gt; <code>python:3-alpine</code></li>
+<li><code>ruby:2.6</code> -&gt; <code>ruby:2.6-alpine</code></li>
+</ul>
+<p>另外，如果使用 <code>Alpine</code> 镜像替换 <code>Ubuntu</code> 基础镜像，安装软件包时需要用 <code>apk</code> 包管理器替换 <code>apt</code> 工具，如</p>
+<div><pre><code>$ apk <span>add</span> --no-cache <span>&lt;</span>package<span>></span>
+</code></pre>
+<div><span>1</span><br></div></div><p><code>Alpine</code> 中软件安装包的名字可能会与其他发行版有所不同，可以在 <code>https://pkgs.alpinelinux.org/packages</code> 网站搜索并确定安装包名称。如果需要的安装包不在主索引内，但是在测试或社区索引中。那么可以按照以下方法使用这些安装包。</p>
+<div><pre><code>$ <span>echo</span> <span>"http://dl-cdn.alpinelinux.org/alpine/edge/testing"</span> <span>>></span> /etc/apk/repositories
+$ apk --update <span>add</span> --no-cache <span>&lt;</span>package<span>></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p>由于在国内访问 <code>apk</code> 仓库较缓慢，建议在使用 <code>apk</code> 之前先替换仓库地址为国内镜像。</p>
+<div><pre><code><span>RUN</span> sed <span>-</span>i <span>"s/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g"</span> /etc/apk/repositories \
+      &amp;&amp; apk add <span>-</span><span>-</span>no<span>-</span>cache &lt;package<span>></span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h2 id="相关资源"> 相关资源</h2>
+<ul>
+<li><code>Alpine</code> 官网：https://www.alpinelinux.org/</li>
+<li><code>Alpine</code> 官方仓库：https://github.com/alpinelinux</li>
+<li><code>Alpine</code> 官方镜像：https://hub.docker.com/_/alpine/</li>
+<li><code>Alpine</code> 官方镜像仓库：https://github.com/gliderlabs/docker-alpine</li>
 </ul>
 ]]></content:encoded>
     </item>
@@ -3702,31 +3702,6 @@ Successfully installed docker-compose cached-property requests texttable websock
 <div><span>1</span><br></div></div>]]></content:encoded>
     </item>
     <item>
-      <title>Compose 简介</title>
-      <link>https://vuepress.mirror.docker-practice.com/compose/introduction/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/compose/introduction/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">Compose 简介</source>
-      <content:encoded><![CDATA[<h1 id="compose-简介"> Compose 简介</h1>
-<AdSenseTitle/>
-<p><code>Compose</code> 项目是 Docker 官方的开源项目，负责实现对 Docker 容器集群的快速编排。从功能上看，跟 <code>OpenStack</code> 中的 <code>Heat</code> 十分类似。</p>
-<p>其代码目前在 <a href="https://github.com/docker/compose" target="_blank" rel="noopener noreferrer">https://github.com/docker/compose</a> 上开源。</p>
-<p><code>Compose</code> 定位是 「定义和运行多个 Docker 容器的应用（Defining and running multi-container Docker applications）」，其前身是开源项目 Fig。</p>
-<p>通过第一部分中的介绍，我们知道使用一个 <code>Dockerfile</code> 模板文件，可以让用户很方便的定义一个单独的应用容器。然而，在日常工作中，经常会碰到需要多个容器相互配合来完成某项任务的情况。例如要实现一个 Web 项目，除了 Web 服务容器本身，往往还需要再加上后端的数据库服务容器，甚至还包括负载均衡容器等。</p>
-<p><code>Compose</code> 恰好满足了这样的需求。它允许用户通过一个单独的 <code>docker-compose.yml</code> 模板文件（YAML 格式）来定义一组相关联的应用容器为一个项目（project）。</p>
-<p><code>Compose</code> 中有两个重要的概念：</p>
-<ul>
-<li>
-<p>服务 (<code>service</code>)：一个应用的容器，实际上可以包括若干运行相同镜像的容器实例。</p>
-</li>
-<li>
-<p>项目 (<code>project</code>)：由一组关联的应用容器组成的一个完整业务单元，在 <code>docker-compose.yml</code> 文件中定义。</p>
-</li>
-</ul>
-<p><code>Compose</code> 的默认管理对象是项目，通过子命令对项目中的一组容器进行便捷地生命周期管理。</p>
-<p><code>Compose</code> 项目由 Python 编写，实现上调用了 Docker 服务提供的 API 来对容器进行管理。因此，只要所操作的平台支持 Docker API，就可以在其上利用 <code>Compose</code> 来进行编排管理。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>使用 compose 搭建 LNMP 环境</title>
       <link>https://vuepress.mirror.docker-practice.com/compose/lnmp/</link>
       <guid>https://vuepress.mirror.docker-practice.com/compose/lnmp/</guid>
@@ -3826,57 +3801,6 @@ myapp_web_1 <span>|</span> <span>[</span><span>2014</span>-01-17 <span>17</span>
 ]]></content:encoded>
     </item>
     <item>
-      <title>使用 WordPress</title>
-      <link>https://vuepress.mirror.docker-practice.com/compose/wordpress/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/compose/wordpress/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">使用 WordPress</source>
-      <content:encoded><![CDATA[<h1 id="使用-wordpress"> 使用 WordPress</h1>
-<AdSenseTitle/>
-<blockquote>
-<p>本小节内容适合 <code>PHP</code> 开发人员阅读。</p>
-</blockquote>
-<p><code>Compose</code> 可以很便捷的让 <code>Wordpress</code> 运行在一个独立的环境中。</p>
-<h2 id="创建空文件夹"> 创建空文件夹</h2>
-<p>假设新建一个名为 <code>wordpress</code> 的文件夹，然后进入这个文件夹。</p>
-<h2 id="创建-docker-compose-yml-文件"> 创建 <code>docker-compose.yml</code> 文件</h2>
-<p><a href="https://github.com/yeasy/docker_practice/blob/master/compose/demo/wordpress/docker-compose.yml" target="_blank" rel="noopener noreferrer"><code>docker-compose.yml</code></a> 文件将开启一个 <code>wordpress</code> 服务和一个独立的 <code>MySQL</code> 实例：</p>
-<div><pre><code><span>version</span><span>:</span> <span>"3"</span>
-<span>services</span><span>:</span>
-
-   <span>db</span><span>:</span>
-     <span>image</span><span>:</span> mysql<span>:</span><span>8.0</span>
-     <span>command</span><span>:</span>
-      <span>-</span> <span>-</span><span>-</span>default_authentication_plugin=mysql_native_password
-      <span>-</span> <span>-</span><span>-</span>character<span>-</span>set<span>-</span>server=utf8mb4
-      <span>-</span> <span>-</span><span>-</span>collation<span>-</span>server=utf8mb4_unicode_ci     
-     <span>volumes</span><span>:</span>
-       <span>-</span> db_data<span>:</span>/var/lib/mysql
-     <span>restart</span><span>:</span> always
-     <span>environment</span><span>:</span>
-       <span>MYSQL_ROOT_PASSWORD</span><span>:</span> somewordpress
-       <span>MYSQL_DATABASE</span><span>:</span> wordpress
-       <span>MYSQL_USER</span><span>:</span> wordpress
-       <span>MYSQL_PASSWORD</span><span>:</span> wordpress
-
-   <span>wordpress</span><span>:</span>
-     <span>depends_on</span><span>:</span>
-       <span>-</span> db
-     <span>image</span><span>:</span> wordpress<span>:</span>latest
-     <span>ports</span><span>:</span>
-       <span>-</span> <span>"8000:80"</span>
-     <span>restart</span><span>:</span> always
-     <span>environment</span><span>:</span>
-       <span>WORDPRESS_DB_HOST</span><span>:</span> db<span>:</span><span>3306</span>
-       <span>WORDPRESS_DB_USER</span><span>:</span> wordpress
-       <span>WORDPRESS_DB_PASSWORD</span><span>:</span> wordpress
-<span>volumes</span><span>:</span>
-  <span>db_data</span><span>:</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br></div></div><h2 id="构建并运行项目"> 构建并运行项目</h2>
-<p>运行 <code>docker-compose up -d</code> Compose 就会拉取镜像再创建我们所需要的镜像，然后启动 <code>wordpress</code> 和数据库容器。 接着浏览器访问 <code>127.0.0.1:8000</code> 端口就能看到 <code>WordPress</code> 安装界面了。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>使用</title>
       <link>https://vuepress.mirror.docker-practice.com/compose/usage/</link>
       <guid>https://vuepress.mirror.docker-practice.com/compose/usage/</guid>
@@ -3938,6 +3862,57 @@ redis <span>=</span> Redis<span>(</span>host<span>=</span><span>'redis'</span><s
 <div><pre><code>$ docker-compose up
 </code></pre>
 <div><span>1</span><br></div></div><p>此时访问本地 <code>5000</code> 端口，每次刷新页面，计数就会加 1。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>使用 WordPress</title>
+      <link>https://vuepress.mirror.docker-practice.com/compose/wordpress/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/compose/wordpress/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">使用 WordPress</source>
+      <content:encoded><![CDATA[<h1 id="使用-wordpress"> 使用 WordPress</h1>
+<AdSenseTitle/>
+<blockquote>
+<p>本小节内容适合 <code>PHP</code> 开发人员阅读。</p>
+</blockquote>
+<p><code>Compose</code> 可以很便捷的让 <code>Wordpress</code> 运行在一个独立的环境中。</p>
+<h2 id="创建空文件夹"> 创建空文件夹</h2>
+<p>假设新建一个名为 <code>wordpress</code> 的文件夹，然后进入这个文件夹。</p>
+<h2 id="创建-docker-compose-yml-文件"> 创建 <code>docker-compose.yml</code> 文件</h2>
+<p><a href="https://github.com/yeasy/docker_practice/blob/master/compose/demo/wordpress/docker-compose.yml" target="_blank" rel="noopener noreferrer"><code>docker-compose.yml</code></a> 文件将开启一个 <code>wordpress</code> 服务和一个独立的 <code>MySQL</code> 实例：</p>
+<div><pre><code><span>version</span><span>:</span> <span>"3"</span>
+<span>services</span><span>:</span>
+
+   <span>db</span><span>:</span>
+     <span>image</span><span>:</span> mysql<span>:</span><span>8.0</span>
+     <span>command</span><span>:</span>
+      <span>-</span> <span>-</span><span>-</span>default_authentication_plugin=mysql_native_password
+      <span>-</span> <span>-</span><span>-</span>character<span>-</span>set<span>-</span>server=utf8mb4
+      <span>-</span> <span>-</span><span>-</span>collation<span>-</span>server=utf8mb4_unicode_ci     
+     <span>volumes</span><span>:</span>
+       <span>-</span> db_data<span>:</span>/var/lib/mysql
+     <span>restart</span><span>:</span> always
+     <span>environment</span><span>:</span>
+       <span>MYSQL_ROOT_PASSWORD</span><span>:</span> somewordpress
+       <span>MYSQL_DATABASE</span><span>:</span> wordpress
+       <span>MYSQL_USER</span><span>:</span> wordpress
+       <span>MYSQL_PASSWORD</span><span>:</span> wordpress
+
+   <span>wordpress</span><span>:</span>
+     <span>depends_on</span><span>:</span>
+       <span>-</span> db
+     <span>image</span><span>:</span> wordpress<span>:</span>latest
+     <span>ports</span><span>:</span>
+       <span>-</span> <span>"8000:80"</span>
+     <span>restart</span><span>:</span> always
+     <span>environment</span><span>:</span>
+       <span>WORDPRESS_DB_HOST</span><span>:</span> db<span>:</span><span>3306</span>
+       <span>WORDPRESS_DB_USER</span><span>:</span> wordpress
+       <span>WORDPRESS_DB_PASSWORD</span><span>:</span> wordpress
+<span>volumes</span><span>:</span>
+  <span>db_data</span><span>:</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br></div></div><h2 id="构建并运行项目"> 构建并运行项目</h2>
+<p>运行 <code>docker-compose up -d</code> Compose 就会拉取镜像再创建我们所需要的镜像，然后启动 <code>wordpress</code> 和数据库容器。 接着浏览器访问 <code>127.0.0.1:8000</code> 端口就能看到 <code>WordPress</code> 安装界面了。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -4036,6 +4011,31 @@ hello world
 <span>.</span> <span>.</span> <span>.</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>Compose 简介</title>
+      <link>https://vuepress.mirror.docker-practice.com/compose/introduction/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/compose/introduction/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">Compose 简介</source>
+      <content:encoded><![CDATA[<h1 id="compose-简介"> Compose 简介</h1>
+<AdSenseTitle/>
+<p><code>Compose</code> 项目是 Docker 官方的开源项目，负责实现对 Docker 容器集群的快速编排。从功能上看，跟 <code>OpenStack</code> 中的 <code>Heat</code> 十分类似。</p>
+<p>其代码目前在 <a href="https://github.com/docker/compose" target="_blank" rel="noopener noreferrer">https://github.com/docker/compose</a> 上开源。</p>
+<p><code>Compose</code> 定位是 「定义和运行多个 Docker 容器的应用（Defining and running multi-container Docker applications）」，其前身是开源项目 Fig。</p>
+<p>通过第一部分中的介绍，我们知道使用一个 <code>Dockerfile</code> 模板文件，可以让用户很方便的定义一个单独的应用容器。然而，在日常工作中，经常会碰到需要多个容器相互配合来完成某项任务的情况。例如要实现一个 Web 项目，除了 Web 服务容器本身，往往还需要再加上后端的数据库服务容器，甚至还包括负载均衡容器等。</p>
+<p><code>Compose</code> 恰好满足了这样的需求。它允许用户通过一个单独的 <code>docker-compose.yml</code> 模板文件（YAML 格式）来定义一组相关联的应用容器为一个项目（project）。</p>
+<p><code>Compose</code> 中有两个重要的概念：</p>
+<ul>
+<li>
+<p>服务 (<code>service</code>)：一个应用的容器，实际上可以包括若干运行相同镜像的容器实例。</p>
+</li>
+<li>
+<p>项目 (<code>project</code>)：由一组关联的应用容器组成的一个完整业务单元，在 <code>docker-compose.yml</code> 文件中定义。</p>
+</li>
+</ul>
+<p><code>Compose</code> 的默认管理对象是项目，通过子命令对项目中的一组容器进行便捷地生命周期管理。</p>
+<p><code>Compose</code> 项目由 Python 编写，实现上调用了 Docker 服务提供的 API 来对容器进行管理。因此，只要所操作的平台支持 Docker API，就可以在其上利用 <code>Compose</code> 来进行编排管理。</p>
+]]></content:encoded>
     </item>
     <item>
       <title>导出和导入容器</title>
@@ -6855,39 +6855,6 @@ For <span>more</span> examples and ideas, visit:
 ]]></content:encoded>
     </item>
     <item>
-      <title>开启实验特性</title>
-      <link>https://vuepress.mirror.docker-practice.com/install/experimental/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/install/experimental/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">开启实验特性</source>
-      <content:encoded><![CDATA[<h1 id="开启实验特性"> 开启实验特性</h1>
-<AdSenseTitle/>
-<p>一些 docker 命令或功能仅当 <strong>实验特性</strong> 开启时才能使用，请按照以下方法进行设置。</p>
-<h2 id="开启-docker-cli-的实验特性"> 开启 Docker CLI 的实验特性</h2>
-<p>编辑 <code>~/.docker/config.json</code> 文件，新增如下条目</p>
-<div><pre><code><span>{</span>
-  <span>"experimental"</span><span>:</span> <span>"enabled"</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>或者通过设置环境变量的方式：</p>
-<p><strong>Linux/macOS</strong></p>
-<div><pre><code>$ <span>export</span> <span>DOCKER_CLI_EXPERIMENTAL</span><span>=</span>enabled
-</code></pre>
-<div><span>1</span><br></div></div><p><strong>Windows</strong></p>
-<div><pre><code><span># 临时生效</span>
-$ <span>set</span> <span>$env</span>:DOCKER_CLI_EXPERIMENTAL=<span>"enabled"</span>
-
-<span># 永久生效</span>
-$ <span>[environment]</span>::SetEnvironmentvariable<span>(</span><span>"DOCKER_CLI_EXPERIMENTAL"</span><span>,</span><span>"enabled"</span><span>,</span><span>"User"</span><span>)</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="开启-dockerd-的实验特性"> 开启 Dockerd 的实验特性</h2>
-<p>编辑 <code>/etc/docker/daemon.json</code>，新增如下条目</p>
-<div><pre><code><span>{</span>
-  <span>"experimental"</span><span>:</span> <span>true</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
       <title>Fedora 安装 Docker</title>
       <link>https://vuepress.mirror.docker-practice.com/install/fedora/</link>
       <guid>https://vuepress.mirror.docker-practice.com/install/fedora/</guid>
@@ -7015,6 +6982,39 @@ For <span>more</span> examples and ideas, visit:
 <li><a href="https://docs.docker.com/install/linux/docker-ce/fedora" target="_blank" rel="noopener noreferrer">Docker 官方 Fedora 安装文档</a>。</li>
 </ul>
 ]]></content:encoded>
+    </item>
+    <item>
+      <title>开启实验特性</title>
+      <link>https://vuepress.mirror.docker-practice.com/install/experimental/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/install/experimental/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">开启实验特性</source>
+      <content:encoded><![CDATA[<h1 id="开启实验特性"> 开启实验特性</h1>
+<AdSenseTitle/>
+<p>一些 docker 命令或功能仅当 <strong>实验特性</strong> 开启时才能使用，请按照以下方法进行设置。</p>
+<h2 id="开启-docker-cli-的实验特性"> 开启 Docker CLI 的实验特性</h2>
+<p>编辑 <code>~/.docker/config.json</code> 文件，新增如下条目</p>
+<div><pre><code><span>{</span>
+  <span>"experimental"</span><span>:</span> <span>"enabled"</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>或者通过设置环境变量的方式：</p>
+<p><strong>Linux/macOS</strong></p>
+<div><pre><code>$ <span>export</span> <span>DOCKER_CLI_EXPERIMENTAL</span><span>=</span>enabled
+</code></pre>
+<div><span>1</span><br></div></div><p><strong>Windows</strong></p>
+<div><pre><code><span># 临时生效</span>
+$ <span>set</span> <span>$env</span>:DOCKER_CLI_EXPERIMENTAL=<span>"enabled"</span>
+
+<span># 永久生效</span>
+$ <span>[environment]</span>::SetEnvironmentvariable<span>(</span><span>"DOCKER_CLI_EXPERIMENTAL"</span><span>,</span><span>"enabled"</span><span>,</span><span>"User"</span><span>)</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="开启-dockerd-的实验特性"> 开启 Dockerd 的实验特性</h2>
+<p>编辑 <code>/etc/docker/daemon.json</code>，新增如下条目</p>
+<div><pre><code><span>{</span>
+  <span>"experimental"</span><span>:</span> <span>true</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>]]></content:encoded>
     </item>
     <item>
       <title>macOS 安装 Docker</title>
@@ -7344,7 +7344,7 @@ EOF</span>
 </blockquote>
 <h2 id="系统要求"> 系统要求</h2>
 <p>Docker 不仅支持 <code>x86_64</code> 架构的计算机，同时也支持 <code>ARM</code> 架构的计算机，本小节内容以树莓派单片电脑为例讲解 <code>ARM</code> 架构安装 Docker。</p>
-<p>Docker 支持以下版本的 <a href="https://www.raspberrypi.org/downloads/raspberry-pi-os/" target="_blank" rel="noopener noreferrer">Raspberry Pi OS</a> 操作系统：</p>
+<p>Docker 支持以下版本的 <a href="https://www.raspberrypi.org/software/operating-systems/" target="_blank" rel="noopener noreferrer">Raspberry Pi OS</a> 操作系统：</p>
 <ul>
 <li>Raspberry Pi OS Buster</li>
 </ul>
@@ -7913,28 +7913,6 @@ For <span>more</span> examples and ideas, visit:
 ]]></content:encoded>
     </item>
     <item>
-      <title>项目简介</title>
-      <link>https://vuepress.mirror.docker-practice.com/kubernetes/intro/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/kubernetes/intro/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">项目简介</source>
-      <content:encoded><![CDATA[<h1 id="项目简介"> 项目简介</h1>
-<AdSenseTitle/>
-<p><img src="./_images/kubernetes_logo.png" alt=""></p>
-<p>Kubernetes 是 Google 团队发起的开源项目，它的目标是管理跨多个主机的容器，提供基本的部署，维护以及应用伸缩，主要实现语言为 Go 语言。Kubernetes 是：</p>
-<ul>
-<li>易学：轻量级，简单，容易理解</li>
-<li>便携：支持公有云，私有云，混合云，以及多种云平台</li>
-<li>可拓展：模块化，可插拔，支持钩子，可任意组合</li>
-<li>自修复：自动重调度，自动重启，自动复制</li>
-</ul>
-<p>Kubernetes 构建于 Google 数十年经验，一大半来源于 Google 生产环境规模的经验。结合了社区最佳的想法和实践。</p>
-<p>在分布式系统中，部署，调度，伸缩一直是最为重要的也最为基础的功能。Kubernetes 就是希望解决这一序列问题的。</p>
-<p>Kubernetes 目前在<a href="https://github.com/kubernetes/kubernetes" target="_blank" rel="noopener noreferrer">GitHub</a>进行维护。</p>
-<h3 id="kubernetes-能够运行在任何地方"> Kubernetes 能够运行在任何地方！</h3>
-<p>虽然 Kubernetes 最初是为 GCE 定制的，但是在后续版本中陆续增加了其他云平台的支持，以及本地数据中心的支持。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>基本架构</title>
       <link>https://vuepress.mirror.docker-practice.com/kubernetes/design/</link>
       <guid>https://vuepress.mirror.docker-practice.com/kubernetes/design/</guid>
@@ -7974,6 +7952,28 @@ For <span>more</span> examples and ideas, visit:
 <li>kube-proxy 是一个简单的网络访问代理，同时也是一个 Load Balancer。它负责将访问到某个服务的请求具体分配给工作节点上的 Pod（同一类标签）。</li>
 </ul>
 <p><img src="./_images/kube-proxy.png" alt="Proxy 代理对服务的请求"></p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>项目简介</title>
+      <link>https://vuepress.mirror.docker-practice.com/kubernetes/intro/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/kubernetes/intro/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">项目简介</source>
+      <content:encoded><![CDATA[<h1 id="项目简介"> 项目简介</h1>
+<AdSenseTitle/>
+<p><img src="./_images/kubernetes_logo.png" alt=""></p>
+<p>Kubernetes 是 Google 团队发起的开源项目，它的目标是管理跨多个主机的容器，提供基本的部署，维护以及应用伸缩，主要实现语言为 Go 语言。Kubernetes 是：</p>
+<ul>
+<li>易学：轻量级，简单，容易理解</li>
+<li>便携：支持公有云，私有云，混合云，以及多种云平台</li>
+<li>可拓展：模块化，可插拔，支持钩子，可任意组合</li>
+<li>自修复：自动重调度，自动重启，自动复制</li>
+</ul>
+<p>Kubernetes 构建于 Google 数十年经验，一大半来源于 Google 生产环境规模的经验。结合了社区最佳的想法和实践。</p>
+<p>在分布式系统中，部署，调度，伸缩一直是最为重要的也最为基础的功能。Kubernetes 就是希望解决这一序列问题的。</p>
+<p>Kubernetes 目前在<a href="https://github.com/kubernetes/kubernetes" target="_blank" rel="noopener noreferrer">GitHub</a>进行维护。</p>
+<h3 id="kubernetes-能够运行在任何地方"> Kubernetes 能够运行在任何地方！</h3>
+<p>虽然 Kubernetes 最初是为 GCE 定制的，但是在后续版本中陆续增加了其他云平台的支持，以及本地数据中心的支持。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -8100,6 +8100,16 @@ $ <span>DASHBOARD_LOGIN_TOKEN</span><span>=</span><span><span>$(</span>kubectl d
 <div><span>1</span><br></div></div><p>如果正常输出信息，则证明 Kubernetes 成功启动。</p>
 ]]></content:encoded>
       <enclosure url="https://github.com/AliyunContainerService/k8s-for-docker-desktop/raw/master/images/k8s.png" type="image/png"/>
+    </item>
+    <item>
+      <title>一步步部署 kubernetes 集群</title>
+      <link>https://vuepress.mirror.docker-practice.com/kubernetes/setup/systemd/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/kubernetes/setup/systemd/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">一步步部署 kubernetes 集群</source>
+      <content:encoded><![CDATA[<h1 id="一步步部署-kubernetes-集群"> 一步步部署 kubernetes 集群</h1>
+<AdSenseTitle/>
+<p>可以参考 <a href="https://github.com/opsnull/follow-me-install-kubernetes-cluster" target="_blank" rel="noopener noreferrer">opsnull/follow-me-install-kubernetes-cluster</a> 项目一步步部署 kubernetes 集群。</p>
+]]></content:encoded>
     </item>
     <item>
       <title>使用 kubeadm 部署 kubernetes</title>
@@ -8250,16 +8260,6 @@ kubeadm <span>join</span> <span>192.168</span>.199.100:6443 --token cz81zt.orsy9
 <ul>
 <li><a href="https://kubernetes.io/zh/docs/setup/production-environment/tools/kubeadm/install-kubeadm/" target="_blank" rel="noopener noreferrer">官方文档</a></li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>一步步部署 kubernetes 集群</title>
-      <link>https://vuepress.mirror.docker-practice.com/kubernetes/setup/systemd/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/kubernetes/setup/systemd/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">一步步部署 kubernetes 集群</source>
-      <content:encoded><![CDATA[<h1 id="一步步部署-kubernetes-集群"> 一步步部署 kubernetes 集群</h1>
-<AdSenseTitle/>
-<p>可以参考 <a href="https://github.com/opsnull/follow-me-install-kubernetes-cluster" target="_blank" rel="noopener noreferrer">opsnull/follow-me-install-kubernetes-cluster</a> 项目一步步部署 kubernetes 集群。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -8692,7 +8692,7 @@ username/ubuntu
       <source url="https://vuepress.mirror.docker-practice.com/rss.xml">Nexus3.x 的私有仓库</source>
       <content:encoded><![CDATA[<h1 id="nexus3-x-的私有仓库"> Nexus3.x 的私有仓库</h1>
 <AdSenseTitle/>
-<p>使用 Docker 官方的 Registry 创建的仓库面临一些维护问题。比如某些镜像删除以后空间默认是不会回收的，需要一些命令去回收空间然后重启 Registry 程序。在企业中把内部的一些工具包放入 Nexus 中是比较常见的做法，最新版本 <code>Nexus3.x</code> 全面支持 Docker 的私有镜像。所以使用 <a href="https://www.sonatype.com/nexus/repository-oss/download" target="_blank" rel="noopener noreferrer"><code>Nexus3.x</code></a> 一个软件来管理 <code>Docker</code> , <code>Maven</code> , <code>Yum</code> , <code>PyPI</code> 等是一个明智的选择。</p>
+<p>使用 Docker 官方的 Registry 创建的仓库面临一些维护问题。比如某些镜像删除以后空间默认是不会回收的，需要一些命令去回收空间然后重启 Registry 程序。在企业中把内部的一些工具包放入 Nexus 中是比较常见的做法，最新版本 <code>Nexus3.x</code> 全面支持 Docker 的私有镜像。所以使用 <a href="https://www.sonatype.com/nexus/repository-oss-download" target="_blank" rel="noopener noreferrer"><code>Nexus3.x</code></a> 一个软件来管理 <code>Docker</code> , <code>Maven</code> , <code>Yum</code> , <code>PyPI</code> 等是一个明智的选择。</p>
 <h2 id="启动-nexus-容器"> 启动 Nexus 容器</h2>
 <div><pre><code>$ docker run -d --name nexus3 --restart<span>=</span>always <span>\</span>
     -p <span>8081</span>:8081 <span>\</span>
@@ -9165,6 +9165,16 @@ Linux 内核自 2.2 版本起就支持能力机制，它将权限划分为更加
 ]]></content:encoded>
     </item>
     <item>
+      <title>Swarm mode</title>
+      <link>https://vuepress.mirror.docker-practice.com/swarm_mode/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/swarm_mode/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">Swarm mode</source>
+      <content:encoded><![CDATA[<h1 id="swarm-mode"> Swarm mode</h1>
+<p>Docker 1.12 <a href="https://docs.docker.com/engine/swarm/" target="_blank" rel="noopener noreferrer">Swarm mode</a> 已经内嵌入 Docker 引擎，成为了 docker 子命令 <code>docker swarm</code>。请注意与旧的 <code>Docker Swarm</code> 区分开来。</p>
+<p><code>Swarm mode</code> 内置 kv 存储功能，提供了众多的新特性，比如：具有容错能力的去中心化设计、内置服务发现、负载均衡、路由网格、动态伸缩、滚动更新、安全传输等。使得 Docker 原生的 <code>Swarm</code> 集群具备与 Mesos、Kubernetes 竞争的实力。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>在 Swarm 集群中管理配置数据</title>
       <link>https://vuepress.mirror.docker-practice.com/swarm_mode/config/</link>
       <guid>https://vuepress.mirror.docker-practice.com/swarm_mode/config/</guid>
@@ -9203,16 +9213,6 @@ yod8fx8iiqtoo84jgwadp86yk   redis.conf          <span>4</span> seconds ago      
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>如果你没有在 <code>target</code> 中显式的指定路径时，默认的 <code>redis.conf</code> 以 <code>tmpfs</code> 文件系统挂载到容器的 <code>/config.conf</code>。</p>
 <p>经过测试，redis 可以正常使用。</p>
 <p>以前我们通过监听主机目录来配置 Redis，就需要在集群的每个节点放置该文件，如果采用 <code>docker config</code> 来管理服务的配置信息，我们只需在集群中的管理节点创建 <code>config</code>，当部署服务时，集群会自动的将配置文件分发到运行服务的各个节点中，大大降低了配置信息的管理和分发难度。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Swarm mode</title>
-      <link>https://vuepress.mirror.docker-practice.com/swarm_mode/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/swarm_mode/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">Swarm mode</source>
-      <content:encoded><![CDATA[<h1 id="swarm-mode"> Swarm mode</h1>
-<p>Docker 1.12 <a href="https://docs.docker.com/engine/swarm/" target="_blank" rel="noopener noreferrer">Swarm mode</a> 已经内嵌入 Docker 引擎，成为了 docker 子命令 <code>docker swarm</code>。请注意与旧的 <code>Docker Swarm</code> 区分开来。</p>
-<p><code>Swarm mode</code> 内置 kv 存储功能，提供了众多的新特性，比如：具有容错能力的去中心化设计、内置服务发现、负载均衡、路由网格、动态伸缩、滚动更新、安全传输等。使得 Docker 原生的 <code>Swarm</code> 集群具备与 Mesos、Kubernetes 竞争的实力。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -9330,38 +9330,6 @@ nginx.1.pjfzd39buzlt@swarm2    <span>|</span> <span>2017</span>/11/25 02:10:27 <
 <div><span>1</span><br></div></div>]]></content:encoded>
     </item>
     <item>
-      <title>基本概念</title>
-      <link>https://vuepress.mirror.docker-practice.com/swarm_mode/overview/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/swarm_mode/overview/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">基本概念</source>
-      <content:encoded><![CDATA[<h1 id="基本概念"> 基本概念</h1>
-<p><code>Swarm</code> 是使用 <a href="https://github.com/docker/swarmkit/" target="_blank" rel="noopener noreferrer"><code>SwarmKit</code></a> 构建的 Docker 引擎内置（原生）的集群管理和编排工具。</p>
-<p>使用 <code>Swarm</code> 集群之前需要了解以下几个概念。</p>
-<h2 id="节点"> 节点</h2>
-<p>运行 Docker 的主机可以主动初始化一个 <code>Swarm</code> 集群或者加入一个已存在的 <code>Swarm</code> 集群，这样这个运行 Docker 的主机就成为一个 <code>Swarm</code> 集群的节点 (<code>node</code>) 。</p>
-<p>节点分为管理 (<code>manager</code>) 节点和工作 (<code>worker</code>) 节点。</p>
-<p>管理节点用于 <code>Swarm</code> 集群的管理，<code>docker swarm</code> 命令基本只能在管理节点执行（节点退出集群命令 <code>docker swarm leave</code> 可以在工作节点执行）。一个 <code>Swarm</code> 集群可以有多个管理节点，但只有一个管理节点可以成为 <code>leader</code>，<code>leader</code> 通过 <code>raft</code> 协议实现。</p>
-<p>工作节点是任务执行节点，管理节点将服务 (<code>service</code>) 下发至工作节点执行。管理节点默认也作为工作节点。你也可以通过配置让服务只运行在管理节点。</p>
-<p>来自 Docker 官网的这张图片形象的展示了集群中管理节点与工作节点的关系。</p>
-<p><img src="https://docs.docker.com/engine/swarm/images/swarm-diagram.png" alt=""></p>
-<h2 id="服务和任务"> 服务和任务</h2>
-<p>任务 （<code>Task</code>）是 <code>Swarm</code> 中的最小的调度单位，目前来说就是一个单一的容器。</p>
-<p>服务 （<code>Services</code>） 是指一组任务的集合，服务定义了任务的属性。服务有两种模式：</p>
-<ul>
-<li>
-<p><code>replicated services</code> 按照一定规则在各个工作节点上运行指定个数的任务。</p>
-</li>
-<li>
-<p><code>global services</code> 每个工作节点上运行一个任务</p>
-</li>
-</ul>
-<p>两种模式通过 <code>docker service create</code> 的 <code>--mode</code> 参数指定。</p>
-<p>来自 Docker 官网的这张图片形象的展示了容器、任务、服务的关系。</p>
-<p><img src="https://docs.docker.com/engine/swarm/images/services-diagram.png" alt=""></p>
-]]></content:encoded>
-      <enclosure url="https://docs.docker.com/engine/swarm/images/swarm-diagram.png" type="image/png"/>
-    </item>
-    <item>
       <title>SWarm mode 与滚动升级</title>
       <link>https://vuepress.mirror.docker-practice.com/swarm_mode/rolling_update/</link>
       <guid>https://vuepress.mirror.docker-practice.com/swarm_mode/rolling_update/</guid>
@@ -9394,6 +9362,38 @@ i7ynkbg6ybq5         <span>\</span>_ nginx.1         nginx:1.13.7-alpine   VM-20
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>结果的输出详细记录了服务的部署、滚动升级、回退的过程。</p>
 ]]></content:encoded>
+    </item>
+    <item>
+      <title>基本概念</title>
+      <link>https://vuepress.mirror.docker-practice.com/swarm_mode/overview/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/swarm_mode/overview/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">基本概念</source>
+      <content:encoded><![CDATA[<h1 id="基本概念"> 基本概念</h1>
+<p><code>Swarm</code> 是使用 <a href="https://github.com/docker/swarmkit/" target="_blank" rel="noopener noreferrer"><code>SwarmKit</code></a> 构建的 Docker 引擎内置（原生）的集群管理和编排工具。</p>
+<p>使用 <code>Swarm</code> 集群之前需要了解以下几个概念。</p>
+<h2 id="节点"> 节点</h2>
+<p>运行 Docker 的主机可以主动初始化一个 <code>Swarm</code> 集群或者加入一个已存在的 <code>Swarm</code> 集群，这样这个运行 Docker 的主机就成为一个 <code>Swarm</code> 集群的节点 (<code>node</code>) 。</p>
+<p>节点分为管理 (<code>manager</code>) 节点和工作 (<code>worker</code>) 节点。</p>
+<p>管理节点用于 <code>Swarm</code> 集群的管理，<code>docker swarm</code> 命令基本只能在管理节点执行（节点退出集群命令 <code>docker swarm leave</code> 可以在工作节点执行）。一个 <code>Swarm</code> 集群可以有多个管理节点，但只有一个管理节点可以成为 <code>leader</code>，<code>leader</code> 通过 <code>raft</code> 协议实现。</p>
+<p>工作节点是任务执行节点，管理节点将服务 (<code>service</code>) 下发至工作节点执行。管理节点默认也作为工作节点。你也可以通过配置让服务只运行在管理节点。</p>
+<p>来自 Docker 官网的这张图片形象的展示了集群中管理节点与工作节点的关系。</p>
+<p><img src="https://docs.docker.com/engine/swarm/images/swarm-diagram.png" alt=""></p>
+<h2 id="服务和任务"> 服务和任务</h2>
+<p>任务 （<code>Task</code>）是 <code>Swarm</code> 中的最小的调度单位，目前来说就是一个单一的容器。</p>
+<p>服务 （<code>Services</code>） 是指一组任务的集合，服务定义了任务的属性。服务有两种模式：</p>
+<ul>
+<li>
+<p><code>replicated services</code> 按照一定规则在各个工作节点上运行指定个数的任务。</p>
+</li>
+<li>
+<p><code>global services</code> 每个工作节点上运行一个任务</p>
+</li>
+</ul>
+<p>两种模式通过 <code>docker service create</code> 的 <code>--mode</code> 参数指定。</p>
+<p>来自 Docker 官网的这张图片形象的展示了容器、任务、服务的关系。</p>
+<p><img src="https://docs.docker.com/engine/swarm/images/services-diagram.png" alt=""></p>
+]]></content:encoded>
+      <enclosure url="https://docs.docker.com/engine/swarm/images/swarm-diagram.png" type="image/png"/>
     </item>
     <item>
       <title>在 Swarm 集群中使用 compose 文件</title>
@@ -9601,29 +9601,6 @@ nzt5xzae4n62  wordpress  replicated  <span>1</span>/1       wordpress:latest
 ]]></content:encoded>
     </item>
     <item>
-      <title>命名空间</title>
-      <link>https://vuepress.mirror.docker-practice.com/underly/namespace/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/underly/namespace/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">命名空间</source>
-      <content:encoded><![CDATA[<h1 id="命名空间"> 命名空间</h1>
-<p>命名空间是 Linux 内核一个强大的特性。每个容器都有自己单独的命名空间，运行在其中的应用都像是在独立的操作系统中运行一样。命名空间保证了容器之间彼此互不影响。
-<AdSenseTitle/></p>
-<h2 id="pid-命名空间"> pid 命名空间</h2>
-<p>不同用户的进程就是通过 pid 命名空间隔离开的，且不同命名空间中可以有相同 pid。所有的 LXC 进程在 Docker 中的父进程为 Docker 进程，每个 LXC 进程具有不同的命名空间。同时由于允许嵌套，因此可以很方便的实现嵌套的 Docker 容器。</p>
-<h2 id="net-命名空间"> net 命名空间</h2>
-<p>有了 pid 命名空间，每个命名空间中的 pid 能够相互隔离，但是网络端口还是共享 host 的端口。网络隔离是通过 net 命名空间实现的， 每个 net 命名空间有独立的 网络设备，IP 地址，路由表，/proc/net 目录。这样每个容器的网络就能隔离开来。Docker 默认采用 veth 的方式，将容器中的虚拟网卡同 host 上的一 个Docker 网桥 docker0 连接在一起。</p>
-<h2 id="ipc-命名空间"> ipc 命名空间</h2>
-<p>容器中进程交互还是采用了 Linux 常见的进程间交互方法(interprocess communication - IPC)， 包括信号量、消息队列和共享内存等。然而同 VM 不同的是，容器的进程间交互实际上还是 host 上具有相同 pid 命名空间中的进程间交互，因此需要在 IPC 资源申请时加入命名空间信息，每个 IPC 资源有一个唯一的 32 位 id。</p>
-<h2 id="mnt-命名空间"> mnt 命名空间</h2>
-<p>类似 chroot，将一个进程放到一个特定的目录执行。mnt 命名空间允许不同命名空间的进程看到的文件结构不同，这样每个命名空间 中的进程所看到的文件目录就被隔离开了。同 chroot 不同，每个命名空间中的容器在 /proc/mounts 的信息只包含所在命名空间的 mount point。</p>
-<h2 id="uts-命名空间"> uts 命名空间</h2>
-<p>UTS(&quot;UNIX Time-sharing System&quot;) 命名空间允许每个容器拥有独立的 hostname 和 domain name， 使其在网络上可以被视作一个独立的节点而非 主机上的一个进程。</p>
-<h2 id="user-命名空间"> user 命名空间</h2>
-<p>每个容器可以有不同的用户和组 id， 也就是说可以在容器内用容器内部的用户执行程序而非主机上的用户。</p>
-<p>*注：更多关于 Linux 上命名空间的信息，请阅读 <a href="https://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/" target="_blank" rel="noopener noreferrer">这篇文章</a>。</p>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Docker 网络实现</title>
       <link>https://vuepress.mirror.docker-practice.com/underly/network/</link>
       <guid>https://vuepress.mirror.docker-practice.com/underly/network/</guid>
@@ -9686,6 +9663,29 @@ $ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>$pid</span> <s
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>以上，就是 Docker 配置网络的具体过程。</p>
 <p>当容器结束后，Docker 会清空容器，容器内的 eth0 会随网络命名空间一起被清除，A 接口也被自动从 <code>docker0</code> 卸载。</p>
 <p>此外，用户可以使用 <code>ip netns exec</code> 命令来在指定网络命名空间中进行配置，从而配置容器内的网络。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>命名空间</title>
+      <link>https://vuepress.mirror.docker-practice.com/underly/namespace/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/underly/namespace/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">命名空间</source>
+      <content:encoded><![CDATA[<h1 id="命名空间"> 命名空间</h1>
+<p>命名空间是 Linux 内核一个强大的特性。每个容器都有自己单独的命名空间，运行在其中的应用都像是在独立的操作系统中运行一样。命名空间保证了容器之间彼此互不影响。
+<AdSenseTitle/></p>
+<h2 id="pid-命名空间"> pid 命名空间</h2>
+<p>不同用户的进程就是通过 pid 命名空间隔离开的，且不同命名空间中可以有相同 pid。所有的 LXC 进程在 Docker 中的父进程为 Docker 进程，每个 LXC 进程具有不同的命名空间。同时由于允许嵌套，因此可以很方便的实现嵌套的 Docker 容器。</p>
+<h2 id="net-命名空间"> net 命名空间</h2>
+<p>有了 pid 命名空间，每个命名空间中的 pid 能够相互隔离，但是网络端口还是共享 host 的端口。网络隔离是通过 net 命名空间实现的， 每个 net 命名空间有独立的 网络设备，IP 地址，路由表，/proc/net 目录。这样每个容器的网络就能隔离开来。Docker 默认采用 veth 的方式，将容器中的虚拟网卡同 host 上的一 个Docker 网桥 docker0 连接在一起。</p>
+<h2 id="ipc-命名空间"> ipc 命名空间</h2>
+<p>容器中进程交互还是采用了 Linux 常见的进程间交互方法(interprocess communication - IPC)， 包括信号量、消息队列和共享内存等。然而同 VM 不同的是，容器的进程间交互实际上还是 host 上具有相同 pid 命名空间中的进程间交互，因此需要在 IPC 资源申请时加入命名空间信息，每个 IPC 资源有一个唯一的 32 位 id。</p>
+<h2 id="mnt-命名空间"> mnt 命名空间</h2>
+<p>类似 chroot，将一个进程放到一个特定的目录执行。mnt 命名空间允许不同命名空间的进程看到的文件结构不同，这样每个命名空间 中的进程所看到的文件目录就被隔离开了。同 chroot 不同，每个命名空间中的容器在 /proc/mounts 的信息只包含所在命名空间的 mount point。</p>
+<h2 id="uts-命名空间"> uts 命名空间</h2>
+<p>UTS(&quot;UNIX Time-sharing System&quot;) 命名空间允许每个容器拥有独立的 hostname 和 domain name， 使其在网络上可以被视作一个独立的节点而非 主机上的一个进程。</p>
+<h2 id="user-命名空间"> user 命名空间</h2>
+<p>每个容器可以有不同的用户和组 id， 也就是说可以在容器内用容器内部的用户执行程序而非主机上的用户。</p>
+<p>*注：更多关于 Linux 上命名空间的信息，请阅读 <a href="https://blog.scottlowe.org/2013/09/04/introducing-linux-network-namespaces/" target="_blank" rel="noopener noreferrer">这篇文章</a>。</p>
 ]]></content:encoded>
     </item>
     <item>
