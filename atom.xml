@@ -2,53 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
   <id>https://vuepress.mirror.docker-practice.com/</id>
   <title>Docker 从入门到实践</title>
-  <updated>2021-03-07T15:59:54.521Z</updated>
+  <updated>2021-03-11T16:18:20.473Z</updated>
   <generator>@mr-hope/vuepress-plugin-feed</generator>
   <link rel="self" href="https://vuepress.mirror.docker-practice.com/atom.xml"/>
   <link rel="alternate" href="https://vuepress.mirror.docker-practice.com/"/>
   <entry>
-    <title type="html">如何贡献</title>
-    <id>https://vuepress.mirror.docker-practice.com/CONTRIBUTING/</id>
-    <link href="https://vuepress.mirror.docker-practice.com/CONTRIBUTING/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="如何贡献"> 如何贡献</h1>
-<p>领取或创建新的 <a href="https://github.com/yeasy/docker_practice/issues" target="_blank" rel="noopener noreferrer">Issue</a>，如 <a href="https://github.com/yeasy/docker_practice/issues/235" target="_blank" rel="noopener noreferrer">issue 235</a>，添加自己为 <code>Assignee</code>。</p>
-<p>在 <a href="https://github.com/yeasy/docker_practice/fork" target="_blank" rel="noopener noreferrer">GitHub</a> 上 <code>fork</code> 到自己的仓库，如 <code>docker_user/docker_practice</code>，然后 <code>clone</code> 到本地，并设置用户信息。</p>
-<div><pre><code>$ <span>git</span> clone git@github.com:docker_user/docker_practice.git
-
-$ <span>cd</span> docker_practice
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>修改代码后提交，并推送到自己的仓库，注意修改提交消息为对应 Issue 号和描述。</p>
-<div><pre><code><span># Update the content</span>
-
-$ <span>git</span> commit -a -s
-
-<span># In commit msg dialog, add content like "Fix issue #235: describe ur change"</span>
-
-$ <span>git</span> push
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>在 <a href="https://github.com/yeasy/docker_practice/pulls" target="_blank" rel="noopener noreferrer">GitHub</a> 上提交 <code>Pull Request</code>，添加标签，并邀请维护者进行 <code>Review</code>。</p>
-<p>定期使用项目仓库内容更新自己仓库内容。</p>
-<div><pre><code>$ <span>git</span> remote <span>add</span> upstream https://github.com/yeasy/docker_practice
-
-$ <span>git</span> fetch upstream
-
-$ <span>git</span> rebase upstream/master
-
-$ <span>git</span> push -f origin master
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="排版规范"> 排版规范</h2>
-<p>本开源书籍遵循 <a href="https://github.com/mzlogin/chinese-copywriting-guidelines" target="_blank" rel="noopener noreferrer">中文排版指南</a> 规范。</p>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
-  </entry>
-  <entry>
     <title type="html">修订记录</title>
     <id>https://vuepress.mirror.docker-practice.com/CHANGELOG/</id>
     <link href="https://vuepress.mirror.docker-practice.com/CHANGELOG/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="修订记录"> 修订记录</h1>
 <ul>
 <li>
@@ -274,12 +236,13 @@ $ <span>git</span> push -f origin master
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker — 从入门到实践</title>
     <id>https://vuepress.mirror.docker-practice.com/</id>
     <link href="https://vuepress.mirror.docker-practice.com/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker-从入门到实践"> Docker — 从入门到实践</h1>
 <AdSenseTitle/>
 <p><a href="https://github.com/yeasy/docker_practice" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/yeasy/docker_practice.svg?style=social&amp;label=Stars" alt=""></a> <a href="https://github.com/yeasy/docker_practice/releases" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/release/yeasy/docker_practice/all.svg" alt=""></a> <a href="https://github.com/docker/docker-ce" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Based-Docker%20CE%20v20.10-blue.svg" alt=""></a> <a href="https://union-click.jd.com/jdc?e=&amp;p=AyIGZRtYFAcXBFIZWR0yEgRQH1kXAhs3EUQDS10iXhBeGlcJDBkNXg9JHU4YDk5ER1xOGRNLGEEcVV8BXURFUFdfC0RVU1JRUy1OVxUBFwNXGVscMlVYLlAaXAV1Z1JHA0dWEHVXZTliY1QLWStaJQAWB10fXhwKEDdlG1wlUHzf462DsLMO0%2F%2BUjp2VIgZlG18RBBcCUBlbEAoTBWUcWxwySVI7HAhBBxEOBUgOFQYQUGUraxYyIjdVK1glQHxXUEhYEVEUUFQcC0IHGgRRSAgVARAPAhsLFgNCDl0ZWiUAEwZREg%3D%3D&amp;t=W1dCFFlQCxxKQgFHREkdSVJKSQVJHFRXFk9FUlpGQUpLCVBaTFhbXQtWVmpSWRtYEAYQBVUS" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Docker%20%E6%8A%80%E6%9C%AF%E5%85%A5%E9%97%A8%E4%B8%8E%E5%AE%9E%E6%88%98-jd.com-red.svg" alt=""></a></p>
@@ -356,12 +319,52 @@ $ <span>git</span> push -f origin master
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">如何贡献</title>
+    <id>https://vuepress.mirror.docker-practice.com/CONTRIBUTING/</id>
+    <link href="https://vuepress.mirror.docker-practice.com/CONTRIBUTING/"/>
+    <updated>2021-03-11T15:09:37.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="如何贡献"> 如何贡献</h1>
+<p>领取或创建新的 <a href="https://github.com/yeasy/docker_practice/issues" target="_blank" rel="noopener noreferrer">Issue</a>，如 <a href="https://github.com/yeasy/docker_practice/issues/235" target="_blank" rel="noopener noreferrer">issue 235</a>，添加自己为 <code>Assignee</code>。</p>
+<p>在 <a href="https://github.com/yeasy/docker_practice/fork" target="_blank" rel="noopener noreferrer">GitHub</a> 上 <code>fork</code> 到自己的仓库，如 <code>docker_user/docker_practice</code>，然后 <code>clone</code> 到本地，并设置用户信息。</p>
+<div><pre><code>$ <span>git</span> clone git@github.com:docker_user/docker_practice.git
+
+$ <span>cd</span> docker_practice
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>修改代码后提交，并推送到自己的仓库，注意修改提交消息为对应 Issue 号和描述。</p>
+<div><pre><code><span># Update the content</span>
+
+$ <span>git</span> commit -a -s
+
+<span># In commit msg dialog, add content like "Fix issue #235: describe ur change"</span>
+
+$ <span>git</span> push
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>在 <a href="https://github.com/yeasy/docker_practice/pulls" target="_blank" rel="noopener noreferrer">GitHub</a> 上提交 <code>Pull Request</code>，添加标签，并邀请维护者进行 <code>Review</code>。</p>
+<p>定期使用项目仓库内容更新自己仓库内容。</p>
+<div><pre><code>$ <span>git</span> remote <span>add</span> upstream https://github.com/yeasy/docker_practice
+
+$ <span>git</span> fetch upstream
+
+$ <span>git</span> rebase upstream/master
+
+$ <span>git</span> push -f origin master
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="排版规范"> 排版规范</h2>
+<p>本开源书籍遵循 <a href="https://github.com/mzlogin/chinese-copywriting-guidelines" target="_blank" rel="noopener noreferrer">中文排版指南</a> 规范。</p>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker — 从入门到实践</title>
     <id>https://vuepress.mirror.docker-practice.com/SUMMARY/</id>
     <link href="https://vuepress.mirror.docker-practice.com/SUMMARY/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker-从入门到实践"> <a href="https://github.com/yeasy/docker_practice/blob/master/SUMMARY.md" target="_blank" rel="noopener noreferrer">Docker — 从入门到实践</a></h1>
 <AdSenseTitle/>
 <ul>
@@ -633,12 +636,13 @@ $ <span>git</span> push -f origin master
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">高级网络配置</title>
     <id>https://vuepress.mirror.docker-practice.com/advanced_network/</id>
     <link href="https://vuepress.mirror.docker-practice.com/advanced_network/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="高级网络配置"> 高级网络配置</h1>
 <AdSenseTitle/>
 <blockquote>
@@ -654,12 +658,13 @@ $ <span>git</span> push -f origin master
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">容器访问控制</title>
     <id>https://vuepress.mirror.docker-practice.com/advanced_network/access_control/</id>
     <link href="https://vuepress.mirror.docker-practice.com/advanced_network/access_control/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="容器访问控制"> 容器访问控制</h1>
 <AdSenseTitle/>
 <p>容器的访问控制，主要通过 Linux 上的 <code>iptables</code> 防火墙来进行管理和实现。<code>iptables</code> 是 Linux 上默认的防火墙软件，在大部分发行版中都自带。</p>
@@ -707,12 +712,13 @@ DROP       all  --  <span>0.0</span>.0.0/0            <span>0.0</span>.0.0/0
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">自定义网桥</title>
     <id>https://vuepress.mirror.docker-practice.com/advanced_network/bridge/</id>
     <link href="https://vuepress.mirror.docker-practice.com/advanced_network/bridge/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="自定义网桥"> 自定义网桥</h1>
 <AdSenseTitle/>
 <p>除了默认的 <code>docker0</code> 网桥，用户也可以指定网桥来连接各个容器。</p>
@@ -746,12 +752,13 @@ $ <span>sudo</span> <span>ip</span> <span>link</span> <span>set</span> dev bridg
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">编辑网络配置文件</title>
     <id>https://vuepress.mirror.docker-practice.com/advanced_network/config_file/</id>
     <link href="https://vuepress.mirror.docker-practice.com/advanced_network/config_file/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="编辑网络配置文件"> 编辑网络配置文件</h1>
 <AdSenseTitle/>
 <p>Docker 1.2.0 开始支持在运行中的容器里编辑 <code>/etc/hosts</code>, <code>/etc/hostname</code> 和 <code>/etc/resolv.conf</code> 文件。</p>
@@ -760,12 +767,13 @@ $ <span>sudo</span> <span>ip</span> <span>link</span> <span>set</span> dev bridg
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">配置 docker0 网桥</title>
     <id>https://vuepress.mirror.docker-practice.com/advanced_network/docker0/</id>
     <link href="https://vuepress.mirror.docker-practice.com/advanced_network/docker0/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="配置-docker0-网桥"> 配置 docker0 网桥</h1>
 <AdSenseTitle/>
 <p>Docker 服务默认会创建一个 <code>docker0</code> 网桥（其上有一个 <code>docker0</code> 内部接口），它在内核层连通了其他的物理或虚拟网卡，这就将所有容器和本地主机都放到同一个物理网络。</p>
@@ -799,12 +807,13 @@ default via <span>172.17</span>.42.1 dev eth0
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">工具和示例</title>
     <id>https://vuepress.mirror.docker-practice.com/advanced_network/example/</id>
     <link href="https://vuepress.mirror.docker-practice.com/advanced_network/example/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="工具和示例"> 工具和示例</h1>
 <AdSenseTitle/>
 <p>在介绍自定义网络拓扑之前，你可能会对一些外部工具和例子感兴趣：</p>
@@ -816,12 +825,13 @@ default via <span>172.17</span>.42.1 dev eth0
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">映射容器端口到宿主主机的实现</title>
     <id>https://vuepress.mirror.docker-practice.com/advanced_network/port_mapping/</id>
     <link href="https://vuepress.mirror.docker-practice.com/advanced_network/port_mapping/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="映射容器端口到宿主主机的实现"> 映射容器端口到宿主主机的实现</h1>
 <AdSenseTitle/>
 <p>默认情况下，容器可以主动访问到外部网络的连接，但是外部网络无法访问到容器。</p>
@@ -869,12 +879,13 @@ DNAT       tcp  --  <span>0.0</span>.0.0/0            <span>0.0</span>.0.0/0    
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">示例：创建一个点到点连接</title>
     <id>https://vuepress.mirror.docker-practice.com/advanced_network/ptp/</id>
     <link href="https://vuepress.mirror.docker-practice.com/advanced_network/ptp/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="示例-创建一个点到点连接"> 示例：创建一个点到点连接</h1>
 <p>默认情况下，Docker 会将所有容器连接到由 <code>docker0</code> 提供的虚拟子网中。
 <AdSenseTitle/></p>
@@ -915,12 +926,13 @@ $ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>3004</span> <s
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">快速配置指南</title>
     <id>https://vuepress.mirror.docker-practice.com/advanced_network/quick_guide/</id>
     <link href="https://vuepress.mirror.docker-practice.com/advanced_network/quick_guide/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="快速配置指南"> 快速配置指南</h1>
 <AdSenseTitle/>
 <p>下面是一个跟 Docker 网络相关的命令列表。</p>
@@ -951,23 +963,25 @@ $ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>3004</span> <s
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">附录</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="附录"> 附录</h1>
 ]]></content>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Dockerfile 最佳实践</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/best_practices/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/best_practices/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="dockerfile-最佳实践"> Dockerfile 最佳实践</h1>
 <AdSenseTitle/>
 <p>本附录是笔者对 Docker 官方文档中 <a href="https://docs.docker.com/develop/develop-images/dockerfile_best-practices/" target="_blank" rel="noopener noreferrer">Best practices for writing Dockerfiles</a> 的理解与翻译。</p>
@@ -1196,12 +1210,13 @@ $ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>3004</span> <s
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker 命令查询</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/command/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/command/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker-命令查询"> Docker 命令查询</h1>
 <AdSenseTitle/>
 <h2 id="基本语法"> 基本语法</h2>
@@ -1220,12 +1235,13 @@ $ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>3004</span> <s
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">客户端命令(docker)</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/command/docker/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/command/docker/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="客户端命令-docker"> 客户端命令(docker)</h1>
 <AdSenseTitle/>
 <h2 id="客户端命令选项"> 客户端命令选项</h2>
@@ -1299,12 +1315,13 @@ $ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>3004</span> <s
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">服务端命令(dockerd)</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/command/dockerd/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/command/dockerd/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="服务端命令-dockerd"> 服务端命令(dockerd)</h1>
 <AdSenseTitle/>
 <h2 id="dockerd-命令选项"> dockerd 命令选项</h2>
@@ -1368,12 +1385,13 @@ $ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>3004</span> <s
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">如何调试 Docker</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/debug/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/debug/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="如何调试-docker"> 如何调试 Docker</h1>
 <AdSenseTitle/>
 <h2 id="开启-debug-模式"> 开启 Debug 模式</h2>
@@ -1402,12 +1420,13 @@ $ <span>sudo</span> <span>dmesg</span> <span>|</span><span>grep</span> runc
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">常见问题总结</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/faq/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/faq/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="常见问题总结"> 常见问题总结</h1>
 <AdSenseTitle/>
 <h2 id="镜像相关"> 镜像相关</h2>
@@ -1571,12 +1590,13 @@ lrwxrwxrwx. <span>1</span> root root <span>15</span> <span>11</span>月 <span>17
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">热门镜像介绍</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/repo/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/repo/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="热门镜像介绍"> 热门镜像介绍</h1>
 <AdSenseTitle/>
 <p>本章将介绍一些热门镜像的功能，使用方法等。包括 Ubuntu、CentOS、MySQL、MongoDB、Redis、Nginx、Wordpress、Node.js 等。</p>
@@ -1584,12 +1604,13 @@ lrwxrwxrwx. <span>1</span> root root <span>15</span> <span>11</span>月 <span>17
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">CentOS</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/repo/centos/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/repo/centos/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="centos"> <a href="https://hub.docker.com/_/centos" target="_blank" rel="noopener noreferrer">CentOS</a></h1>
 <AdSenseTitle/>
 <h2 id="基本信息"> 基本信息</h2>
@@ -1606,12 +1627,13 @@ bash-4.2<span>#</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">minio</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/repo/minio/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/repo/minio/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="minio"> minio</h1>
 <p>[TOC]
 <AdSenseTitle/></p>
@@ -1655,12 +1677,13 @@ docker run -p <span>9000</span>:9000 minio/minio server /data
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">MongoDB</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/repo/mongodb/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/repo/mongodb/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="mongodb"> <a href="https://hub.docker.com/_/mongo/" target="_blank" rel="noopener noreferrer">MongoDB</a></h1>
 <AdSenseTitle/>
 <h2 id="基本信息"> 基本信息</h2>
@@ -1685,12 +1708,13 @@ docker run -p <span>9000</span>:9000 minio/minio server /data
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">MySQL</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/repo/mysql/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/repo/mysql/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="mysql"> <a href="https://hub.docker.com/_/mysql/" target="_blank" rel="noopener noreferrer">MySQL</a></h1>
 <AdSenseTitle/>
 <h2 id="基本信息"> 基本信息</h2>
@@ -1715,12 +1739,13 @@ docker run -p <span>9000</span>:9000 minio/minio server /data
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Nginx</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/repo/nginx/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/repo/nginx/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="nginx"> <a href="https://hub.docker.com/_/nginx/" target="_blank" rel="noopener noreferrer">Nginx</a></h1>
 <AdSenseTitle/>
 <h2 id="基本信息"> 基本信息</h2>
@@ -1753,12 +1778,13 @@ $ docker run --name some-nginx -d some-content-nginx
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Node.js</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/repo/nodejs/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/repo/nodejs/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="node-js"> <a href="https://hub.docker.com/_/node/" target="_blank" rel="noopener noreferrer">Node.js</a></h1>
 <AdSenseTitle/>
 <h2 id="基本信息"> 基本信息</h2>
@@ -1789,12 +1815,13 @@ $ docker run -it --rm --name my-running-app my-nodejs-app
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">PHP</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/repo/php/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/repo/php/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="php"> <a href="https://hub.docker.com/_/php/" target="_blank" rel="noopener noreferrer">PHP</a></h1>
 <AdSenseTitle/>
 <h2 id="基本信息"> 基本信息</h2>
@@ -1810,12 +1837,13 @@ $ docker run -it --rm --name my-running-app my-nodejs-app
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Redis</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/repo/redis/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/repo/redis/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="redis"> <a href="https://hub.docker.com/_/redis/" target="_blank" rel="noopener noreferrer">Redis</a></h1>
 <AdSenseTitle/>
 <h2 id="基本信息"> 基本信息</h2>
@@ -1844,12 +1872,13 @@ $ docker run -it --rm --name my-running-app my-nodejs-app
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Ubuntu</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/repo/ubuntu/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/repo/ubuntu/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="ubuntu"> <a href="https://hub.docker.com/_/ubuntu/" target="_blank" rel="noopener noreferrer">Ubuntu</a></h1>
 <AdSenseTitle/>
 <h2 id="基本信息"> 基本信息</h2>
@@ -1866,12 +1895,13 @@ root@523c70904d54:/<span>#</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">WordPress</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/repo/wordpress/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/repo/wordpress/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="wordpress"> <a href="https://hub.docker.com/_/wordpress/" target="_blank" rel="noopener noreferrer">WordPress</a></h1>
 <AdSenseTitle/>
 <h2 id="基本信息"> 基本信息</h2>
@@ -1893,12 +1923,13 @@ root@523c70904d54:/<span>#</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">资源链接</title>
     <id>https://vuepress.mirror.docker-practice.com/appendix/resources/</id>
     <link href="https://vuepress.mirror.docker-practice.com/appendix/resources/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="资源链接"> 资源链接</h1>
 <AdSenseTitle/>
 <h2 id="官方网站"> 官方网站</h2>
@@ -1932,12 +1963,13 @@ root@523c70904d54:/<span>#</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">归档项目</title>
     <id>https://vuepress.mirror.docker-practice.com/archive/</id>
     <link href="https://vuepress.mirror.docker-practice.com/archive/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="归档项目"> 归档项目</h1>
 <AdSenseTitle/>
 <p>以下项目不被官方支持或内容陈旧，将在下一版本中删除。</p>
@@ -1950,12 +1982,13 @@ root@523c70904d54:/<span>#</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">基本概念</title>
     <id>https://vuepress.mirror.docker-practice.com/basic_concept/</id>
     <link href="https://vuepress.mirror.docker-practice.com/basic_concept/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="基本概念"> 基本概念</h1>
 <AdSenseTitle/>
 <p><strong>Docker</strong> 包括三个基本概念</p>
@@ -1969,12 +2002,13 @@ root@523c70904d54:/<span>#</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker 容器</title>
     <id>https://vuepress.mirror.docker-practice.com/basic_concept/container/</id>
     <link href="https://vuepress.mirror.docker-practice.com/basic_concept/container/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker-容器"> Docker 容器</h1>
 <AdSenseTitle/>
 <p>镜像（<code>Image</code>）和容器（<code>Container</code>）的关系，就像是面向对象程序设计中的 <code>类</code> 和 <code>实例</code> 一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。</p>
@@ -1987,12 +2021,13 @@ root@523c70904d54:/<span>#</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker 镜像</title>
     <id>https://vuepress.mirror.docker-practice.com/basic_concept/image/</id>
     <link href="https://vuepress.mirror.docker-practice.com/basic_concept/image/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker-镜像"> Docker 镜像</h1>
 <AdSenseTitle/>
 <p>我们都知道，操作系统分为 <strong>内核</strong> 和 <strong>用户空间</strong>。对于 <code>Linux</code> 而言，内核启动后，会挂载 <code>root</code> 文件系统为其提供用户空间支持。而 <strong>Docker 镜像</strong>（<code>Image</code>），就相当于是一个 <code>root</code> 文件系统。比如官方镜像 <code>ubuntu:18.04</code> 就包含了完整的一套 Ubuntu 18.04 最小系统的 <code>root</code> 文件系统。</p>
@@ -2006,12 +2041,13 @@ root@523c70904d54:/<span>#</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker Registry</title>
     <id>https://vuepress.mirror.docker-practice.com/basic_concept/repository/</id>
     <link href="https://vuepress.mirror.docker-practice.com/basic_concept/repository/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker-registry"> Docker Registry</h1>
 <AdSenseTitle/>
 <p>镜像构建完成后，可以很容易的在当前宿主机上运行，但是，如果需要在其它服务器上使用这个镜像，我们就需要一个集中的存储、分发镜像的服务，<a href="./../repository/registry.html">Docker Registry</a> 就是这样的服务。</p>
@@ -2032,12 +2068,13 @@ root@523c70904d54:/<span>#</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker Buildx</title>
     <id>https://vuepress.mirror.docker-practice.com/buildx/</id>
     <link href="https://vuepress.mirror.docker-practice.com/buildx/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker-buildx"> Docker Buildx</h1>
 <AdSenseTitle/>
 <p>Docker Buildx 是一个 docker CLI 插件，其扩展了 docker 命令，支持 <a href="./buildkit.html">Moby BuildKit</a> 提供的功能。提供了与 docker build 相同的用户体验，并增加了许多新功能。</p>
@@ -2048,12 +2085,13 @@ root@523c70904d54:/<span>#</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">使用 BuildKit 构建镜像</title>
     <id>https://vuepress.mirror.docker-practice.com/buildx/buildkit/</id>
     <link href="https://vuepress.mirror.docker-practice.com/buildx/buildkit/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="使用-buildkit-构建镜像"> 使用 <code>BuildKit</code> 构建镜像</h1>
 <AdSenseTitle/>
 <p><strong>BuildKit</strong> 是下一代的镜像构建组件，在 https://github.com/moby/buildkit 开源。</p>
@@ -2194,12 +2232,13 @@ $ docker build -t <span>test</span> --ssh <span>default</span><span>=</span><spa
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">使用 Buildx 构建镜像</title>
     <id>https://vuepress.mirror.docker-practice.com/buildx/buildx/</id>
     <link href="https://vuepress.mirror.docker-practice.com/buildx/buildx/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="使用-buildx-构建镜像"> 使用 Buildx 构建镜像</h1>
 <AdSenseTitle/>
 <h2 id="启用-buildx"> 启用 Buildx</h2>
@@ -2219,12 +2258,13 @@ $ docker build -t <span>test</span> --ssh <span>default</span><span>=</span><spa
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">使用 buildx 构建多种系统架构支持的 Docker 镜像</title>
     <id>https://vuepress.mirror.docker-practice.com/buildx/multi-arch-images/</id>
     <link href="https://vuepress.mirror.docker-practice.com/buildx/multi-arch-images/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="使用-buildx-构建多种系统架构支持的-docker-镜像"> 使用 buildx 构建多种系统架构支持的 Docker 镜像</h1>
 <AdSenseTitle/>
 <p>在之前的版本中构建多种系统架构支持的 Docker 镜像，要想使用统一的名字必须使用 <a href="./../image/manifest.html"><code>$ docker manifest</code></a> 命令。</p>
@@ -2315,12 +2355,13 @@ Linux buildkitsandbox <span>4.9</span>.125-linuxkit <span>#1 SMP Fri Sep 7 08:20
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">CI/CD</title>
     <id>https://vuepress.mirror.docker-practice.com/cases/ci/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cases/ci/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="ci-cd"> CI/CD</h1>
 <AdSenseTitle/>
 <p><strong>持续集成(Continuous integration)</strong> 是一种软件开发实践，每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽早地发现集成错误。</p>
@@ -2330,12 +2371,13 @@ Linux buildkitsandbox <span>4.9</span>.125-linuxkit <span>#1 SMP Fri Sep 7 08:20
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">GitHub Actions</title>
     <id>https://vuepress.mirror.docker-practice.com/cases/ci/actions/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cases/ci/actions/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="github-actions"> GitHub Actions</h1>
 <AdSenseTitle/>
 <p>GitHub <a href="https://github.com/features/actions" target="_blank" rel="noopener noreferrer">Actions</a> 是 GitHub 推出的一款 CI/CD 工具。</p>
@@ -2365,12 +2407,13 @@ Linux buildkitsandbox <span>4.9</span>.125-linuxkit <span>#1 SMP Fri Sep 7 08:20
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Drone</title>
     <id>https://vuepress.mirror.docker-practice.com/cases/ci/drone/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cases/ci/drone/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="drone"> Drone</h1>
 <AdSenseTitle/>
 <p>基于 <code>Docker</code> 的 <code>CI/CD</code> 工具 <code>Drone</code> 所有编译、测试的流程都在 <code>Docker</code> 容器中进行。</p>
@@ -2447,23 +2490,25 @@ $ <span>git</span> push origin master
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Drone Demo</title>
     <id>https://vuepress.mirror.docker-practice.com/cases/ci/drone/demo/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cases/ci/drone/demo/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="drone-demo"> Drone Demo</h1>
 ]]></content>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">部署 Drone</title>
     <id>https://vuepress.mirror.docker-practice.com/cases/ci/drone/install/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cases/ci/drone/install/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="部署-drone"> 部署 Drone</h1>
 <AdSenseTitle/>
 <h2 id="要求"> 要求</h2>
@@ -2548,12 +2593,13 @@ $ <span>git</span> push origin master
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">操作系统</title>
     <id>https://vuepress.mirror.docker-practice.com/cases/os/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cases/os/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="操作系统"> 操作系统</h1>
 <AdSenseTitle/>
 <p>目前常用的 Linux 发行版主要包括 <code>Debian/Ubuntu</code> 系列和 <code>CentOS/Fedora</code> 系列。</p>
@@ -2564,12 +2610,13 @@ $ <span>git</span> push origin master
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Alpine</title>
     <id>https://vuepress.mirror.docker-practice.com/cases/os/alpine/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cases/os/alpine/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="alpine"> Alpine</h1>
 <AdSenseTitle/>
 <h2 id="简介"> 简介</h2>
@@ -2620,12 +2667,13 @@ $ apk --update <span>add</span> --no-cache <span>&lt;</span>package<span>></span
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Busybox</title>
     <id>https://vuepress.mirror.docker-practice.com/cases/os/busybox/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cases/os/busybox/"/>
-    <updated>2021-03-07T15:56:19.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="busybox"> Busybox</h1>
 <AdSenseTitle/>
 <h2 id="简介"> 简介</h2>
@@ -2738,12 +2786,13 @@ tmpfs on /sys/firmware <span>type</span> tmpfs <span>(</span>ro,relatime<span>)<
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">CentOS/Fedora</title>
     <id>https://vuepress.mirror.docker-practice.com/cases/os/centos/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cases/os/centos/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="centos-fedora"> CentOS/Fedora</h1>
 <AdSenseTitle/>
 <h2 id="centos-系统简介"> CentOS 系统简介</h2>
@@ -2804,12 +2853,13 @@ Fedora release <span>24</span> <span>(</span>Twenty Four<span>)</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Debian/Ubuntu</title>
     <id>https://vuepress.mirror.docker-practice.com/cases/os/debian/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cases/os/debian/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="debian-ubuntu"> Debian/Ubuntu</h1>
 <AdSenseTitle/>
 <p><code>Debian</code> 和 <code>Ubuntu</code> 都是目前较为流行的 <strong>Debian 系</strong> 的服务器操作系统，十分适合研发场景。<code>Docker Hub</code> 上提供了官方镜像，国内各大容器云服务也基本都提供了相应的支持。</p>
@@ -2963,12 +3013,13 @@ root@7d93de07bf76:/<span># curl 127.0.0.1</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">本章小结</title>
     <id>https://vuepress.mirror.docker-practice.com/cases/os/summary/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cases/os/summary/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="本章小结"> 本章小结</h1>
 <AdSenseTitle/>
 <p>本章讲解了典型操作系统镜像的下载和使用。</p>
@@ -2986,12 +3037,28 @@ root@7d93de07bf76:/<span># curl 127.0.0.1</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">容器与云计算</title>
+    <id>https://vuepress.mirror.docker-practice.com/cloud/</id>
+    <link href="https://vuepress.mirror.docker-practice.com/cloud/"/>
+    <updated>2021-03-11T15:09:37.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="容器与云计算"> 容器与云计算</h1>
+<AdSenseTitle/>
+<p>Docker 目前已经得到了众多公有云平台的支持，并成为除虚拟机之外的核心云业务。</p>
+<p>除了 AWS、Google、Azure 等，国内的各大公有云厂商，基本上都同时支持了虚拟机服务和基于 Kubernetes 的容器云业务。有的还推出了其他服务，例如 <a href="https://cloud.tencent.com/act/cps/redirect?redirect=11588&amp;cps_key=3a5255852d5db99dcd5da4c72f05df61" target="_blank" rel="noopener noreferrer">容器镜像服务</a> 让用户在云上享有安全高效的镜像托管、分发等服务。</p>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">阿里云</title>
     <id>https://vuepress.mirror.docker-practice.com/cloud/alicloud/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cloud/alicloud/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="阿里云"> 阿里云</h1>
 <AdSenseTitle/>
 <p><img src="./_images/aliyun-logo.png" alt="阿里云"></p>
@@ -3003,26 +3070,13 @@ root@7d93de07bf76:/<span># curl 127.0.0.1</span>
     <contributor>
       <name/>
     </contributor>
-  </entry>
-  <entry>
-    <title type="html">容器与云计算</title>
-    <id>https://vuepress.mirror.docker-practice.com/cloud/</id>
-    <link href="https://vuepress.mirror.docker-practice.com/cloud/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="容器与云计算"> 容器与云计算</h1>
-<AdSenseTitle/>
-<p>Docker 目前已经得到了众多公有云平台的支持，并成为除虚拟机之外的核心云业务。</p>
-<p>除了 AWS、Google、Azure 等，国内的各大公有云厂商，基本上都同时支持了虚拟机服务和基于 Kubernetes 的容器云业务。有的还推出了其他服务，例如 <a href="https://cloud.tencent.com/act/cps/redirect?redirect=11588&amp;cps_key=3a5255852d5db99dcd5da4c72f05df61" target="_blank" rel="noopener noreferrer">容器镜像服务</a> 让用户在云上享有安全高效的镜像托管、分发等服务。</p>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">亚马逊云</title>
     <id>https://vuepress.mirror.docker-practice.com/cloud/aws/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cloud/aws/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="亚马逊云"> 亚马逊云</h1>
 <AdSenseTitle/>
 <p><img src="./_images/aws-logo.jpg" alt="AWS"></p>
@@ -3034,12 +3088,13 @@ root@7d93de07bf76:/<span># curl 127.0.0.1</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">简介</title>
     <id>https://vuepress.mirror.docker-practice.com/cloud/intro/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cloud/intro/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="简介"> 简介</h1>
 <AdSenseTitle/>
 <p>目前与容器相关的云计算主要分为两种类型。</p>
@@ -3049,12 +3104,13 @@ root@7d93de07bf76:/<span># curl 127.0.0.1</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">本章小结</title>
     <id>https://vuepress.mirror.docker-practice.com/cloud/summary/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cloud/summary/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="本章小结"> 本章小结</h1>
 <AdSenseTitle/>
 <p>本章介绍了公有云服务对 Docker 的积极支持，以及新出现的容器云平台。</p>
@@ -3070,12 +3126,13 @@ root@7d93de07bf76:/<span># curl 127.0.0.1</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">腾讯云</title>
     <id>https://vuepress.mirror.docker-practice.com/cloud/tencentCloud/</id>
     <link href="https://vuepress.mirror.docker-practice.com/cloud/tencentCloud/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="腾讯云"> 腾讯云</h1>
 <AdSenseTitle/>
 <p><img src="./_images/qcloud-logo.jpg" alt="腾讯云"></p>
@@ -3087,12 +3144,13 @@ root@7d93de07bf76:/<span># curl 127.0.0.1</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker Compose 项目</title>
     <id>https://vuepress.mirror.docker-practice.com/compose/</id>
     <link href="https://vuepress.mirror.docker-practice.com/compose/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker-compose-项目"> Docker Compose 项目</h1>
 <AdSenseTitle/>
 <p><code>Docker Compose</code> 是 Docker 官方编排（Orchestration）项目之一，负责快速的部署分布式应用。</p>
@@ -3101,12 +3159,13 @@ root@7d93de07bf76:/<span># curl 127.0.0.1</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Compose 命令说明</title>
     <id>https://vuepress.mirror.docker-practice.com/compose/commands/</id>
     <link href="https://vuepress.mirror.docker-practice.com/compose/commands/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="compose-命令说明"> Compose 命令说明</h1>
 <AdSenseTitle/>
 <h2 id="命令对象与格式"> 命令对象与格式</h2>
@@ -3344,12 +3403,13 @@ root@7d93de07bf76:/<span># curl 127.0.0.1</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Compose 模板文件</title>
     <id>https://vuepress.mirror.docker-practice.com/compose/compose_file/</id>
     <link href="https://vuepress.mirror.docker-practice.com/compose/compose_file/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="compose-模板文件"> Compose 模板文件</h1>
 <AdSenseTitle/>
 <p>模板文件是使用 <code>Compose</code> 的核心，涉及到的指令关键字也比较多。但大家不用担心，这里面大部分指令跟 <code>docker run</code> 相关参数的含义都是类似的。</p>
@@ -3731,12 +3791,13 @@ env_file:
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">使用 Django</title>
     <id>https://vuepress.mirror.docker-practice.com/compose/django/</id>
     <link href="https://vuepress.mirror.docker-practice.com/compose/django/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="使用-django"> 使用 Django</h1>
 <AdSenseTitle/>
 <blockquote>
@@ -3830,12 +3891,13 @@ web_1  <span>|</span> Quit the server with CONTROL-C.
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">安装与卸载</title>
     <id>https://vuepress.mirror.docker-practice.com/compose/install/</id>
     <link href="https://vuepress.mirror.docker-practice.com/compose/install/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="安装与卸载"> 安装与卸载</h1>
 <AdSenseTitle/>
 <p><code>Compose</code> 支持 Linux、macOS、Windows 10 三大平台。</p>
@@ -3882,12 +3944,13 @@ Successfully installed docker-compose cached-property requests texttable websock
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Compose 简介</title>
     <id>https://vuepress.mirror.docker-practice.com/compose/introduction/</id>
     <link href="https://vuepress.mirror.docker-practice.com/compose/introduction/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="compose-简介"> Compose 简介</h1>
 <AdSenseTitle/>
 <p><code>Compose</code> 项目是 Docker 官方的开源项目，负责实现对 Docker 容器集群的快速编排。从功能上看，跟 <code>OpenStack</code> 中的 <code>Heat</code> 十分类似。</p>
@@ -3910,12 +3973,13 @@ Successfully installed docker-compose cached-property requests texttable websock
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">使用 compose 搭建 LNMP 环境</title>
     <id>https://vuepress.mirror.docker-practice.com/compose/lnmp/</id>
     <link href="https://vuepress.mirror.docker-practice.com/compose/lnmp/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="使用-compose-搭建-lnmp-环境"> 使用 compose 搭建 LNMP 环境</h1>
 <AdSenseTitle/>
 <p>本项目的维护者 <a href="https://github.com/khs1994" target="_blank" rel="noopener noreferrer">khs1994</a> 的开源项目 <a href="https://github.com/khs1994-docker/lnmp" target="_blank" rel="noopener noreferrer">khs1994-docker/lnmp</a> 使用 Docker Compose 搭建了一套 LNMP 环境，各位开发者可以参考该项目在 Docker 或 Kubernetes 中运行 LNMP。</p>
@@ -3923,12 +3987,13 @@ Successfully installed docker-compose cached-property requests texttable websock
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">使用 Rails</title>
     <id>https://vuepress.mirror.docker-practice.com/compose/rails/</id>
     <link href="https://vuepress.mirror.docker-practice.com/compose/rails/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="使用-rails"> 使用 Rails</h1>
 <AdSenseTitle/>
 <blockquote>
@@ -4015,12 +4080,13 @@ myapp_web_1 <span>|</span> <span>[</span><span>2014</span>-01-17 <span>17</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">使用</title>
     <id>https://vuepress.mirror.docker-practice.com/compose/usage/</id>
     <link href="https://vuepress.mirror.docker-practice.com/compose/usage/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="使用"> 使用</h1>
 <AdSenseTitle/>
 <h2 id="术语"> 术语</h2>
@@ -4082,12 +4148,13 @@ redis <span>=</span> Redis<span>(</span>host<span>=</span><span>'redis'</span><s
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">使用 WordPress</title>
     <id>https://vuepress.mirror.docker-practice.com/compose/wordpress/</id>
     <link href="https://vuepress.mirror.docker-practice.com/compose/wordpress/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="使用-wordpress"> 使用 WordPress</h1>
 <AdSenseTitle/>
 <blockquote>
@@ -4136,12 +4203,13 @@ redis <span>=</span> Redis<span>(</span>host<span>=</span><span>'redis'</span><s
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">操作 Docker 容器</title>
     <id>https://vuepress.mirror.docker-practice.com/container/</id>
     <link href="https://vuepress.mirror.docker-practice.com/container/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="操作-docker-容器"> 操作 Docker 容器</h1>
 <AdSenseTitle/>
 <p>容器是 Docker 又一核心概念。</p>
@@ -4151,12 +4219,13 @@ redis <span>=</span> Redis<span>(</span>host<span>=</span><span>'redis'</span><s
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">进入容器</title>
     <id>https://vuepress.mirror.docker-practice.com/container/attach_exec/</id>
     <link href="https://vuepress.mirror.docker-practice.com/container/attach_exec/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="进入容器"> 进入容器</h1>
 <AdSenseTitle/>
 <p>在使用 <code>-d</code> 参数时，容器启动后会进入后台。</p>
@@ -4202,12 +4271,13 @@ root@69d137adef7a:/<span>#</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">后台运行</title>
     <id>https://vuepress.mirror.docker-practice.com/container/daemon/</id>
     <link href="https://vuepress.mirror.docker-practice.com/container/daemon/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="后台运行"> 后台运行</h1>
 <AdSenseTitle/>
 <p>更多的时候，需要让 Docker 在后台运行而不是直接把执行命令的结果输出在当前宿主机下。此时，可以通过添加 <code>-d</code> 参数来实现。</p>
@@ -4242,12 +4312,13 @@ hello world
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">导出和导入容器</title>
     <id>https://vuepress.mirror.docker-practice.com/container/import_export/</id>
     <link href="https://vuepress.mirror.docker-practice.com/container/import_export/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="导出和导入容器"> 导出和导入容器</h1>
 <AdSenseTitle/>
 <h2 id="导出容器"> 导出容器</h2>
@@ -4273,12 +4344,13 @@ test/ubuntu         v1.0                9d37a6082e97        About a minute ago  
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">删除容器</title>
     <id>https://vuepress.mirror.docker-practice.com/container/rm/</id>
     <link href="https://vuepress.mirror.docker-practice.com/container/rm/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="删除容器"> 删除容器</h1>
 <AdSenseTitle/>
 <p>可以使用 <code>docker container rm</code> 来删除一个处于终止状态的容器。例如</p>
@@ -4294,12 +4366,13 @@ trusting_newton
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">启动容器</title>
     <id>https://vuepress.mirror.docker-practice.com/container/run/</id>
     <link href="https://vuepress.mirror.docker-practice.com/container/run/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="启动容器"> 启动容器</h1>
 <AdSenseTitle/>
 <p>启动容器有两种方式，一种是基于镜像新建一个容器并启动，另外一个是将在终止状态（<code>exited</code>）的容器重新启动。</p>
@@ -4345,12 +4418,13 @@ bin boot dev etc home lib lib64 media mnt opt proc root run sbin srv sys tmp usr
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">终止容器</title>
     <id>https://vuepress.mirror.docker-practice.com/container/stop/</id>
     <link href="https://vuepress.mirror.docker-practice.com/container/stop/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="终止容器"> 终止容器</h1>
 <AdSenseTitle/>
 <p>可以使用 <code>docker container stop</code> 来终止一个运行中的容器。</p>
@@ -4367,12 +4441,13 @@ ba267838cc1b        ubuntu:18.04             <span>"/bin/bash"</span>           
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Fedora CoreOS</title>
     <id>https://vuepress.mirror.docker-practice.com/coreos/</id>
     <link href="https://vuepress.mirror.docker-practice.com/coreos/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="fedora-coreos"> Fedora CoreOS</h1>
 <AdSenseTitle/>
 <p><code>CoreOS</code> 是一个专门为安全和大规模运行容器化工作负载而构建的新 Fedora 版本，它继承了 Fedora Atomic Host 和 CoreOS Container Linux 的优势。</p>
@@ -4382,12 +4457,13 @@ ba267838cc1b        ubuntu:18.04             <span>"/bin/bash"</span>           
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">安装 Fedora CoreOS</title>
     <id>https://vuepress.mirror.docker-practice.com/coreos/install/</id>
     <link href="https://vuepress.mirror.docker-practice.com/coreos/install/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="安装-fedora-coreos"> 安装 Fedora CoreOS</h1>
 <AdSenseTitle/>
 <h2 id="下载-iso"> 下载 ISO</h2>
@@ -4428,12 +4504,13 @@ $ docker --version
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Fedora CoreOS 介绍</title>
     <id>https://vuepress.mirror.docker-practice.com/coreos/intro/</id>
     <link href="https://vuepress.mirror.docker-practice.com/coreos/intro/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="fedora-coreos-介绍"> Fedora CoreOS 介绍</h1>
 <AdSenseTitle/>
 <p><a href="https://getfedora.org/coreos/" target="_blank" rel="noopener noreferrer">Fedora CoreOS</a> 是一个自动更新的，最小的，整体的，以容器为中心的操作系统，不仅适用于集群，而且可独立运行，并针对运行 Kubernetes 进行了优化。它旨在结合 CoreOS Container Linux 和 Fedora Atomic Host 的优点，将 Container Linux 中的 <a href="https://github.com/coreos/ignition" target="_blank" rel="noopener noreferrer">Ignition</a> 与 <a href="https://github.com/coreos/rpm-ostree" target="_blank" rel="noopener noreferrer">rpm-ostree</a> 和 Project Atomic 中的 SELinux 强化等技术相集成。其目标是提供最佳的容器主机，以安全，大规模地运行容器化的工作负载。</p>
@@ -4456,12 +4533,13 @@ $ docker --version
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker 数据管理</title>
     <id>https://vuepress.mirror.docker-practice.com/data_management/</id>
     <link href="https://vuepress.mirror.docker-practice.com/data_management/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker-数据管理"> Docker 数据管理</h1>
 <AdSenseTitle/>
 <p><img src="./_images/types-of-mounts.png" alt=""></p>
@@ -4478,12 +4556,13 @@ $ docker --version
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">挂载主机目录</title>
     <id>https://vuepress.mirror.docker-practice.com/data_management/bind-mounts/</id>
     <link href="https://vuepress.mirror.docker-practice.com/data_management/bind-mounts/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="挂载主机目录"> 挂载主机目录</h1>
 <AdSenseTitle/>
 <h2 id="挂载一个主机目录作为数据卷"> 挂载一个主机目录作为数据卷</h2>
@@ -4539,12 +4618,13 @@ root@2affd44b4667:/<span># history</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">数据卷</title>
     <id>https://vuepress.mirror.docker-practice.com/data_management/volume/</id>
     <link href="https://vuepress.mirror.docker-practice.com/data_management/volume/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="数据卷"> 数据卷</h1>
 <AdSenseTitle/>
 <p><code>数据卷</code> 是一个可供一个或多个容器使用的特殊目录，它绕过 UFS，可以提供很多有用的特性：</p>
@@ -4625,12 +4705,13 @@ DRIVER              VOLUME NAME
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">etcd</title>
     <id>https://vuepress.mirror.docker-practice.com/etcd/</id>
     <link href="https://vuepress.mirror.docker-practice.com/etcd/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="etcd"> etcd</h1>
 <AdSenseTitle/>
 <p><code>etcd</code> 是 <code>CoreOS</code> 团队发起的一个管理配置信息和服务发现（<code>Service Discovery</code>）的项目，在这一章里面，我们将基于 <code>etcd 3.x</code> 版本介绍该项目的目标，安装和使用，以及实现的技术。</p>
@@ -4638,12 +4719,13 @@ DRIVER              VOLUME NAME
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">etcd 集群</title>
     <id>https://vuepress.mirror.docker-practice.com/etcd/cluster/</id>
     <link href="https://vuepress.mirror.docker-practice.com/etcd/cluster/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="etcd-集群"> etcd 集群</h1>
 <AdSenseTitle/>
 <p>下面我们使用 <a href="./../compose/">Docker Compose</a> 模拟启动一个 3 节点的 <code>etcd</code> 集群。</p>
@@ -4771,12 +4853,13 @@ ed635d2a2dbef43d, started, node2, http://172.16.238.101:2380, http://172.16.238.
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">使用 etcdctl v2</title>
     <id>https://vuepress.mirror.docker-practice.com/etcd/etcdctl-v2/</id>
     <link href="https://vuepress.mirror.docker-practice.com/etcd/etcdctl-v2/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="使用-etcdctl-v2"> 使用 etcdctl v2</h1>
 <AdSenseTitle/>
 <p><code>etcdctl</code> 是一个命令行客户端，它能提供一些简洁的命令，供用户直接跟 <code>etcd</code> 服务打交道，而无需基于 <code>HTTP API</code> 方式。这在某些情况下将很方便，例如用户对服务进行测试或者手动修改数据库内容。我们也推荐在刚接触 <code>etcd</code> 时通过 <code>etcdctl</code> 命令来熟悉相关的操作，这些操作跟 <code>HTTP API</code> 实际上是对应的。</p>
@@ -4995,12 +5078,13 @@ ce2a822cea30bfca: <span>name</span><span>=</span>default <span>peerURLs</span><s
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">使用 etcdctl</title>
     <id>https://vuepress.mirror.docker-practice.com/etcd/etcdctl/</id>
     <link href="https://vuepress.mirror.docker-practice.com/etcd/etcdctl/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="使用-etcdctl"> 使用 etcdctl</h1>
 <AdSenseTitle/>
 <p><code>etcdctl</code> 是一个命令行客户端，它能提供一些简洁的命令，供用户直接跟 <code>etcd</code> 服务打交道，而无需基于 <code>HTTP API</code> 方式。这在某些情况下将很方便，例如用户对服务进行测试或者手动修改数据库内容。我们也推荐在刚接触 <code>etcd</code> 时通过 <code>etcdctl</code> 命令来熟悉相关的操作，这些操作跟 <code>HTTP API</code> 实际上是对应的。</p>
@@ -5124,12 +5208,13 @@ testkey
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">安装</title>
     <id>https://vuepress.mirror.docker-practice.com/etcd/install/</id>
     <link href="https://vuepress.mirror.docker-practice.com/etcd/install/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="安装"> 安装</h1>
 <AdSenseTitle/>
 <p><code>etcd</code> 基于 <code>Go</code> 语言实现，因此，用户可以从 <a href="https://github.com/etcd-io/etcd" target="_blank" rel="noopener noreferrer">项目主页</a> 下载源代码自行编译，也可以下载编译好的二进制文件，甚至直接使用制作好的 <code>Docker</code> 镜像文件来体验。</p>
@@ -5207,12 +5292,13 @@ $ etcdctl member list
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">什么是 etcd</title>
     <id>https://vuepress.mirror.docker-practice.com/etcd/intro/</id>
     <link href="https://vuepress.mirror.docker-practice.com/etcd/intro/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="什么是-etcd"> 什么是 etcd</h1>
 <AdSenseTitle/>
 <p><img src="./_images/etcd_logo.png" alt=""></p>
@@ -5241,12 +5327,13 @@ $ etcdctl member list
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">在 IDE 中使用 Docker</title>
     <id>https://vuepress.mirror.docker-practice.com/ide/</id>
     <link href="https://vuepress.mirror.docker-practice.com/ide/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="在-ide-中使用-docker"> 在 IDE 中使用 Docker</h1>
 <AdSenseTitle/>
 <p>使用 IDE 进行开发，往往要求本地安装好工具链。一些 IDE 支持 Docker 容器中的工具链，这样充分利用了 Docker 的优点，而无需在本地安装。</p>
@@ -5254,12 +5341,13 @@ $ etcdctl member list
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">VS Code 中使用 Docker</title>
     <id>https://vuepress.mirror.docker-practice.com/ide/vsCode/</id>
     <link href="https://vuepress.mirror.docker-practice.com/ide/vsCode/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="vs-code-中使用-docker"> VS Code 中使用 Docker</h1>
 <AdSenseTitle/>
 <h2 id="将-docker-容器作为远程开发环境"> 将 Docker 容器作为远程开发环境</h2>
@@ -5268,12 +5356,13 @@ $ etcdctl member list
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">使用 Docker 镜像</title>
     <id>https://vuepress.mirror.docker-practice.com/image/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="使用-docker-镜像"> 使用 Docker 镜像</h1>
 <AdSenseTitle/>
 <p>在之前的介绍中，我们知道镜像是 Docker 的三大组件之一。</p>
@@ -5294,12 +5383,13 @@ $ etcdctl member list
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">使用 Dockerfile 定制镜像</title>
     <id>https://vuepress.mirror.docker-practice.com/image/build/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/build/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="使用-dockerfile-定制镜像"> 使用 Dockerfile 定制镜像</h1>
 <AdSenseTitle/>
 <p>从刚才的 <code>docker commit</code> 的学习中，我们可以了解到，镜像的定制实际上就是定制每一层所添加的配置、文件。如果我们可以把每一层修改、安装、构建、操作的命令都写入一个脚本，用这个脚本来构建、定制镜像，那么之前提及的无法重复的问题、镜像构建透明性的问题、体积的问题就都会解决。这个脚本就是 Dockerfile。</p>
@@ -5324,7 +5414,7 @@ $ <span>touch</span> Dockerfile
 <span>...</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br></div></div><p>如果你以 <code>scratch</code> 为基础镜像的话，意味着你不以任何镜像为基础，接下来所写的指令将作为镜像第一层开始存在。</p>
-<p>不以任何系统为基础，直接将可执行文件复制进镜像的做法并不罕见，比如 <a href="https://hub.docker.com/_/swarm/" target="_blank" rel="noopener noreferrer"><code>swarm</code></a>、<a href="https://quay.io/repository/coreos/etcd" target="_blank" rel="noopener noreferrer"><code>etcd</code></a>。对于 Linux 下静态编译的程序来说，并不需要有操作系统提供运行时支持，所需的一切库都已经在可执行文件里了，因此直接 <code>FROM scratch</code> 会让镜像体积更加小巧。使用 <a href="https://golang.org/" target="_blank" rel="noopener noreferrer">Go 语言</a> 开发的应用很多会使用这种方式来制作镜像，这也是为什么有人认为 Go 是特别适合容器微服务架构的语言的原因之一。</p>
+<p>不以任何系统为基础，直接将可执行文件复制进镜像的做法并不罕见，对于 Linux 下静态编译的程序来说，并不需要有操作系统提供运行时支持，所需的一切库都已经在可执行文件里了，因此直接 <code>FROM scratch</code> 会让镜像体积更加小巧。使用 <a href="https://golang.google.cn/" target="_blank" rel="noopener noreferrer">Go 语言</a> 开发的应用很多会使用这种方式来制作镜像，这也是为什么有人认为 Go 是特别适合容器微服务架构的语言的原因之一。</p>
 <h2 id="run-执行命令"> RUN 执行命令</h2>
 <p><code>RUN</code> 指令是用来执行命令行命令的。由于命令行的强大能力，<code>RUN</code> 指令在定制镜像时是最常用的指令之一。其格式有两种：</p>
 <ul>
@@ -5447,12 +5537,13 @@ Successfully built 038ad4142d2b
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">利用 commit 理解镜像构成</title>
     <id>https://vuepress.mirror.docker-practice.com/image/commit/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/commit/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="利用-commit-理解镜像构成"> 利用 commit 理解镜像构成</h1>
 <AdSenseTitle/>
 <blockquote>
@@ -5545,12 +5636,13 @@ e43d811ce2f4        <span>4</span> weeks ago         /bin/sh -c <span>#(nop)  CM
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Dockerfile 指令详解</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="dockerfile-指令详解"> Dockerfile 指令详解</h1>
 <AdSenseTitle/>
 <p>我们已经介绍了 <code>FROM</code>，<code>RUN</code>，还提及了 <code>COPY</code>, <code>ADD</code>，其实 <code>Dockerfile</code> 功能很强大，它提供了十多个指令。下面我们继续讲解其他的指令。</p>
@@ -5558,12 +5650,13 @@ e43d811ce2f4        <span>4</span> weeks ago         /bin/sh -c <span>#(nop)  CM
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">ADD 更高级的复制文件</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/add/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/add/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="add-更高级的复制文件"> ADD 更高级的复制文件</h1>
 <AdSenseTitle/>
 <p><code>ADD</code> 指令和 <code>COPY</code> 的格式和性质基本一致。但是在 <code>COPY</code> 基础上增加了一些功能。</p>
@@ -5588,18 +5681,19 @@ e43d811ce2f4        <span>4</span> weeks ago         /bin/sh -c <span>#(nop)  CM
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">ARG 构建参数</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/arg/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/arg/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="arg-构建参数"> ARG 构建参数</h1>
 <AdSenseTitle/>
 <p>格式：<code>ARG &lt;参数名&gt;[=&lt;默认值&gt;]</code></p>
 <p>构建参数和 <code>ENV</code> 的效果一样，都是设置环境变量。所不同的是，<code>ARG</code> 所设置的构建环境的环境变量，在将来容器运行时是不会存在这些环境变量的。但是不要因此就使用 <code>ARG</code> 保存密码之类的信息，因为 <code>docker history</code> 还是可以看到所有值的。</p>
 <p><code>Dockerfile</code> 中的 <code>ARG</code> 指令是定义参数名称，以及定义其默认值。该默认值可以在构建命令 <code>docker build</code> 中用 <code>--build-arg &lt;参数名&gt;=&lt;值&gt;</code> 来覆盖。</p>
-<p>在 1.13 之前的版本，要求 <code>--build-arg</code> 中的参数名，必须在 <code>Dockerfile</code> 中用 <code>ARG</code> 定义过了，换句话说，就是 <code>--build-arg</code> 指定的参数，必须在 <code>Dockerfile</code> 中使用了。如果对应参数没有被使用，则会报错退出构建。从 1.13 开始，这种严格的限制被放开，不再报错退出，而是显示警告信息，并继续构建。这对于使用 CI 系统，用同样的构建流程构建不同的 <code>Dockerfile</code> 的时候比较有帮助，避免构建命令必须根据每个 Dockerfile 的内容修改。</p>
+<p>灵活的使用 <code>ARG</code> 指令，能够在不修改 Dockerfile 的情况下，构建出不同的镜像。</p>
 <p>ARG 指令有生效范围，如果在 <code>FROM</code> 指令之前指定，那么只能用于 <code>FROM</code> 指令中。</p>
 <div><pre><code><span>ARG</span> DOCKER_USERNAME=library
 
@@ -5651,12 +5745,13 @@ e43d811ce2f4        <span>4</span> weeks ago         /bin/sh -c <span>#(nop)  CM
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">CMD 容器启动命令</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/cmd/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/cmd/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="cmd-容器启动命令"> CMD 容器启动命令</h1>
 <AdSenseTitle/>
 <p><code>CMD</code> 指令的格式和 <code>RUN</code> 相似，也是两种格式：</p>
@@ -5690,12 +5785,13 @@ e43d811ce2f4        <span>4</span> weeks ago         /bin/sh -c <span>#(nop)  CM
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">COPY 复制文件</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/copy/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/copy/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="copy-复制文件"> COPY 复制文件</h1>
 <AdSenseTitle/>
 <p>格式：</p>
@@ -5724,12 +5820,13 @@ e43d811ce2f4        <span>4</span> weeks ago         /bin/sh -c <span>#(nop)  CM
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">ENTRYPOINT 入口点</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/entrypoint/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/entrypoint/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="entrypoint-入口点"> ENTRYPOINT 入口点</h1>
 <AdSenseTitle/>
 <p><code>ENTRYPOINT</code> 的格式和 <code>RUN</code> 指令格式一样，分为 <code>exec</code> 格式和 <code>shell</code> 格式。</p>
@@ -5819,12 +5916,13 @@ Connection: keep-alive
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">ENV 设置环境变量</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/env/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/env/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="env-设置环境变量"> ENV 设置环境变量</h1>
 <AdSenseTitle/>
 <p>格式有两种：</p>
@@ -5855,27 +5953,29 @@ Connection: keep-alive
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">EXPOSE 声明端口</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/expose/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/expose/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="expose-声明端口"> EXPOSE 声明端口</h1>
 <AdSenseTitle/>
 <p>格式为 <code>EXPOSE &lt;端口1&gt; [&lt;端口2&gt;...]</code>。</p>
-<p><code>EXPOSE</code> 指令是声明运行时容器提供服务端口，这只是一个声明，在运行时并不会因为这个声明应用就会开启这个端口的服务。在 Dockerfile 中写入这样的声明有两个好处，一个是帮助镜像使用者理解这个镜像服务的守护端口，以方便配置映射；另一个用处则是在运行时使用随机端口映射时，也就是 <code>docker run -P</code> 时，会自动随机映射 <code>EXPOSE</code> 的端口。</p>
+<p><code>EXPOSE</code> 指令是声明容器运行时提供服务的端口，这只是一个声明，在容器运行时并不会因为这个声明应用就会开启这个端口的服务。在 Dockerfile 中写入这样的声明有两个好处，一个是帮助镜像使用者理解这个镜像服务的守护端口，以方便配置映射；另一个用处则是在运行时使用随机端口映射时，也就是 <code>docker run -P</code> 时，会自动随机映射 <code>EXPOSE</code> 的端口。</p>
 <p>要将 <code>EXPOSE</code> 和在运行时使用 <code>-p &lt;宿主端口&gt;:&lt;容器端口&gt;</code> 区分开来。<code>-p</code>，是映射宿主端口和容器端口，换句话说，就是将容器的对应端口服务公开给外界访问，而 <code>EXPOSE</code> 仅仅是声明容器打算使用什么端口而已，并不会自动在宿主进行端口映射。</p>
 ]]></content>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">HEALTHCHECK 健康检查</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/healthcheck/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/healthcheck/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="healthcheck-健康检查"> HEALTHCHECK 健康检查</h1>
 <AdSenseTitle/>
 <p>格式：</p>
@@ -5938,12 +6038,13 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">LABEL 指令</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/label/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/label/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="label-指令"> LABEL 指令</h1>
 <AdSenseTitle/>
 <p><code>LABEL</code> 指令用来给镜像以键值对的形式添加一些元数据（metadata）。</p>
@@ -5959,12 +6060,13 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">ONBUILD 为他人做嫁衣裳</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/onbuild/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/onbuild/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="onbuild-为他人做嫁衣裳"> ONBUILD 为他人做嫁衣裳</h1>
 <AdSenseTitle/>
 <p>格式：<code>ONBUILD &lt;其它指令&gt;</code>。</p>
@@ -6012,12 +6114,13 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">参考文档</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/references/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/references/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="参考文档"> 参考文档</h1>
 <AdSenseTitle/>
 <ul>
@@ -6035,12 +6138,13 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">SHELL 指令</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/shell/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/shell/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="shell-指令"> SHELL 指令</h1>
 <AdSenseTitle/>
 <p>格式：<code>SHELL [&quot;executable&quot;, &quot;parameters&quot;]</code></p>
@@ -6069,12 +6173,13 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">WORKDIR 指定工作目录</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/workdir/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/workdir/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="workdir-指定工作目录"> WORKDIR 指定工作目录</h1>
 <AdSenseTitle/>
 <p>格式为 <code>WORKDIR &lt;工作目录路径&gt;</code>。</p>
@@ -6097,17 +6202,18 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 
 <span>RUN</span> pwd
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p><code>pwd</code> 输出的结果为 <code>/a/b/c</code>。</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p><code>RUN pwd</code> 的工作目录为 <code>/a/b/c</code>。</p>
 ]]></content>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">镜像的实现原理</title>
     <id>https://vuepress.mirror.docker-practice.com/image/internal/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/internal/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="镜像的实现原理"> 镜像的实现原理</h1>
 <AdSenseTitle/>
 <p>Docker 镜像是怎么实现增量的修改和维护的？</p>
@@ -6118,12 +6224,13 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">列出镜像</title>
     <id>https://vuepress.mirror.docker-practice.com/image/list/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/list/"/>
-    <updated>2021-03-07T15:56:19.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="列出镜像"> 列出镜像</h1>
 <AdSenseTitle/>
 <p>要想列出已经下载下来的镜像，可以使用 <code>docker image ls</code> 命令。</p>
@@ -6226,165 +6333,13 @@ fe9198c04d62        mongo               <span>3.2</span>
     <contributor>
       <name/>
     </contributor>
-  </entry>
-  <entry>
-    <title type="html">多阶段构建</title>
-    <id>https://vuepress.mirror.docker-practice.com/image/multistage-builds/</id>
-    <link href="https://vuepress.mirror.docker-practice.com/image/multistage-builds/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="多阶段构建"> 多阶段构建</h1>
-<AdSenseTitle/>
-<h2 id="之前的做法"> 之前的做法</h2>
-<p>在 Docker 17.05 版本之前，我们构建 Docker 镜像时，通常会采用两种方式：</p>
-<h3 id="全部放入一个-dockerfile"> 全部放入一个 Dockerfile</h3>
-<p>一种方式是将所有的构建过程编包含在一个 <code>Dockerfile</code> 中，包括项目及其依赖库的编译、测试、打包等流程，这里可能会带来的一些问题：</p>
-<ul>
-<li>
-<p>镜像层次多，镜像体积较大，部署时间变长</p>
-</li>
-<li>
-<p>源代码存在泄露的风险</p>
-</li>
-</ul>
-<p>例如，编写 <code>app.go</code> 文件，该程序输出 <code>Hello World!</code></p>
-<div><pre><code><span>package</span> main
-
-<span>import</span> <span>"fmt"</span>
-
-<span>func</span> <span>main</span><span>(</span><span>)</span><span>{</span>
-    fmt<span>.</span><span>Printf</span><span>(</span><span>"Hello World!"</span><span>)</span><span>;</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>编写 <code>Dockerfile.one</code> 文件</p>
-<div><pre><code><span>FROM</span> golang<span>:</span>1.9<span>-</span>alpine
-
-<span>RUN</span> apk <span>-</span><span>-</span>no<span>-</span>cache add git ca<span>-</span>certificates
-
-<span>WORKDIR</span> /go/src/github.com/go/helloworld/
-
-<span>COPY</span> app.go .
-
-<span>RUN</span> go get <span>-</span>d <span>-</span>v github.com/go<span>-</span>sql<span>-</span>driver/mysql \
-  &amp;&amp; CGO_ENABLED=0 GOOS=linux go build <span>-</span>a <span>-</span>installsuffix cgo <span>-</span>o app . \
-  &amp;&amp; cp /go/src/github.com/go/helloworld/app /root
-
-<span>WORKDIR</span> /root/
-
-<span>CMD</span> <span>[</span><span>"./app"</span><span>]</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div><p>构建镜像</p>
-<div><pre><code>$ docker build -t go/helloworld:1 -f Dockerfile.one <span>.</span>
-</code></pre>
-<div><span>1</span><br></div></div><h3 id="分散到多个-dockerfile"> 分散到多个 Dockerfile</h3>
-<p>另一种方式，就是我们事先在一个 <code>Dockerfile</code> 将项目及其依赖库编译测试打包好后，再将其拷贝到运行环境中，这种方式需要我们编写两个 <code>Dockerfile</code> 和一些编译脚本才能将其两个阶段自动整合起来，这种方式虽然可以很好地规避第一种方式存在的风险，但明显部署过程较复杂。</p>
-<p>例如，编写 <code>Dockerfile.build</code> 文件</p>
-<div><pre><code><span>FROM</span> golang<span>:</span>1.9<span>-</span>alpine
-
-<span>RUN</span> apk <span>-</span><span>-</span>no<span>-</span>cache add git
-
-<span>WORKDIR</span> /go/src/github.com/go/helloworld
-
-<span>COPY</span> app.go .
-
-<span>RUN</span> go get <span>-</span>d <span>-</span>v github.com/go<span>-</span>sql<span>-</span>driver/mysql \
-  &amp;&amp; CGO_ENABLED=0 GOOS=linux go build <span>-</span>a <span>-</span>installsuffix cgo <span>-</span>o app .
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div><p>编写 <code>Dockerfile.copy</code> 文件</p>
-<div><pre><code><span>FROM</span> alpine<span>:</span>latest
-
-<span>RUN</span> apk <span>-</span><span>-</span>no<span>-</span>cache add ca<span>-</span>certificates
-
-<span>WORKDIR</span> /root/
-
-<span>COPY</span> app .
-
-<span>CMD</span> <span>[</span><span>"./app"</span><span>]</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>新建 <code>build.sh</code></p>
-<div><pre><code><span>#!/bin/sh</span>
-<span>echo</span> Building go/helloworld:build
-
-docker build -t go/helloworld:build <span>.</span> -f Dockerfile.build
-
-docker create --name extract go/helloworld:build
-docker <span>cp</span> extract:/go/src/github.com/go/helloworld/app ./app
-docker <span>rm</span> -f extract
-
-<span>echo</span> Building go/helloworld:2
-
-docker build --no-cache -t go/helloworld:2 <span>.</span> -f Dockerfile.copy
-<span>rm</span> ./app
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><p>现在运行脚本即可构建镜像</p>
-<div><pre><code>$ <span>chmod</span> +x build.sh
-
-$ ./build.sh
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>对比两种方式生成的镜像大小</p>
-<div><pre><code>$ docker image <span>ls</span>
-
-REPOSITORY      TAG    IMAGE ID        CREATED         SIZE
-go/helloworld   <span>2</span>      f7cf3465432c    <span>22</span> seconds ago  <span>6</span>.47MB
-go/helloworld   <span>1</span>      f55d3e16affc    <span>2</span> minutes ago   295MB
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="使用多阶段构建"> 使用多阶段构建</h2>
-<p>为解决以上问题，Docker v17.05 开始支持多阶段构建 (<code>multistage builds</code>)。使用多阶段构建我们就可以很容易解决前面提到的问题，并且只需要编写一个 <code>Dockerfile</code>：</p>
-<p>例如，编写 <code>Dockerfile</code> 文件</p>
-<div><pre><code><span>FROM</span> golang<span>:</span>1.9<span>-</span>alpine as builder
-
-<span>RUN</span> apk <span>-</span><span>-</span>no<span>-</span>cache add git
-
-<span>WORKDIR</span> /go/src/github.com/go/helloworld/
-
-<span>RUN</span> go get <span>-</span>d <span>-</span>v github.com/go<span>-</span>sql<span>-</span>driver/mysql
-
-<span>COPY</span> app.go .
-
-<span>RUN</span> CGO_ENABLED=0 GOOS=linux go build <span>-</span>a <span>-</span>installsuffix cgo <span>-</span>o app .
-
-<span>FROM</span> alpine<span>:</span>latest as prod
-
-<span>RUN</span> apk <span>-</span><span>-</span>no<span>-</span>cache add ca<span>-</span>certificates
-
-<span>WORKDIR</span> /root/
-
-<span>COPY</span> <span>-</span><span>-</span>from=0 /go/src/github.com/go/helloworld/app .
-
-<span>CMD</span> <span>[</span><span>"./app"</span><span>]</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div><p>构建镜像</p>
-<div><pre><code>$ docker build -t go/helloworld:3 <span>.</span>
-</code></pre>
-<div><span>1</span><br></div></div><p>对比三个镜像大小</p>
-<div><pre><code>$ docker image <span>ls</span>
-
-REPOSITORY        TAG   IMAGE ID         CREATED            SIZE
-go/helloworld     <span>3</span>     d6911ed9c846     <span>7</span> seconds ago      <span>6</span>.47MB
-go/helloworld     <span>2</span>     f7cf3465432c     <span>22</span> seconds ago     <span>6</span>.47MB
-go/helloworld     <span>1</span>     f55d3e16affc     <span>2</span> minutes ago      295MB
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>很明显使用多阶段构建的镜像体积小，同时也完美解决了上边提到的问题。</p>
-<h3 id="只构建某一阶段的镜像"> 只构建某一阶段的镜像</h3>
-<p>我们可以使用 <code>as</code> 来为某一阶段命名，例如</p>
-<div><pre><code><span>FROM</span> golang<span>:</span>1.9<span>-</span>alpine as builder
-</code></pre>
-<div><span>1</span><br></div></div><p>例如当我们只想构建 <code>builder</code> 阶段的镜像时，增加 <code>--target=builder</code> 参数即可</p>
-<div><pre><code>$ docker build --target builder -t username/imagename:tag <span>.</span>
-</code></pre>
-<div><span>1</span><br></div></div><h3 id="构建时从其他镜像复制文件"> 构建时从其他镜像复制文件</h3>
-<p>上面例子中我们使用 <code>COPY --from=0 /go/src/github.com/go/helloworld/app .</code> 从上一阶段的镜像中复制文件，我们也可以复制任意镜像中的文件。</p>
-<div><pre><code>$ COPY <span>-</span><span>-</span>from=nginx<span>:</span>latest /etc/nginx/nginx.conf /nginx.conf
-</code></pre>
-<div><span>1</span><br></div></div>]]></content>
-    <contributor>
-      <name/>
-    </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">构建多种系统架构支持的 Docker 镜像 -- docker manifest 命令详解</title>
     <id>https://vuepress.mirror.docker-practice.com/image/manifest/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/manifest/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="构建多种系统架构支持的-docker-镜像-docker-manifest-命令详解"> 构建多种系统架构支持的 Docker 镜像 -- docker manifest 命令详解</h1>
 <AdSenseTitle/>
 <p>我们知道使用镜像创建一个容器，该镜像必须与 Docker 宿主机系统架构一致，例如 <code>Linux x86_64</code> 架构的系统中只能使用 <code>Linux x86_64</code> 的镜像创建容器。</p>
@@ -6402,9 +6357,9 @@ go/helloworld     <span>1</span>     f55d3e16affc     <span>2</span> minutes ago
 <div><span>1</span><br></div></div><p>可以发现这个镜像根本获取不到。</p>
 <p>要解决这个问题，通常采用的做法是通过镜像名区分不同系统架构的镜像，例如在 <code>Linux x86_64</code> 和 <code>Linux arm64v8</code> 分别构建 <code>username/test</code> 和 <code>username/arm64v8-test</code> 镜像。运行时使用对应架构的镜像即可。</p>
 <p>这样做显得很繁琐，那么有没有一种方法让 Docker 引擎根据系统架构自动拉取对应的镜像呢？</p>
-<p>我们发现在 <code>Linux x86_64</code> 和 <code>Linux arm64v8</code> 架构的计算机中执行 <code>$ docker run golang:alpine go version</code> 时我们发现可以正确的运行。</p>
+<p>我们发现在 <code>Linux x86_64</code> 和 <code>Linux arm64v8</code> 架构的计算机中分别使用 <code>golang:alpine</code> 镜像运行容器 <code>$ docker run golang:alpine go version</code> 时，容器能够正常的运行。</p>
 <p>这是什么原因呢？</p>
-<p>原因就是 <code>golang:alpine</code> 官方镜像有一个 <a href="https://docs.docker.com/registry/spec/manifest-v2-2/" target="_blank" rel="noopener noreferrer"><code>manifest</code> 列表</a>。</p>
+<p>原因就是 <code>golang:alpine</code> 官方镜像有一个 <a href="https://docs.docker.com/registry/spec/manifest-v2-2/" target="_blank" rel="noopener noreferrer"><code>manifest</code> 列表 (<code>manifest list</code>)</a>。</p>
 <p>当用户获取一个镜像时，Docker 引擎会首先查找该镜像是否有 <code>manifest</code> 列表，如果有的话 Docker 引擎会按照 Docker 运行环境（系统及架构）查找出对应镜像（例如 <code>golang:alpine</code>）。如果没有的话会直接获取镜像（例如上例中我们构建的 <code>username/test</code>）。</p>
 <p>我们可以使用 <code>$ docker manifest inspect golang:alpine</code> 查看这个 <code>manifest</code> 列表的结构。</p>
 <blockquote>
@@ -6485,7 +6440,7 @@ $ docker manifest create username/test <span>\</span>
       username/x8664-test <span>\</span>
       username/arm64v8-test
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>当要修改一个 <code>manifest</code> 列表时，可以加入 <code>-a,--amend</code> 参数。</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>当要修改一个 <code>manifest</code> 列表时，可以加入 <code>-a</code> 或 <code>--amend</code> 参数。</p>
 <h2 id="设置-manifest-列表"> 设置 <code>manifest</code> 列表</h2>
 <div><pre><code><span># $ docker manifest annotate [OPTIONS] MANIFEST_LIST MANIFEST</span>
 $ docker manifest annotate username/test <span>\</span>
@@ -6515,12 +6470,167 @@ $ docker manifest annotate username/test <span>\</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">多阶段构建</title>
+    <id>https://vuepress.mirror.docker-practice.com/image/multistage-builds/</id>
+    <link href="https://vuepress.mirror.docker-practice.com/image/multistage-builds/"/>
+    <updated>2021-03-11T15:09:37.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="多阶段构建"> 多阶段构建</h1>
+<AdSenseTitle/>
+<h2 id="之前的做法"> 之前的做法</h2>
+<p>在 Docker 17.05 版本之前，我们构建 Docker 镜像时，通常会采用两种方式：</p>
+<h3 id="全部放入一个-dockerfile"> 全部放入一个 Dockerfile</h3>
+<p>一种方式是将所有的构建过程编包含在一个 <code>Dockerfile</code> 中，包括项目及其依赖库的编译、测试、打包等流程，这里可能会带来的一些问题：</p>
+<ul>
+<li>
+<p>镜像层次多，镜像体积较大，部署时间变长</p>
+</li>
+<li>
+<p>源代码存在泄露的风险</p>
+</li>
+</ul>
+<p>例如，编写 <code>app.go</code> 文件，该程序输出 <code>Hello World!</code></p>
+<div><pre><code><span>package</span> main
+
+<span>import</span> <span>"fmt"</span>
+
+<span>func</span> <span>main</span><span>(</span><span>)</span><span>{</span>
+    fmt<span>.</span><span>Printf</span><span>(</span><span>"Hello World!"</span><span>)</span><span>;</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>编写 <code>Dockerfile.one</code> 文件</p>
+<div><pre><code><span>FROM</span> golang<span>:</span>alpine
+
+<span>RUN</span> apk <span>-</span><span>-</span>no<span>-</span>cache add git ca<span>-</span>certificates
+
+<span>WORKDIR</span> /go/src/github.com/go/helloworld/
+
+<span>COPY</span> app.go .
+
+<span>RUN</span> go get <span>-</span>d <span>-</span>v github.com/go<span>-</span>sql<span>-</span>driver/mysql \
+  &amp;&amp; CGO_ENABLED=0 GOOS=linux go build <span>-</span>a <span>-</span>installsuffix cgo <span>-</span>o app . \
+  &amp;&amp; cp /go/src/github.com/go/helloworld/app /root
+
+<span>WORKDIR</span> /root/
+
+<span>CMD</span> <span>[</span><span>"./app"</span><span>]</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div><p>构建镜像</p>
+<div><pre><code>$ docker build -t go/helloworld:1 -f Dockerfile.one <span>.</span>
+</code></pre>
+<div><span>1</span><br></div></div><h3 id="分散到多个-dockerfile"> 分散到多个 Dockerfile</h3>
+<p>另一种方式，就是我们事先在一个 <code>Dockerfile</code> 将项目及其依赖库编译测试打包好后，再将其拷贝到运行环境中，这种方式需要我们编写两个 <code>Dockerfile</code> 和一些编译脚本才能将其两个阶段自动整合起来，这种方式虽然可以很好地规避第一种方式存在的风险，但明显部署过程较复杂。</p>
+<p>例如，编写 <code>Dockerfile.build</code> 文件</p>
+<div><pre><code><span>FROM</span> golang<span>:</span>alpine
+
+<span>RUN</span> apk <span>-</span><span>-</span>no<span>-</span>cache add git
+
+<span>WORKDIR</span> /go/src/github.com/go/helloworld
+
+<span>COPY</span> app.go .
+
+<span>RUN</span> go get <span>-</span>d <span>-</span>v github.com/go<span>-</span>sql<span>-</span>driver/mysql \
+  &amp;&amp; CGO_ENABLED=0 GOOS=linux go build <span>-</span>a <span>-</span>installsuffix cgo <span>-</span>o app .
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div><p>编写 <code>Dockerfile.copy</code> 文件</p>
+<div><pre><code><span>FROM</span> alpine<span>:</span>latest
+
+<span>RUN</span> apk <span>-</span><span>-</span>no<span>-</span>cache add ca<span>-</span>certificates
+
+<span>WORKDIR</span> /root/
+
+<span>COPY</span> app .
+
+<span>CMD</span> <span>[</span><span>"./app"</span><span>]</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>新建 <code>build.sh</code></p>
+<div><pre><code><span>#!/bin/sh</span>
+<span>echo</span> Building go/helloworld:build
+
+docker build -t go/helloworld:build <span>.</span> -f Dockerfile.build
+
+docker create --name extract go/helloworld:build
+docker <span>cp</span> extract:/go/src/github.com/go/helloworld/app ./app
+docker <span>rm</span> -f extract
+
+<span>echo</span> Building go/helloworld:2
+
+docker build --no-cache -t go/helloworld:2 <span>.</span> -f Dockerfile.copy
+<span>rm</span> ./app
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br></div></div><p>现在运行脚本即可构建镜像</p>
+<div><pre><code>$ <span>chmod</span> +x build.sh
+
+$ ./build.sh
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>对比两种方式生成的镜像大小</p>
+<div><pre><code>$ docker image <span>ls</span>
+
+REPOSITORY      TAG    IMAGE ID        CREATED         SIZE
+go/helloworld   <span>2</span>      f7cf3465432c    <span>22</span> seconds ago  <span>6</span>.47MB
+go/helloworld   <span>1</span>      f55d3e16affc    <span>2</span> minutes ago   295MB
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><h2 id="使用多阶段构建"> 使用多阶段构建</h2>
+<p>为解决以上问题，Docker v17.05 开始支持多阶段构建 (<code>multistage builds</code>)。使用多阶段构建我们就可以很容易解决前面提到的问题，并且只需要编写一个 <code>Dockerfile</code>：</p>
+<p>例如，编写 <code>Dockerfile</code> 文件</p>
+<div><pre><code><span>FROM</span> golang<span>:</span>alpine as builder
+
+<span>RUN</span> apk <span>-</span><span>-</span>no<span>-</span>cache add git
+
+<span>WORKDIR</span> /go/src/github.com/go/helloworld/
+
+<span>RUN</span> go get <span>-</span>d <span>-</span>v github.com/go<span>-</span>sql<span>-</span>driver/mysql
+
+<span>COPY</span> app.go .
+
+<span>RUN</span> CGO_ENABLED=0 GOOS=linux go build <span>-</span>a <span>-</span>installsuffix cgo <span>-</span>o app .
+
+<span>FROM</span> alpine<span>:</span>latest as prod
+
+<span>RUN</span> apk <span>-</span><span>-</span>no<span>-</span>cache add ca<span>-</span>certificates
+
+<span>WORKDIR</span> /root/
+
+<span>COPY</span> <span>-</span><span>-</span>from=0 /go/src/github.com/go/helloworld/app .
+
+<span>CMD</span> <span>[</span><span>"./app"</span><span>]</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br></div></div><p>构建镜像</p>
+<div><pre><code>$ docker build -t go/helloworld:3 <span>.</span>
+</code></pre>
+<div><span>1</span><br></div></div><p>对比三个镜像大小</p>
+<div><pre><code>$ docker image <span>ls</span>
+
+REPOSITORY        TAG   IMAGE ID         CREATED            SIZE
+go/helloworld     <span>3</span>     d6911ed9c846     <span>7</span> seconds ago      <span>6</span>.47MB
+go/helloworld     <span>2</span>     f7cf3465432c     <span>22</span> seconds ago     <span>6</span>.47MB
+go/helloworld     <span>1</span>     f55d3e16affc     <span>2</span> minutes ago      295MB
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>很明显使用多阶段构建的镜像体积小，同时也完美解决了上边提到的问题。</p>
+<h3 id="只构建某一阶段的镜像"> 只构建某一阶段的镜像</h3>
+<p>我们可以使用 <code>as</code> 来为某一阶段命名，例如</p>
+<div><pre><code><span>FROM</span> golang<span>:</span>alpine as builder
+</code></pre>
+<div><span>1</span><br></div></div><p>例如当我们只想构建 <code>builder</code> 阶段的镜像时，增加 <code>--target=builder</code> 参数即可</p>
+<div><pre><code>$ docker build --target builder -t username/imagename:tag <span>.</span>
+</code></pre>
+<div><span>1</span><br></div></div><h3 id="构建时从其他镜像复制文件"> 构建时从其他镜像复制文件</h3>
+<p>上面例子中我们使用 <code>COPY --from=0 /go/src/github.com/go/helloworld/app .</code> 从上一阶段的镜像中复制文件，我们也可以复制任意镜像中的文件。</p>
+<div><pre><code>$ COPY <span>-</span><span>-</span>from=nginx<span>:</span>latest /etc/nginx/nginx.conf /nginx.conf
+</code></pre>
+<div><span>1</span><br></div></div>]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">实战多阶段构建 Laravel 镜像</title>
     <id>https://vuepress.mirror.docker-practice.com/image/multistage-builds/laravel/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/multistage-builds/laravel/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="实战多阶段构建-laravel-镜像"> 实战多阶段构建 Laravel 镜像</h1>
 <AdSenseTitle/>
 <blockquote>
@@ -6715,12 +6825,13 @@ $ docker build -t my/nginx --target<span>=</span>nginx <span>.</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">其它制作镜像的方式</title>
     <id>https://vuepress.mirror.docker-practice.com/image/other/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/other/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="其它制作镜像的方式"> 其它制作镜像的方式</h1>
 <AdSenseTitle/>
 <p>除了标准的使用 <code>Dockerfile</code> 生成镜像的方法外，由于各种特殊需求和历史原因，还提供了一些其它方法用以生成镜像。</p>
@@ -6776,21 +6887,22 @@ Loaded image: alpine:latest
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">获取镜像</title>
     <id>https://vuepress.mirror.docker-practice.com/image/pull/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/pull/"/>
-    <updated>2021-03-07T15:56:19.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="获取镜像"> 获取镜像</h1>
 <AdSenseTitle/>
 <p>之前提到过，<a href="https://hub.docker.com/search?q=&amp;type=image" target="_blank" rel="noopener noreferrer">Docker Hub</a> 上有大量的高质量的镜像可以用，这里我们就说一下怎么获取这些镜像。</p>
 <p>从 Docker 镜像仓库获取镜像的命令是 <code>docker pull</code>。其命令格式为：</p>
-<div><pre><code>docker pull <span>[</span>选项<span>]</span> <span>[</span>Docker Registry 地址<span>[</span>:端口号<span>]</span>/<span>]</span>仓库名<span>[</span>:标签<span>]</span>
+<div><pre><code>$ docker pull <span>[</span>选项<span>]</span> <span>[</span>Docker Registry 地址<span>[</span>:端口号<span>]</span>/<span>]</span>仓库名<span>[</span>:标签<span>]</span>
 </code></pre>
 <div><span>1</span><br></div></div><p>具体的选项可以通过 <code>docker pull --help</code> 命令看到，这里我们说一下镜像名称的格式。</p>
 <ul>
-<li>Docker 镜像仓库地址：地址的格式一般是 <code>&lt;域名/IP&gt;[:端口号]</code>。默认地址是 Docker Hub(docker.io)。</li>
+<li>Docker 镜像仓库地址：地址的格式一般是 <code>&lt;域名/IP&gt;[:端口号]</code>。默认地址是 Docker Hub(<code>docker.io</code>)。</li>
 <li>仓库名：如之前所说，这里的仓库名是两段式名称，即 <code>&lt;用户名&gt;/&lt;软件名&gt;</code>。对于 Docker Hub，如果不给出用户名，则默认为 <code>library</code>，也就是官方镜像。</li>
 </ul>
 <p>比如：</p>
@@ -6803,7 +6915,7 @@ Digest: sha256:4bc3ae6596938cb0d9e5ac51a1152ec9dcac2a1c50829c74abd9c4361e321b26
 Status: Downloaded newer image <span>for</span> ubuntu:18.04
 docker.io/library/ubuntu:18.04
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><p>上面的命令中没有给出 Docker 镜像仓库地址，因此将会从 Docker Hub 获取镜像。而镜像名称是 <code>ubuntu:18.04</code>，因此将会获取官方镜像 <code>library/ubuntu</code> 仓库中标签为 <code>18.04</code> 的镜像。</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><p>上面的命令中没有给出 Docker 镜像仓库地址，因此将会从 Docker Hub （<code>docker.io</code>）获取镜像。而镜像名称是 <code>ubuntu:18.04</code>，因此将会获取官方镜像 <code>library/ubuntu</code> 仓库中标签为 <code>18.04</code> 的镜像。<code>docker pull</code> 命令的输出结果最后一行给出了镜像的完整名称，即： <code>docker.io/library/ubuntu:18.04</code>。</p>
 <p>从下载过程中可以看到我们之前提及的分层存储的概念，镜像是由多层存储所构成。下载也是一层层的去下载，并非单一文件。下载过程中给出了每一层的 ID 的前 12 位。并且下载结束后，给出该镜像完整的 <code>sha256</code> 的摘要，以确保下载一致性。</p>
 <p>在使用上面命令的时候，你可能会发现，你所看到的层 ID 以及 <code>sha256</code> 的摘要和这里的不一样。这是因为官方镜像是一直在维护的，有任何新的 bug，或者版本更新，都会进行修复再以原来的标签发布，这样可以确保任何使用这个标签的用户可以获得更安全、更稳定的镜像。</p>
 <p><em>如果从 Docker Hub 下载镜像非常缓慢，可以参照 <a href="/install/mirror.html">镜像加速器</a> 一节配置加速器。</em></p>
@@ -6838,12 +6950,13 @@ root@e7009c6ce357:/<span># cat /etc/os-release</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">删除本地镜像</title>
     <id>https://vuepress.mirror.docker-practice.com/image/rm/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/rm/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="删除本地镜像"> 删除本地镜像</h1>
 <AdSenseTitle/>
 <p>如果要删除本地的镜像，可以使用 <code>docker image rm</code> 命令，其格式为：</p>
@@ -6904,12 +7017,13 @@ Untagged: node@sha256:b4f0e0bdeb578043c1ea6862f0d40cc4afe32a4a582f3be235a3b16442
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">安装 Docker</title>
     <id>https://vuepress.mirror.docker-practice.com/install/</id>
     <link href="https://vuepress.mirror.docker-practice.com/install/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="安装-docker"> 安装 Docker</h1>
 <AdSenseTitle/>
 <p>Docker 分为 <code>stable</code> <code>test</code> 和 <code>nightly</code> 三个更新频道。</p>
@@ -6918,12 +7032,13 @@ Untagged: node@sha256:b4f0e0bdeb578043c1ea6862f0d40cc4afe32a4a582f3be235a3b16442
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">CentOS 安装 Docker</title>
     <id>https://vuepress.mirror.docker-practice.com/install/centos/</id>
     <link href="https://vuepress.mirror.docker-practice.com/install/centos/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="centos-安装-docker"> CentOS 安装 Docker</h1>
 <AdSenseTitle/>
 <blockquote>
@@ -7061,12 +7176,13 @@ EOF</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Debian 安装 Docker</title>
     <id>https://vuepress.mirror.docker-practice.com/install/debian/</id>
     <link href="https://vuepress.mirror.docker-practice.com/install/debian/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="debian-安装-docker"> Debian 安装 Docker</h1>
 <AdSenseTitle/>
 <blockquote>
@@ -7076,8 +7192,8 @@ EOF</span>
 <h3 id="系统要求"> 系统要求</h3>
 <p>Docker 支持以下版本的 <a href="https://www.debian.org/intro/about" target="_blank" rel="noopener noreferrer">Debian</a> 操作系统：</p>
 <ul>
-<li>Buster 10</li>
-<li>Stretch 9</li>
+<li>Debian Buster 10</li>
+<li>Debian Stretch 9</li>
 </ul>
 <h3 id="卸载旧版本"> 卸载旧版本</h3>
 <p>旧版本的 Docker 称为 <code>docker</code> 或者 <code>docker-engine</code>，使用以下命令卸载旧版本：</p>
@@ -7093,32 +7209,31 @@ $ <span>sudo</span> <span>apt-get</span> <span>install</span> <span>\</span>
      apt-transport-https <span>\</span>
      ca-certificates <span>\</span>
      <span>curl</span> <span>\</span>
-     gnupg-agent <span>\</span>
-     lsb-release <span>\</span>
-     software-properties-common
+     gnupg <span>\</span>
+     lsb-release
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>鉴于国内网络问题，强烈建议使用国内源，官方源请在注释中查看。</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><p>鉴于国内网络问题，强烈建议使用国内源，官方源请在注释中查看。</p>
 <p>为了确认所下载软件包的合法性，需要添加软件源的 GPG 密钥。</p>
-<div><pre><code>$ <span>curl</span> -fsSL https://mirrors.aliyun.com/docker-ce/linux/debian/gpg <span>|</span> <span>sudo</span> apt-key <span>add</span> -
+<div><pre><code>$ <span>curl</span> -fsSL https://mirrors.aliyun.com/docker-ce/linux/debian/gpg <span>|</span> <span>sudo</span> gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
 
 <span># 官方源</span>
-<span># $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -</span>
+<span># $ curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>然后，我们需要向 <code>sources.list</code> 中添加 Docker 软件源：</p>
 <blockquote>
 <p>在一些基于 Debian 的 Linux 发行版中 <code>$(lsb_release -cs)</code> 可能不会返回 Debian 的版本代号，例如 <a href="https://www.kali.org/docs/policy/kali-linux-relationship-with-debian/" target="_blank" rel="noopener noreferrer">Kail Linux</a>、 <a href="https://www.bunsenlabs.org/" target="_blank" rel="noopener noreferrer">BunsenLabs Linux</a>。在这些发行版中我们需要将下面命令中的 <code>$(lsb_release -cs)</code> 替换为 https://mirrors.aliyun.com/docker-ce/linux/debian/dists/ 中支持的 Debian 版本代号，例如 <code>buster</code>。</p>
 </blockquote>
-<div><pre><code>$ <span>sudo</span> add-apt-repository <span>\</span>
-   <span>"deb [arch=amd64] https://mirrors.aliyun.com/docker-ce/linux/debian \
-   <span><span>$(</span>lsb_release -cs<span>)</span></span> \
-   stable"</span>
+<div><pre><code>$ <span>echo</span> <span>\</span>
+  <span>"deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://mirrors.aliyun.com/docker-ce/linux/debian \
+  <span><span>$(</span>lsb_release -cs<span>)</span></span> stable"</span> <span>|</span> <span>sudo</span> <span>tee</span> /etc/apt/sources.list.d/docker.list <span>></span> /dev/null
+
 
 <span># 官方源</span>
-<span># $ sudo add-apt-repository \</span>
-<span>#    "deb [arch=amd64] https://download.docker.com/linux/debian \</span>
-<span>#    $(lsb_release -cs) \</span>
-<span>#    stable"</span>
+<span># $ echo \</span>
+<span>#   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://https://download.docker.com/linux/debian \</span>
+<span>#   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null</span>
+
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br></div></div><blockquote>
 <p>以上命令会添加稳定版本的 Docker APT 源，如果需要测试版本的 Docker 请将 stable 改为 test。</p>
@@ -7194,12 +7309,13 @@ For <span>more</span> examples and ideas, visit:
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">开启实验特性</title>
     <id>https://vuepress.mirror.docker-practice.com/install/experimental/</id>
     <link href="https://vuepress.mirror.docker-practice.com/install/experimental/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="开启实验特性"> 开启实验特性</h1>
 <AdSenseTitle/>
 <p>一些 docker 命令或功能仅当 <strong>实验特性</strong> 开启时才能使用，请按照以下方法进行设置。</p>
@@ -7230,12 +7346,13 @@ $ <span>[environment]</span>::SetEnvironmentvariable<span>(</span><span>"DOCKER_
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Fedora 安装 Docker</title>
     <id>https://vuepress.mirror.docker-practice.com/install/fedora/</id>
     <link href="https://vuepress.mirror.docker-practice.com/install/fedora/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="fedora-安装-docker"> Fedora 安装 Docker</h1>
 <AdSenseTitle/>
 <blockquote>
@@ -7362,12 +7479,13 @@ For <span>more</span> examples and ideas, visit:
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">macOS 安装 Docker</title>
     <id>https://vuepress.mirror.docker-practice.com/install/mac/</id>
     <link href="https://vuepress.mirror.docker-practice.com/install/mac/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="macos-安装-docker"> macOS 安装 Docker</h1>
 <AdSenseTitle/>
 <h2 id="系统要求"> 系统要求</h2>
@@ -7411,12 +7529,13 @@ $ docker <span>rm</span> webserver
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">镜像加速器</title>
     <id>https://vuepress.mirror.docker-practice.com/install/mirror/</id>
     <link href="https://vuepress.mirror.docker-practice.com/install/mirror/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="镜像加速器"> 镜像加速器</h1>
 <AdSenseTitle/>
 <p>国内从 Docker Hub 拉取镜像有时会遇到困难，此时可以配置镜像加速器。国内很多云服务商都提供了国内加速器服务，例如：</p>
@@ -7504,12 +7623,13 @@ $ docker pull registry.cn-hangzhou.aliyuncs.com/google_containers/xxx
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">离线部署Docker</title>
     <id>https://vuepress.mirror.docker-practice.com/install/offline/</id>
     <link href="https://vuepress.mirror.docker-practice.com/install/offline/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="离线部署docker"> 离线部署Docker</h1>
 <AdSenseTitle/>
 <p>[TOC]</p>
@@ -7687,12 +7807,13 @@ EOF</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">树莓派卡片电脑安装 Docker</title>
     <id>https://vuepress.mirror.docker-practice.com/install/raspberry-pi/</id>
     <link href="https://vuepress.mirror.docker-practice.com/install/raspberry-pi/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="树莓派卡片电脑安装-docker"> 树莓派卡片电脑安装 Docker</h1>
 <AdSenseTitle/>
 <blockquote>
@@ -7809,12 +7930,13 @@ For <span>more</span> examples and ideas, visit:
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Ubuntu 安装 Docker</title>
     <id>https://vuepress.mirror.docker-practice.com/install/ubuntu/</id>
     <link href="https://vuepress.mirror.docker-practice.com/install/ubuntu/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="ubuntu-安装-docker"> Ubuntu 安装 Docker</h1>
 <AdSenseTitle/>
 <blockquote>
@@ -7824,9 +7946,10 @@ For <span>more</span> examples and ideas, visit:
 <h3 id="系统要求"> 系统要求</h3>
 <p>Docker 支持以下版本的 <a href="https://ubuntu.com/server" target="_blank" rel="noopener noreferrer">Ubuntu</a> 操作系统：</p>
 <ul>
-<li>Focal 20.04 (LTS)</li>
-<li>Bionic 18.04 (LTS)</li>
-<li>Xenial 16.04 (LTS)</li>
+<li>Ubuntu Groovy 20.10</li>
+<li>Ubuntu Focal 20.04 (LTS)</li>
+<li>Ubuntu Bionic 18.04 (LTS)</li>
+<li>Ubuntu Xenial 16.04 (LTS)</li>
 </ul>
 <p>Docker 可以安装在 64 位的 x86 平台或 ARM 平台上。Ubuntu 发行版中，LTS（Long-Term-Support）长期支持版本，会获得 5 年的升级维护支持，这样的版本会更稳定，因此在生产环境中推荐使用 LTS 版本。</p>
 <h3 id="卸载旧版本"> 卸载旧版本</h3>
@@ -7843,31 +7966,29 @@ $ <span>sudo</span> <span>apt-get</span> <span>install</span> <span>\</span>
     apt-transport-https <span>\</span>
     ca-certificates <span>\</span>
     <span>curl</span> <span>\</span>
-    gnupg-agent <span>\</span>
-    software-properties-common
+    gnupg <span>\</span>
+    lsb-release
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div><p>鉴于国内网络问题，强烈建议使用国内源，官方源请在注释中查看。</p>
 <p>为了确认所下载软件包的合法性，需要添加软件源的 <code>GPG</code> 密钥。</p>
-<div><pre><code>$ <span>curl</span> -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg <span>|</span> <span>sudo</span> apt-key <span>add</span> -
+<div><pre><code>$ <span>curl</span> -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg <span>|</span> <span>sudo</span> gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
 
 <span># 官方源</span>
-<span># $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -</span>
+<span># $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>然后，我们需要向 <code>sources.list</code> 中添加 Docker 软件源</p>
-<div><pre><code>$ <span>sudo</span> add-apt-repository <span>\</span>
-    <span>"deb [arch=amd64] https://mirrors.aliyun.com/docker-ce/linux/ubuntu \
-    <span><span>$(</span>lsb_release -cs<span>)</span></span> \
-    stable"</span>
+<div><pre><code>$ <span>echo</span> <span>\</span>
+  <span>"deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://mirrors.aliyun.com/docker-ce/linux/ubuntu \
+  <span><span>$(</span>lsb_release -cs<span>)</span></span> stable"</span> <span>|</span> <span>sudo</span> <span>tee</span> /etc/apt/sources.list.d/docker.list <span>></span> /dev/null
 
 
 <span># 官方源</span>
-<span># $ sudo add-apt-repository \</span>
-<span>#    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \</span>
-<span>#    $(lsb_release -cs) \</span>
-<span>#    stable"</span>
+<span># $ echo \</span>
+<span>#   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \</span>
+<span>#   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null</span>
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><blockquote>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><blockquote>
 <p>以上命令会添加稳定版本的 Docker APT 镜像源，如果需要测试版本的 Docker 请将 stable 改为 test。</p>
 </blockquote>
 <h3 id="安装-docker"> 安装 Docker</h3>
@@ -7941,12 +8062,13 @@ For <span>more</span> examples and ideas, visit:
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Windows 10 安装 Docker</title>
     <id>https://vuepress.mirror.docker-practice.com/install/windows/</id>
     <link href="https://vuepress.mirror.docker-practice.com/install/windows/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="windows-10-安装-docker"> Windows 10 安装 Docker</h1>
 <AdSenseTitle/>
 <h2 id="系统要求"> 系统要求</h2>
@@ -7980,12 +8102,13 @@ For <span>more</span> examples and ideas, visit:
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">简介</title>
     <id>https://vuepress.mirror.docker-practice.com/introduction/</id>
     <link href="https://vuepress.mirror.docker-practice.com/introduction/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="简介"> 简介</h1>
 <AdSenseTitle/>
 <p>本章将带领你进入 <strong>Docker</strong> 的世界。</p>
@@ -7996,12 +8119,13 @@ For <span>more</span> examples and ideas, visit:
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">什么是 Docker</title>
     <id>https://vuepress.mirror.docker-practice.com/introduction/what/</id>
     <link href="https://vuepress.mirror.docker-practice.com/introduction/what/"/>
-    <updated>2021-03-07T15:56:19.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="什么是-docker"> 什么是 Docker</h1>
 <AdSenseTitle/>
 <p><strong>Docker</strong> 最初是 <code>dotCloud</code> 公司创始人 <a href="https://github.com/shykes" target="_blank" rel="noopener noreferrer">Solomon Hykes</a> 在法国期间发起的一个公司内部项目，它是基于 <code>dotCloud</code> 公司多年云服务技术的一次革新，并于 <a href="https://en.wikipedia.org/wiki/Docker_(software)" target="_blank" rel="noopener noreferrer">2013 年 3 月以 Apache 2.0 授权协议开源</a>，主要项目代码在 <a href="https://github.com/moby/moby" target="_blank" rel="noopener noreferrer">GitHub</a> 上进行维护。<code>Docker</code> 项目后来还加入了 Linux 基金会，并成立推动 <a href="https://opencontainers.org/" target="_blank" rel="noopener noreferrer">开放容器联盟（OCI）</a>。</p>
@@ -8022,12 +8146,13 @@ For <span>more</span> examples and ideas, visit:
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">为什么要使用 Docker？</title>
     <id>https://vuepress.mirror.docker-practice.com/introduction/why/</id>
     <link href="https://vuepress.mirror.docker-practice.com/introduction/why/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="为什么要使用-docker"> 为什么要使用 Docker？</h1>
 <AdSenseTitle/>
 <p>作为一种新兴的虚拟化方式，<code>Docker</code> 跟传统的虚拟化方式相比具有众多的优势。</p>
@@ -8081,12 +8206,13 @@ For <span>more</span> examples and ideas, visit:
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Kubernetes</title>
     <id>https://vuepress.mirror.docker-practice.com/kubernetes/</id>
     <link href="https://vuepress.mirror.docker-practice.com/kubernetes/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="kubernetes"> Kubernetes</h1>
 <AdSenseTitle/>
 <p><code>Kubernetes</code> 是 Google 团队发起并维护的基于 Docker 的开源容器集群管理系统，它不仅支持常见的云平台，而且支持内部数据中心。</p>
@@ -8103,12 +8229,13 @@ For <span>more</span> examples and ideas, visit:
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">基本概念</title>
     <id>https://vuepress.mirror.docker-practice.com/kubernetes/concepts/</id>
     <link href="https://vuepress.mirror.docker-practice.com/kubernetes/concepts/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="基本概念"> 基本概念</h1>
 <AdSenseTitle/>
 <p><img src="./_images/kubernetes_design.jpg" alt=""></p>
@@ -8290,12 +8417,13 @@ For <span>more</span> examples and ideas, visit:
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">基本架构</title>
     <id>https://vuepress.mirror.docker-practice.com/kubernetes/design/</id>
     <link href="https://vuepress.mirror.docker-practice.com/kubernetes/design/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="基本架构"> 基本架构</h1>
 <AdSenseTitle/>
 <p>任何优秀的项目都离不开优秀的架构设计。本小节将介绍 Kubernetes 在架构方面的设计考虑。</p>
@@ -8335,12 +8463,13 @@ For <span>more</span> examples and ideas, visit:
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">项目简介</title>
     <id>https://vuepress.mirror.docker-practice.com/kubernetes/intro/</id>
     <link href="https://vuepress.mirror.docker-practice.com/kubernetes/intro/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="项目简介"> 项目简介</h1>
 <AdSenseTitle/>
 <p><img src="./_images/kubernetes_logo.png" alt=""></p>
@@ -8360,12 +8489,13 @@ For <span>more</span> examples and ideas, visit:
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">kubectl 使用</title>
     <id>https://vuepress.mirror.docker-practice.com/kubernetes/kubectl/</id>
     <link href="https://vuepress.mirror.docker-practice.com/kubernetes/kubectl/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="kubectl-使用"> kubectl 使用</h1>
 <AdSenseTitle/>
 <p><a href="https://github.com/kubernetes/kubernetes" target="_blank" rel="noopener noreferrer">kubectl</a> 是 Kubernetes 自带的客户端，可以用它来直接操作 Kubernetes。</p>
@@ -8413,12 +8543,13 @@ kubectl <span>[</span>command<span>]</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">部署 Kubernetes</title>
     <id>https://vuepress.mirror.docker-practice.com/kubernetes/setup/</id>
     <link href="https://vuepress.mirror.docker-practice.com/kubernetes/setup/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="部署-kubernetes"> 部署 Kubernetes</h1>
 <AdSenseTitle/>
 <p>目前，Kubernetes 支持在多种环境下使用，包括本地主机（Ubuntu、Debian、CentOS、Fedora 等）、云服务（<a href="https://cloud.tencent.com/act/cps/redirect?redirect=10058&amp;cps_key=3a5255852d5db99dcd5da4c72f05df61" target="_blank" rel="noopener noreferrer">腾讯云</a>、<a href="https://www.aliyun.com/product/kubernetes?source=5176.11533457&amp;userCode=8lx5zmtu&amp;type=copy" target="_blank" rel="noopener noreferrer">阿里云</a>、<a href="https://cloud.baidu.com/product/cce.html" target="_blank" rel="noopener noreferrer">百度云</a> 等）。</p>
@@ -8433,12 +8564,13 @@ kubectl <span>[</span>command<span>]</span>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Kubernetes Dashboard</title>
     <id>https://vuepress.mirror.docker-practice.com/kubernetes/setup/dashboard/</id>
     <link href="https://vuepress.mirror.docker-practice.com/kubernetes/setup/dashboard/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="kubernetes-dashboard"> Kubernetes Dashboard</h1>
 <AdSenseTitle/>
 <p><a href="https://github.com/kubernetes/dashboard" target="_blank" rel="noopener noreferrer">Kubernetes Dashboard</a> 是基于网页的 Kubernetes 用户界面。</p>
@@ -8473,12 +8605,13 @@ $ <span>DASHBOARD_LOGIN_TOKEN</span><span>=</span><span><span>$(</span>kubectl d
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker Desktop 启用 Kubernetes</title>
     <id>https://vuepress.mirror.docker-practice.com/kubernetes/setup/docker-desktop/</id>
     <link href="https://vuepress.mirror.docker-practice.com/kubernetes/setup/docker-desktop/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker-desktop-启用-kubernetes"> Docker Desktop 启用 Kubernetes</h1>
 <AdSenseTitle/>
 <p>使用 Docker Desktop 可以很方便的启用 Kubernetes，由于国内获取不到 <code>k8s.gcr.io</code> 镜像，我们必须首先解决这一问题。</p>
@@ -8495,12 +8628,13 @@ $ <span>DASHBOARD_LOGIN_TOKEN</span><span>=</span><span><span>$(</span>kubectl d
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">使用 kubeadm 部署 kubernetes</title>
     <id>https://vuepress.mirror.docker-practice.com/kubernetes/setup/kubeadm/</id>
     <link href="https://vuepress.mirror.docker-practice.com/kubernetes/setup/kubeadm/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="使用-kubeadm-部署-kubernetes"> 使用 kubeadm 部署 kubernetes</h1>
 <AdSenseTitle/>
 <p><code>kubeadm</code> 提供了 <code>kubeadm init</code> 以及 <code>kubeadm join</code> 这两个命令作为快速创建 <code>kubernetes</code> 集群的最佳实践。</p>
@@ -8649,12 +8783,13 @@ kubeadm <span>join</span> <span>192.168</span>.199.100:6443 --token cz81zt.orsy9
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">一步步部署 kubernetes 集群</title>
     <id>https://vuepress.mirror.docker-practice.com/kubernetes/setup/systemd/</id>
     <link href="https://vuepress.mirror.docker-practice.com/kubernetes/setup/systemd/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="一步步部署-kubernetes-集群"> 一步步部署 kubernetes 集群</h1>
 <AdSenseTitle/>
 <p>可以参考 <a href="https://github.com/opsnull/follow-me-install-kubernetes-cluster" target="_blank" rel="noopener noreferrer">opsnull/follow-me-install-kubernetes-cluster</a> 项目一步步部署 kubernetes 集群。</p>
@@ -8662,12 +8797,13 @@ kubeadm <span>join</span> <span>192.168</span>.199.100:6443 --token cz81zt.orsy9
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker Machine 项目</title>
     <id>https://vuepress.mirror.docker-practice.com/machine/</id>
     <link href="https://vuepress.mirror.docker-practice.com/machine/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker-machine-项目"> Docker Machine 项目</h1>
 <p><img src="https://docs.docker.com/machine/img/machine.png" alt=""></p>
 <p>Docker Machine 是 Docker 官方编排（Orchestration）项目之一，负责在多种平台上快速安装 Docker 环境。</p>
@@ -8677,12 +8813,13 @@ kubeadm <span>join</span> <span>192.168</span>.199.100:6443 --token cz81zt.orsy9
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">安装</title>
     <id>https://vuepress.mirror.docker-practice.com/machine/install/</id>
     <link href="https://vuepress.mirror.docker-practice.com/machine/install/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h2 id="安装"> 安装</h2>
 <p>Docker Machine 可以在多种操作系统平台上安装，包括 Linux、macOS，以及 Windows。</p>
 <h3 id="macos、windows"> macOS、Windows</h3>
@@ -8706,12 +8843,13 @@ docker-machine version <span>0.16</span>.1, build cce350d7
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">使用</title>
     <id>https://vuepress.mirror.docker-practice.com/machine/usage/</id>
     <link href="https://vuepress.mirror.docker-practice.com/machine/usage/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h2 id="使用"> 使用</h2>
 <p>Docker Machine 支持多种后端驱动，包括虚拟机、本地主机和云平台等。</p>
 <h3 id="创建本地主机实例"> 创建本地主机实例</h3>
@@ -8824,12 +8962,13 @@ Docker version <span>17.10</span>.0-ce, build f4ffd25
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker 中的网络功能介绍</title>
     <id>https://vuepress.mirror.docker-practice.com/network/</id>
     <link href="https://vuepress.mirror.docker-practice.com/network/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker-中的网络功能介绍"> Docker 中的网络功能介绍</h1>
 <AdSenseTitle/>
 <p>Docker 允许通过外部访问容器或容器互联的方式来提供网络服务。</p>
@@ -8837,12 +8976,13 @@ Docker version <span>17.10</span>.0-ce, build f4ffd25
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">配置 DNS</title>
     <id>https://vuepress.mirror.docker-practice.com/network/dns/</id>
     <link href="https://vuepress.mirror.docker-practice.com/network/dns/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="配置-dns"> 配置 DNS</h1>
 <AdSenseTitle/>
 <p>如何自定义配置容器的主机名和 DNS 呢？秘诀就是 Docker 利用虚拟文件来挂载容器的 3 个相关配置文件。</p>
@@ -8878,12 +9018,13 @@ nameserver <span>8.8</span>.8.8
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">容器互联</title>
     <id>https://vuepress.mirror.docker-practice.com/network/linking/</id>
     <link href="https://vuepress.mirror.docker-practice.com/network/linking/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="容器互联"> 容器互联</h1>
 <AdSenseTitle/>
 <p>如果你之前有 <code>Docker</code> 使用经验，你可能已经习惯了使用 <code>--link</code> 参数来使容器互联。</p>
@@ -8928,12 +9069,13 @@ PING busybox1 <span>(</span><span>172.19</span>.0.2<span>)</span>: <span>56</spa
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">外部访问容器</title>
     <id>https://vuepress.mirror.docker-practice.com/network/port_mapping/</id>
     <link href="https://vuepress.mirror.docker-practice.com/network/port_mapping/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="外部访问容器"> 外部访问容器</h1>
 <AdSenseTitle/>
 <p>容器中可以运行一些网络应用，要让外部也可以访问这些应用，可以通过 <code>-P</code> 或 <code>-p</code> 参数来指定端口映射。</p>
@@ -8990,12 +9132,13 @@ fae320d08268        nginx:alpine        <span>"/docker-entrypoint.…"</span>   
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">podman</title>
     <id>https://vuepress.mirror.docker-practice.com/podman/</id>
     <link href="https://vuepress.mirror.docker-practice.com/podman/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="podman"> podman</h1>
 <AdSenseTitle/>
 <p><a href="https://github.com/containers/podman" target="_blank" rel="noopener noreferrer"><code>podman</code></a> 是一个无守护程序与 docker 命令兼容的下一代 Linux 容器工具。</p>
@@ -9016,12 +9159,13 @@ $ podman run -d -p <span>80</span>:80 nginx:alpine
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">访问仓库</title>
     <id>https://vuepress.mirror.docker-practice.com/repository/</id>
     <link href="https://vuepress.mirror.docker-practice.com/repository/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="访问仓库"> 访问仓库</h1>
 <AdSenseTitle/>
 <p>仓库（<code>Repository</code>）是集中存放镜像的地方。</p>
@@ -9031,12 +9175,13 @@ $ podman run -d -p <span>80</span>:80 nginx:alpine
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker Hub</title>
     <id>https://vuepress.mirror.docker-practice.com/repository/dockerhub/</id>
     <link href="https://vuepress.mirror.docker-practice.com/repository/dockerhub/"/>
-    <updated>2021-03-07T15:56:19.000Z</updated>
+    <updated>2021-03-11T16:12:47.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker-hub"> Docker Hub</h1>
 <AdSenseTitle/>
 <p>目前 Docker 官方维护了一个公共仓库 <a href="https://hub.docker.com/" target="_blank" rel="noopener noreferrer">Docker Hub</a>，其中已经包括了数量超过 <a href="https://hub.docker.com/search/?type=image" target="_blank" rel="noopener noreferrer">2,650,000</a> 的镜像。大部分需求都可以通过在 Docker Hub 中直接下载镜像来实现。</p>
@@ -9049,17 +9194,17 @@ $ podman run -d -p <span>80</span>:80 nginx:alpine
 <p>你可以通过 <code>docker search</code> 命令来查找官方仓库中的镜像，并利用 <code>docker pull</code> 命令来将它下载到本地。</p>
 <p>例如以 <code>centos</code> 为关键词进行搜索：</p>
 <div><pre><code>$ docker search centos
-NAME                                            DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
-centos                                          The official build of CentOS.                   <span>465</span>       <span>[</span>OK<span>]</span>
-tianon/centos                                   CentOS <span>5</span> and <span>6</span>, created using rinse instea<span>..</span>.   <span>28</span>
-blalor/centos                                   Bare-bones base CentOS <span>6.5</span> image                <span>6</span>                    <span>[</span>OK<span>]</span>
-saltstack/centos-6-minimal                                                                      <span>6</span>                    <span>[</span>OK<span>]</span>
-tutum/centos-6.4                                DEPRECATED. Use tutum/centos:6.4 instead. <span>..</span>.   <span>5</span>                    <span>[</span>OK<span>]</span>
+NAME                               DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+centos                             The official build of CentOS.                   <span>6449</span>      <span>[</span>OK<span>]</span>
+ansible/centos7-ansible            Ansible on Centos7                              <span>132</span>                  <span>[</span>OK<span>]</span>
+consol/centos-xfce-vnc             Centos container with <span>"headless"</span> VNC session…   <span>126</span>                  <span>[</span>OK<span>]</span>
+jdeathe/centos-ssh                 OpenSSH / Supervisor / EPEL/IUS/SCL Repos - …   <span>117</span>                  <span>[</span>OK<span>]</span>
+centos/systemd                     systemd enabled base container.                 <span>96</span>                   <span>[</span>OK<span>]</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><p>可以看到返回了很多包含关键字的镜像，其中包括镜像名字、描述、收藏数（表示该镜像的受关注程度）、是否官方创建（<code>OFFICIAL</code>）、是否自动构建 （<code>AUTOMATED</code>）。</p>
 <p>根据是否是官方提供，可将镜像分为两类。</p>
 <p>一种是类似 <code>centos</code> 这样的镜像，被称为基础镜像或根镜像。这些基础镜像由 Docker 公司创建、验证、支持、提供。这样的镜像往往使用单个单词作为名字。</p>
-<p>还有一种类型，比如 <code>tianon/centos</code> 镜像，它是由 Docker Hub 的注册用户创建并维护的，往往带有用户名称前缀。可以通过前缀 <code>username/</code> 来指定使用某个用户提供的镜像，比如 tianon 用户。</p>
+<p>还有一种类型，比如 <code>ansible/centos7-ansible</code> 镜像，它是由 Docker Hub 的注册用户创建并维护的，往往带有用户名称前缀。可以通过前缀 <code>username/</code> 来指定使用某个用户提供的镜像，比如 ansible 用户。</p>
 <p>另外，在查找的时候通过 <code>--filter=stars=N</code> 参数可以指定仅显示收藏数量为 <code>N</code> 以上的镜像。</p>
 <p>下载官方 <code>centos</code> 镜像到本地。</p>
 <div><pre><code>$ docker pull centos
@@ -9115,32 +9260,49 @@ username/ubuntu
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Nexus3.x 的私有仓库</title>
     <id>https://vuepress.mirror.docker-practice.com/repository/nexus3_registry/</id>
     <link href="https://vuepress.mirror.docker-practice.com/repository/nexus3_registry/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T16:12:47.000Z</updated>
     <content type="html"><![CDATA[<h1 id="nexus3-x-的私有仓库"> Nexus3.x 的私有仓库</h1>
 <AdSenseTitle/>
-<p>使用 Docker 官方的 Registry 创建的仓库面临一些维护问题。比如某些镜像删除以后空间默认是不会回收的，需要一些命令去回收空间然后重启 Registry 程序。在企业中把内部的一些工具包放入 Nexus 中是比较常见的做法，最新版本 <code>Nexus3.x</code> 全面支持 Docker 的私有镜像。所以使用 <a href="https://www.sonatype.com/nexus/repository-oss-download" target="_blank" rel="noopener noreferrer"><code>Nexus3.x</code></a> 一个软件来管理 <code>Docker</code> , <code>Maven</code> , <code>Yum</code> , <code>PyPI</code> 等是一个明智的选择。</p>
+<p>使用 Docker 官方的 Registry 创建的仓库面临一些维护问题。比如某些镜像删除以后空间默认是不会回收的，需要一些命令去回收空间然后重启 Registry。在企业中把内部的一些工具包放入 <code>Nexus</code> 中是比较常见的做法，最新版本 <code>Nexus3.x</code> 全面支持 Docker 的私有镜像。所以使用 <a href="https://www.sonatype.com/nexus/repository-oss-download" target="_blank" rel="noopener noreferrer"><code>Nexus3.x</code></a> 一个软件来管理 <code>Docker</code> , <code>Maven</code> , <code>Yum</code> , <code>PyPI</code> 等是一个明智的选择。</p>
 <h2 id="启动-nexus-容器"> 启动 Nexus 容器</h2>
 <div><pre><code>$ docker run -d --name nexus3 --restart<span>=</span>always <span>\</span>
     -p <span>8081</span>:8081 <span>\</span>
     --mount <span>src</span><span>=</span>nexus-data,target<span>=</span>/nexus-data <span>\</span>
     sonatype/nexus3
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>等待 3-5 分钟，如果 <code>nexus3</code> 容器没有异常退出，那么你可以使用浏览器打开 <code>http://YourIP:8081</code> 访问 Nexus 了。</p>
-<p>第一次启动 Nexus 的默认帐号是 <code>admin</code> 密码是 <code>admin123</code> 登录以后点击页面上方的齿轮按钮进行设置。</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>首次运行需等待 3-5 分钟，你可以使用 <code>docker logs nexus3 -f</code> 查看日志：</p>
+<div><pre><code>$ docker logs nexus3 -f
+
+<span>2021</span>-03-11 <span>15</span>:31:21,990+0000 INFO  <span>[</span>jetty-main-1<span>]</span> *SYSTEM org.sonatype.nexus.bootstrap.jetty.JettyServer -
+-------------------------------------------------
+
+Started Sonatype Nexus OSS <span>3.30</span>.0-01
+
+-------------------------------------------------
+
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>如果你看到以上内容，说明 <code>Nexus</code> 已经启动成功，你可以使用浏览器打开 <code>http://YourIP:8081</code> 访问 <code>Nexus</code> 了。</p>
+<p>首次运行请通过以下命令获取初始密码：</p>
+<div><pre><code>$ docker <span>exec</span> nexus3 <span>cat</span> /nexus-data/admin.password
+
+9266139e-41a2-4abb-92ec-e4142a3532cb
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>首次启动 Nexus 的默认帐号是 <code>admin</code> ，密码则是上边命令获取到的，点击右上角登录，首次登录需更改初始密码。</p>
+<p>登录之后可以点击页面上方的齿轮按钮按照下面的方法进行设置。</p>
 <h2 id="创建仓库"> 创建仓库</h2>
 <p>创建一个私有仓库的方法： <code>Repository-&gt;Repositories</code> 点击右边菜单 <code>Create repository</code> 选择 <code>docker (hosted)</code></p>
 <ul>
-<li>Name: 仓库的名称</li>
-<li>HTTP: 仓库单独的访问端口</li>
-<li>Enable Docker V1 API: 如果需要同时支持 V1 版本请勾选此项（不建议勾选）。</li>
-<li>Hosted -&gt; Deployment pollcy: 请选择 Allow redeploy 否则无法上传 Docker 镜像。</li>
+<li><strong>Name</strong>: 仓库的名称</li>
+<li><strong>HTTP</strong>: 仓库单独的访问端口（例如：<strong>5001</strong>）</li>
+<li><strong>Hosted -&gt; Deployment pollcy</strong>: 请选择 <strong>Allow redeploy</strong> 否则无法上传 Docker 镜像。</li>
 </ul>
-<p>其它的仓库创建方法请各位自己摸索，还可以创建一个 docker (proxy) 类型的仓库链接到 DockerHub 上。再创建一个 docker (group) 类型的仓库把刚才的 hosted 与 proxy 添加在一起。主机在访问的时候默认下载私有仓库中的镜像，如果没有将链接到 DockerHub 中下载并缓存到 Nexus 中。</p>
+<p>其它的仓库创建方法请各位自己摸索，还可以创建一个 <code>docker (proxy)</code> 类型的仓库链接到 DockerHub 上。再创建一个 <code>docker (group)</code> 类型的仓库把刚才的 <code>hosted</code> 与 <code>proxy</code> 添加在一起。主机在访问的时候默认下载私有仓库中的镜像，如果没有将链接到 DockerHub 中下载并缓存到 Nexus 中。</p>
 <h2 id="添加访问权限"> 添加访问权限</h2>
 <p>菜单 <code>Security-&gt;Realms</code> 把 Docker Bearer Token Realm 移到右边的框中保存。</p>
 <p>添加用户规则：菜单 <code>Security-&gt;Roles</code>-&gt;<code>Create role</code>  在 <code>Privlleges</code> 选项搜索 docker 把相应的规则移动到右边的框中然后保存。</p>
@@ -9150,7 +9312,7 @@ username/ubuntu
 <p>NGINX 示例配置如下</p>
 <div><pre><code><span>upstream</span> register
 <span>{</span>
-    <span>server</span> <span>"YourHostName OR IP"</span><span>:</span><span>5001</span><span>;</span> <span>#端口为上面添加的私有镜像仓库是设置的 HTTP 选项的端口号</span>
+    <span>server</span> <span>"YourHostName OR IP"</span><span>:</span><span>5001</span><span>;</span> <span>#端口为上面添加私有镜像仓库时设置的 HTTP 选项的端口号</span>
     check interval<span>=</span><span>3000</span> rise<span>=</span><span>2</span> fall<span>=</span><span>10</span> <span>timeout</span><span>=</span><span>1000</span> type<span>=</span><span>http</span><span>;</span>
     check_http_send <span>"HEAD / HTTP/1.0\r\n\r\n"</span><span>;</span>
     check_http_expect_alive http_4xx<span>;</span>
@@ -9196,23 +9358,24 @@ username/ubuntu
 <span>}</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br></div></div><h2 id="docker-主机访问镜像仓库"> Docker 主机访问镜像仓库</h2>
-<p>如果不启用 SSL 加密可以通过前面章节的方法添加信任地址到 Docker 的配置文件中然后重启 Docker</p>
-<p>使用 SSL 加密以后程序需要访问就不能采用修改配置的访问了。具体方法如下：</p>
+<p>如果不启用 SSL 加密可以通过 <a href="./registry.html">前面章节</a> 的方法添加非 https 仓库地址到 Docker 的配置文件中然后重启 Docker。</p>
+<p>使用 SSL 加密以后程序需要访问就不能采用修改配置的方式了。具体方法如下：</p>
 <div><pre><code>$ openssl s_client -showcerts -connect YourDomainName OR HostIP:443 <span>&lt;</span>/dev/null <span><span>2</span>></span>/dev/null<span>|</span>openssl x509 -outform PEM <span>></span>ca.crt
 $ <span>cat</span> ca.crt <span>|</span> <span>sudo</span> <span>tee</span> -a /etc/ssl/certs/ca-certificates.crt
 $ systemctl restart docker
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>使用 <code>docker login YourDomainName OR HostIP</code> 进行测试，用户名密码填写上面 Nexus 中生成的。</p>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><p>使用 <code>docker login YourDomainName OR HostIP</code> 进行测试，用户名密码填写上面 Nexus 中设置的。</p>
 ]]></content>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">私有仓库</title>
     <id>https://vuepress.mirror.docker-practice.com/repository/registry/</id>
     <link href="https://vuepress.mirror.docker-practice.com/repository/registry/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T16:12:47.000Z</updated>
     <content type="html"><![CDATA[<h1 id="私有仓库"> 私有仓库</h1>
 <AdSenseTitle/>
 <p>有时候使用 Docker Hub 这样的公共仓库可能不方便，用户可以创建一个本地仓库供私人使用。</p>
@@ -9220,7 +9383,7 @@ $ systemctl restart docker
 <p><a href="https://docs.docker.com/registry/" target="_blank" rel="noopener noreferrer"><code>docker-registry</code></a> 是官方提供的工具，可以用于构建私有的镜像仓库。本文内容基于 <a href="https://github.com/docker/distribution" target="_blank" rel="noopener noreferrer"><code>docker-registry</code></a> v2.x 版本。</p>
 <h2 id="安装运行-docker-registry"> 安装运行 docker-registry</h2>
 <h3 id="容器运行"> 容器运行</h3>
-<p>你可以通过获取官方 <code>registry</code> 镜像来运行。</p>
+<p>你可以使用官方 <code>registry</code> 镜像来运行。</p>
 <div><pre><code>$ docker run -d -p <span>5000</span>:5000 --restart<span>=</span>always --name registry registry
 </code></pre>
 <div><span>1</span><br></div></div><p>这将使用官方的 <code>registry</code> 镜像来启动私有仓库。默认情况下，仓库会被创建在容器的 <code>/var/lib/registry</code> 目录下。你可以通过 <code>-v</code> 参数来将镜像文件存放在本地的指定路径。例如下面的例子将上传的镜像放到本地的 <code>/opt/data/registry</code> 目录。</p>
@@ -9276,7 +9439,7 @@ $ docker image <span>ls</span>
 REPOSITORY                         TAG                 IMAGE ID            CREATED             VIRTUAL SIZE
 <span>127.0</span>.0.1:5000/ubuntu:latest       latest              ba5877dc9bec        <span>6</span> weeks ago         <span>192.7</span> MB
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br></div></div><h2 id="注意事项"> 注意事项</h2>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br></div></div><h2 id="配置非-https-仓库地址"> 配置非 https 仓库地址</h2>
 <p>如果你不想使用 <code>127.0.0.1:5000</code> 作为仓库地址，比如想让本网段的其他主机也能把镜像推送到私有仓库。你就得把例如 <code>192.168.199.100:5000</code> 这样的内网地址作为私有仓库地址，这时你会发现无法成功推送镜像。</p>
 <p>这是因为 Docker 默认不允许非 <code>HTTPS</code> 方式推送镜像。我们可以通过 Docker 的配置选项来取消这个限制，或者查看下一节配置能够通过 <code>HTTPS</code> 访问的私有仓库。</p>
 <h3 id="ubuntu-16-04-debian-8-centos-7"> Ubuntu 16.04+, Debian 8+, centos 7</h3>
@@ -9300,12 +9463,13 @@ REPOSITORY                         TAG                 IMAGE ID            CREAT
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">私有仓库高级配置</title>
     <id>https://vuepress.mirror.docker-practice.com/repository/registry_auth/</id>
     <link href="https://vuepress.mirror.docker-practice.com/repository/registry_auth/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="私有仓库高级配置"> 私有仓库高级配置</h1>
 <AdSenseTitle/>
 <p>上一节我们搭建了一个具有基础功能的私有仓库，本小节我们来使用 <code>Docker Compose</code> 搭建一个拥有权限认证、TLS 的私有仓库。</p>
@@ -9466,12 +9630,13 @@ no basic auth credentials
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">安全</title>
     <id>https://vuepress.mirror.docker-practice.com/security/</id>
     <link href="https://vuepress.mirror.docker-practice.com/security/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="安全"> 安全</h1>
 <AdSenseTitle/>
 <p>评估 Docker 的安全性时，主要考虑三个方面:</p>
@@ -9484,12 +9649,13 @@ no basic auth credentials
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">控制组</title>
     <id>https://vuepress.mirror.docker-practice.com/security/control_group/</id>
     <link href="https://vuepress.mirror.docker-practice.com/security/control_group/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="控制组"> 控制组</h1>
 <AdSenseTitle/>
 <p>控制组是 Linux 容器机制的另外一个关键组件，负责实现资源的审计和限制。</p>
@@ -9500,12 +9666,13 @@ no basic auth credentials
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker服务端的防护</title>
     <id>https://vuepress.mirror.docker-practice.com/security/daemon_sec/</id>
     <link href="https://vuepress.mirror.docker-practice.com/security/daemon_sec/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker服务端的防护"> Docker服务端的防护</h1>
 <AdSenseTitle/>
 <p>运行一个容器或应用程序的核心是通过 Docker 服务端。Docker 服务的运行目前需要 root 权限，因此其安全性十分关键。</p>
@@ -9524,12 +9691,13 @@ no basic auth credentials
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">内核能力机制</title>
     <id>https://vuepress.mirror.docker-practice.com/security/kernel_capability/</id>
     <link href="https://vuepress.mirror.docker-practice.com/security/kernel_capability/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="内核能力机制"> 内核能力机制</h1>
 <AdSenseTitle/>
 <p><a href="https://man7.org/linux/man-pages/man7/capabilities.7.html" target="_blank" rel="noopener noreferrer">能力机制（Capability）</a> 是 Linux 内核一个强大的特性，可以提供细粒度的权限访问控制。
@@ -9558,12 +9726,13 @@ Linux 内核自 2.2 版本起就支持能力机制，它将权限划分为更加
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">内核命名空间</title>
     <id>https://vuepress.mirror.docker-practice.com/security/kernel_ns/</id>
     <link href="https://vuepress.mirror.docker-practice.com/security/kernel_ns/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="内核命名空间"> 内核命名空间</h1>
 <AdSenseTitle/>
 <p>Docker 容器和 LXC 容器很相似，所提供的安全特性也差不多。当用 <code>docker run</code> 启动一个容器时，在后台 Docker 为容器创建了一个独立的命名空间和控制组集合。</p>
@@ -9578,12 +9747,13 @@ Linux 内核自 2.2 版本起就支持能力机制，它将权限划分为更加
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">其它安全特性</title>
     <id>https://vuepress.mirror.docker-practice.com/security/other_feature/</id>
     <link href="https://vuepress.mirror.docker-practice.com/security/other_feature/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="其它安全特性"> 其它安全特性</h1>
 <AdSenseTitle/>
 <p>除了能力机制之外，还可以利用一些现有的安全机制来增强使用 Docker 的安全性，例如 TOMOYO, AppArmor, Seccomp, SELinux, GRSEC 等。</p>
@@ -9598,12 +9768,13 @@ Linux 内核自 2.2 版本起就支持能力机制，它将权限划分为更加
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">总结</title>
     <id>https://vuepress.mirror.docker-practice.com/security/summary/</id>
     <link href="https://vuepress.mirror.docker-practice.com/security/summary/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="总结"> 总结</h1>
 <AdSenseTitle/>
 <p>总体来看，Docker 容器还是十分安全的，特别是在容器内不使用 root 权限来运行进程的话。</p>
@@ -9612,12 +9783,27 @@ Linux 内核自 2.2 版本起就支持能力机制，它将权限划分为更加
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
+  </entry>
+  <entry>
+    <title type="html">Swarm mode</title>
+    <id>https://vuepress.mirror.docker-practice.com/swarm_mode/</id>
+    <link href="https://vuepress.mirror.docker-practice.com/swarm_mode/"/>
+    <updated>2021-03-11T15:09:37.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="swarm-mode"> Swarm mode</h1>
+<p>Docker 1.12 <a href="https://docs.docker.com/engine/swarm/" target="_blank" rel="noopener noreferrer">Swarm mode</a> 已经内嵌入 Docker 引擎，成为了 docker 子命令 <code>docker swarm</code>。请注意与旧的 <code>Docker Swarm</code> 区分开来。</p>
+<p><code>Swarm mode</code> 内置 kv 存储功能，提供了众多的新特性，比如：具有容错能力的去中心化设计、内置服务发现、负载均衡、路由网格、动态伸缩、滚动更新、安全传输等。使得 Docker 原生的 <code>Swarm</code> 集群具备与 Mesos、Kubernetes 竞争的实力。</p>
+]]></content>
+    <contributor>
+      <name/>
+    </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker 三剑客之 Docker Swarm</title>
     <id>https://vuepress.mirror.docker-practice.com/swarm/</id>
     <link href="https://vuepress.mirror.docker-practice.com/swarm/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker-三剑客之-docker-swarm"> Docker 三剑客之 Docker Swarm</h1>
 <AdSenseTitle/>
 <p>Docker Swarm 是 Docker 官方三剑客项目之一，提供 Docker 容器集群服务，是 Docker 官方对容器云生态进行支持的核心方案。</p>
@@ -9627,12 +9813,13 @@ Linux 内核自 2.2 版本起就支持能力机制，它将权限划分为更加
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">在 Swarm 集群中管理配置数据</title>
     <id>https://vuepress.mirror.docker-practice.com/swarm_mode/config/</id>
     <link href="https://vuepress.mirror.docker-practice.com/swarm_mode/config/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="在-swarm-集群中管理配置数据"> 在 Swarm 集群中管理配置数据</h1>
 <p>在动态的、大规模的分布式集群上，管理和分发配置文件也是很重要的工作。传统的配置文件分发方式（如配置文件放入镜像中，设置环境变量，volume 动态挂载等）都降低了镜像的通用性。</p>
 <p>在 Docker 17.06 以上版本中，Docker 新增了 <code>docker config</code> 子命令来管理集群中的配置信息，以后你无需将配置文件放入镜像或挂载到容器中就可实现对服务的配置。</p>
@@ -9671,25 +9858,13 @@ yod8fx8iiqtoo84jgwadp86yk   redis.conf          <span>4</span> seconds ago      
     <contributor>
       <name/>
     </contributor>
-  </entry>
-  <entry>
-    <title type="html">Swarm mode</title>
-    <id>https://vuepress.mirror.docker-practice.com/swarm_mode/</id>
-    <link href="https://vuepress.mirror.docker-practice.com/swarm_mode/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="swarm-mode"> Swarm mode</h1>
-<p>Docker 1.12 <a href="https://docs.docker.com/engine/swarm/" target="_blank" rel="noopener noreferrer">Swarm mode</a> 已经内嵌入 Docker 引擎，成为了 docker 子命令 <code>docker swarm</code>。请注意与旧的 <code>Docker Swarm</code> 区分开来。</p>
-<p><code>Swarm mode</code> 内置 kv 存储功能，提供了众多的新特性，比如：具有容错能力的去中心化设计、内置服务发现、负载均衡、路由网格、动态伸缩、滚动更新、安全传输等。使得 Docker 原生的 <code>Swarm</code> 集群具备与 Mesos、Kubernetes 竞争的实力。</p>
-]]></content>
-    <contributor>
-      <name/>
-    </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">创建 Swarm 集群</title>
     <id>https://vuepress.mirror.docker-practice.com/swarm_mode/create/</id>
     <link href="https://vuepress.mirror.docker-practice.com/swarm_mode/create/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="创建-swarm-集群"> 创建 Swarm 集群</h1>
 <p>阅读 <a href="./overview.html">基本概念</a> 一节我们知道 <code>Swarm</code> 集群由 <strong>管理节点</strong> 和 <strong>工作节点</strong> 组成。本节我们来创建一个包含一个管理节点和两个工作节点的最小 <code>Swarm</code> 集群。</p>
 <h2 id="初始化集群"> 初始化集群</h2>
@@ -9753,12 +9928,13 @@ dxn1zf6l61qsb1josjja83ngz *  manager   Ready   Active        Leader
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">部署服务</title>
     <id>https://vuepress.mirror.docker-practice.com/swarm_mode/deploy/</id>
     <link href="https://vuepress.mirror.docker-practice.com/swarm_mode/deploy/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="部署服务"> 部署服务</h1>
 <p>我们使用 <code>docker service</code> 命令来管理 <code>Swarm</code> 集群中的服务，该命令只能在管理节点运行。</p>
 <h2 id="新建服务"> 新建服务</h2>
@@ -9804,12 +9980,13 @@ nginx.1.pjfzd39buzlt@swarm2    <span>|</span> <span>2017</span>/11/25 02:10:27 <
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">基本概念</title>
     <id>https://vuepress.mirror.docker-practice.com/swarm_mode/overview/</id>
     <link href="https://vuepress.mirror.docker-practice.com/swarm_mode/overview/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="基本概念"> 基本概念</h1>
 <p><code>Swarm</code> 是使用 <a href="https://github.com/docker/swarmkit/" target="_blank" rel="noopener noreferrer"><code>SwarmKit</code></a> 构建的 Docker 引擎内置（原生）的集群管理和编排工具。</p>
 <p>使用 <code>Swarm</code> 集群之前需要了解以下几个概念。</p>
@@ -9838,12 +10015,13 @@ nginx.1.pjfzd39buzlt@swarm2    <span>|</span> <span>2017</span>/11/25 02:10:27 <
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">SWarm mode 与滚动升级</title>
     <id>https://vuepress.mirror.docker-practice.com/swarm_mode/rolling_update/</id>
     <link href="https://vuepress.mirror.docker-practice.com/swarm_mode/rolling_update/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="swarm-mode-与滚动升级"> SWarm mode 与滚动升级</h1>
 <p>在 <a href="./deploy.html">部署服务</a> 一节中我们使用 <code>nginx:1.13.7-alpine</code> 镜像部署了一个名为 <code>nginx</code> 的服务。</p>
 <p>现在我们想要将 <code>NGINX</code> 版本升级到 <code>1.13.12</code>，那么在 Swarm mode 中如何升级服务呢？</p>
@@ -9875,12 +10053,13 @@ i7ynkbg6ybq5         <span>\</span>_ nginx.1         nginx:1.13.7-alpine   VM-20
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">在 Swarm 集群中管理敏感数据</title>
     <id>https://vuepress.mirror.docker-practice.com/swarm_mode/secret/</id>
     <link href="https://vuepress.mirror.docker-practice.com/swarm_mode/secret/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="在-swarm-集群中管理敏感数据"> 在 Swarm 集群中管理敏感数据</h1>
 <p>在动态的、大规模的分布式集群上，管理和分发 <code>密码</code>、<code>证书</code> 等敏感信息是极其重要的工作。传统的密钥分发方式（如密钥放入镜像中，设置环境变量，volume 动态挂载等）都存在着潜在的巨大的安全风险。</p>
 <p>Docker 目前已经提供了 <code>secrets</code> 管理功能，用户可以在 Swarm 集群中安全地管理密码、密钥证书等敏感数据，并允许在多个 Docker 容器实例之间共享访问指定的敏感数据。</p>
@@ -9947,12 +10126,13 @@ nzt5xzae4n62  wordpress  replicated  <span>1</span>/1       wordpress:latest
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">在 Swarm 集群中使用 compose 文件</title>
     <id>https://vuepress.mirror.docker-practice.com/swarm_mode/stack/</id>
     <link href="https://vuepress.mirror.docker-practice.com/swarm_mode/stack/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="在-swarm-集群中使用-compose-文件"> 在 Swarm 集群中使用 compose 文件</h1>
 <p>正如之前使用 <code>docker-compose.yml</code> 来一次配置、启动多个容器，在 <code>Swarm</code> 集群中也可以使用 <code>compose</code> 文件 （<code>docker-compose.yml</code>） 来配置、启动多个服务。</p>
 <p>上一节中，我们使用 <code>docker service create</code> 一次只能部署一个服务，使用 <code>docker-compose.yml</code> 我们可以一次启动多个关联的服务。</p>
@@ -10033,12 +10213,13 @@ Removing network wordpress_default
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">底层实现</title>
     <id>https://vuepress.mirror.docker-practice.com/underly/</id>
     <link href="https://vuepress.mirror.docker-practice.com/underly/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="底层实现"> 底层实现</h1>
 <AdSenseTitle/>
 <p>Docker 底层的核心技术包括 Linux 上的命名空间（Namespaces）、控制组（Control groups）、Union 文件系统（Union file systems）和容器格式（Container format）。</p>
@@ -10053,12 +10234,13 @@ Removing network wordpress_default
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">基本架构</title>
     <id>https://vuepress.mirror.docker-practice.com/underly/arch/</id>
     <link href="https://vuepress.mirror.docker-practice.com/underly/arch/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="基本架构"> 基本架构</h1>
 <AdSenseTitle/>
 <p>Docker 采用了 <code>C/S</code> 架构，包括客户端和服务端。Docker 守护进程 （<code>Daemon</code>）作为服务端接受来自客户端的请求，并处理这些请求（创建、运行、分发容器）。</p>
@@ -10070,12 +10252,13 @@ Removing network wordpress_default
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">控制组</title>
     <id>https://vuepress.mirror.docker-practice.com/underly/cgroups/</id>
     <link href="https://vuepress.mirror.docker-practice.com/underly/cgroups/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="控制组"> 控制组</h1>
 <AdSenseTitle/>
 <p>控制组（<a href="https://en.wikipedia.org/wiki/Cgroups" target="_blank" rel="noopener noreferrer">cgroups</a>）是 Linux 内核的一个特性，主要用来对共享资源进行隔离、限制、审计等。只有能控制分配到容器的资源，才能避免当多个容器同时运行时的对系统资源的竞争。</p>
@@ -10085,12 +10268,13 @@ Removing network wordpress_default
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">容器格式</title>
     <id>https://vuepress.mirror.docker-practice.com/underly/container_format/</id>
     <link href="https://vuepress.mirror.docker-practice.com/underly/container_format/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="容器格式"> 容器格式</h1>
 <AdSenseTitle/>
 <p>最初，Docker 采用了 <code>LXC</code> 中的容器格式。从 0.7 版本以后开始去除 LXC，转而使用自行开发的 <a href="https://github.com/docker/libcontainer" target="_blank" rel="noopener noreferrer">libcontainer</a>，从 1.11 开始，则进一步演进为使用 <a href="https://github.com/opencontainers/runc" target="_blank" rel="noopener noreferrer">runC</a> 和 <a href="https://github.com/containerd/containerd" target="_blank" rel="noopener noreferrer">containerd</a>。</p>
@@ -10098,12 +10282,13 @@ Removing network wordpress_default
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">命名空间</title>
     <id>https://vuepress.mirror.docker-practice.com/underly/namespace/</id>
     <link href="https://vuepress.mirror.docker-practice.com/underly/namespace/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="命名空间"> 命名空间</h1>
 <AdSenseTitle/>
 <p>命名空间是 Linux 内核一个强大的特性。每个容器都有自己单独的命名空间，运行在其中的应用都像是在独立的操作系统中运行一样。命名空间保证了容器之间彼此互不影响。</p>
@@ -10124,12 +10309,13 @@ Removing network wordpress_default
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">Docker 网络实现</title>
     <id>https://vuepress.mirror.docker-practice.com/underly/network/</id>
     <link href="https://vuepress.mirror.docker-practice.com/underly/network/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="docker-网络实现"> Docker 网络实现</h1>
 <AdSenseTitle/>
 <p>Docker 的网络实现其实就是利用了 Linux 上的网络命名空间和虚拟网络设备（特别是 veth pair）。建议先熟悉了解这两部分的基本概念再阅读本章。</p>
@@ -10192,12 +10378,13 @@ $ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>$pid</span> <s
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">联合文件系统</title>
     <id>https://vuepress.mirror.docker-practice.com/underly/ufs/</id>
     <link href="https://vuepress.mirror.docker-practice.com/underly/ufs/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="联合文件系统"> 联合文件系统</h1>
 <AdSenseTitle/>
 <p>联合文件系统（<a href="https://en.wikipedia.org/wiki/UnionFS" target="_blank" rel="noopener noreferrer">UnionFS</a>）是一种分层、轻量级并且高性能的文件系统，它支持对文件系统的修改作为一次提交来一层层的叠加，同时可以将不同目录挂载到同一个虚拟文件系统下(unite several directories into a single virtual filesystem)。</p>
@@ -10237,12 +10424,13 @@ $ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>$pid</span> <s
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">VOLUME 定义匿名卷</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/volume/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/volume/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="volume-定义匿名卷"> VOLUME 定义匿名卷</h1>
 <AdSenseTitle/>
 <p>格式为：</p>
@@ -10253,20 +10441,21 @@ $ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>$pid</span> <s
 <p>之前我们说过，容器运行时应该尽量保持容器存储层不发生写操作，对于数据库类需要保存动态数据的应用，其数据库文件应该保存于卷(volume)中，后面的章节我们会进一步介绍 Docker 卷的概念。为了防止运行时用户忘记将动态文件所保存目录挂载为卷，在 <code>Dockerfile</code> 中，我们可以事先指定某些目录挂载为匿名卷，这样在运行时如果用户不指定挂载，其应用也可以正常运行，不会向容器存储层写入大量数据。</p>
 <div><pre><code><span>VOLUME</span> /data
 </code></pre>
-<div><span>1</span><br></div></div><p>这里的 <code>/data</code> 目录就会在运行时自动挂载为匿名卷，任何向 <code>/data</code> 中写入的信息都不会记录进容器存储层，从而保证了容器存储层的无状态化。当然，运行时可以覆盖这个挂载设置。比如：</p>
-<div><pre><code>docker run -d -v mydata:/data xxxx
+<div><span>1</span><br></div></div><p>这里的 <code>/data</code> 目录就会在容器运行时自动挂载为匿名卷，任何向 <code>/data</code> 中写入的信息都不会记录进容器存储层，从而保证了容器存储层的无状态化。当然，运行容器时可以覆盖这个挂载设置。比如：</p>
+<div><pre><code>$ docker run -d -v mydata:/data xxxx
 </code></pre>
 <div><span>1</span><br></div></div><p>在这行命令中，就使用了 <code>mydata</code> 这个命名卷挂载到了 <code>/data</code> 这个位置，替代了 <code>Dockerfile</code> 中定义的匿名卷的挂载配置。</p>
 ]]></content>
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
   <entry>
     <title type="html">USER 指定当前用户</title>
     <id>https://vuepress.mirror.docker-practice.com/image/dockerfile/user/</id>
     <link href="https://vuepress.mirror.docker-practice.com/image/dockerfile/user/"/>
-    <updated>2021-03-07T15:54:43.000Z</updated>
+    <updated>2021-03-11T15:09:37.000Z</updated>
     <content type="html"><![CDATA[<h1 id="user-指定当前用户"> USER 指定当前用户</h1>
 <AdSenseTitle/>
 <p>格式：<code>USER &lt;用户名&gt;[:&lt;用户组&gt;]</code></p>
@@ -10290,5 +10479,6 @@ $ <span>sudo</span> <span>ip</span> netns <span>exec</span> <span>$pid</span> <s
     <contributor>
       <name/>
     </contributor>
+    <published>2021-03-11T15:09:37.000Z</published>
   </entry>
 </feed>
