@@ -6,8 +6,8 @@
     <link>https://vuepress.mirror.docker-practice.com/</link>
     <description></description>
     <language>zh-CN</language>
-    <pubDate>Sun, 06 Jun 2021 02:53:37 GMT</pubDate>
-    <lastBuildDate>Sun, 06 Jun 2021 02:53:37 GMT</lastBuildDate>
+    <pubDate>Sun, 06 Jun 2021 03:13:35 GMT</pubDate>
+    <lastBuildDate>Sun, 06 Jun 2021 03:13:35 GMT</lastBuildDate>
     <generator>@mr-hope/vuepress-plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <item>
@@ -274,6 +274,83 @@ $ <span>git</span> push -f origin master
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br></div></div><h2 id="排版规范"> 排版规范</h2>
 <p>本开源书籍遵循 <a href="https://github.com/mzlogin/chinese-copywriting-guidelines" target="_blank" rel="noopener noreferrer">中文排版指南</a> 规范。</p>
 ]]></content:encoded>
+    </item>
+    <item>
+      <title>Docker — 从入门到实践</title>
+      <link>https://vuepress.mirror.docker-practice.com/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">Docker — 从入门到实践</source>
+      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="docker-从入门到实践"> Docker — 从入门到实践</h1>
+<AdSenseTitle/>
+<p><a href="https://github.com/yeasy/docker_practice" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/yeasy/docker_practice.svg?style=social&label=Stars" alt="" /></a> <a href="https://github.com/yeasy/docker_practice/releases" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/release/yeasy/docker_practice/all.svg" alt="" /></a> <a href="https://github.com/docker/docker-ce" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Based-Docker CE v20.10-blue.svg" alt="" /></a> <a href="https://union-click.jd.com/jdc?e=&amp;p=JF8AANADIgZlGF0VAxUDVBJdHDISBFAfWRcCGzcRRANLXSJeEF4aVwkMGQ1eD0kdSVJKSQVJHBIEUB9ZFwIbGAxeB0gyS34PbFlHVHNkI0MQEAoIcSxyBWFLRAtZK1olABYHXR9eHAoQN2UbXCVQfN_jrYOwsw7T_5SOnZUiBmUbXBYBFwBVG14UBBAAZRxbHDJJUjscCEEHEQ4FSA4VBhBQZStrFjIiN1UrWCVAfARQT1gQA0cFAEwOEAcRDlMTDEALQAFTEwwRUhMAUR1cJQATBlES" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Docker 技术入门与实战-jd.com-red.svg" alt="" /></a></p>
+<p><strong>v1.3.0</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">语言</th>
+<th style="text-align:left">-</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><a href="https://github.com/yeasy/docker_practice" target="_blank" rel="noopener noreferrer">简体中文</a></td>
+<td style="text-align:left"><a href="https://vuepress.mirror.docker-practice.com/" target="_blank" rel="noopener noreferrer">阅读</a></td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://www.docker.com" target="_blank" rel="noopener noreferrer">Docker</a> 是个划时代的开源项目，它彻底释放了计算虚拟化的威力，极大提高了应用的维护效率，降低了云计算应用开发的成本！使用 Docker，可以让应用的部署、测试和分发都变得前所未有的高效和轻松！</p>
+<p>无论是应用开发者、运维人员、还是其他信息技术从业人员，都有必要认识和掌握 Docker，节约有限的生命。</p>
+<p>本书既适用于具备基础 Linux 知识的 Docker 初学者，也希望可供理解原理和实现的高级用户参考。同时，书中给出的实践案例，可供在进行实际部署时借鉴。前六章为基础内容，供用户理解 Docker 的基本概念和操作；7 ~ 9 章介绍包括数据管理、网络等高级操作；第 10 ~ 12 章介绍了容器生态中的几个核心项目；13、14 章讨论了关于 Docker 安全和实现技术等高级话题。后续章节则分别介绍包括 Etcd、Fedora CoreOS、Kubernetes、容器云等相关热门开源项目。最后，还展示了使用容器技术的典型的应用场景和实践案例。</p>
+<ul>
+<li>在线阅读：<a href="https://vuepress.mirror.docker-practice.com/" target="_blank" rel="noopener noreferrer">docker-practice.com</a>，<a href="https://yeasy.gitbook.io/docker_practice/" target="_blank" rel="noopener noreferrer">GitBook</a>，<a href="https://github.com/yeasy/docker_practice/blob/master/SUMMARY.md" target="_blank" rel="noopener noreferrer">Github</a></li>
+<li><a href="https://github.com/yeasy/docker_practice/wiki/%E7%A6%BB%E7%BA%BF%E9%98%85%E8%AF%BB%E5%8A%9F%E8%83%BD%E8%AF%A6%E8%A7%A3" target="_blank" rel="noopener noreferrer">离线阅读 <code>$ docker run -it --rm -p 4000:80 ccr.ccs.tencentyun.com/dockerpracticesig/docker_practice:vuepress</code></a></li>
+</ul>
+<p>Docker 自身仍在快速发展中，生态环境也在蓬勃成长。建议初学者使用最新稳定版本的 Docker 进行学习实践。欢迎 <a href="./CONTRIBUTING.html">参与项目维护</a>。</p>
+<ul>
+<li><a href="./CHANGELOG.html">修订记录</a></li>
+<li><a href="https://github.com/yeasy/docker_practice/graphs/contributors" target="_blank" rel="noopener noreferrer">贡献者名单</a></li>
+</ul>
+<h2 id="微信小程序"> 微信小程序</h2>
+<p align="center">
+<img width="200" src="https://docker_practice.gitee.io/pic/dp-wechat-miniprogram.jpg">
+</p>
+<p align="center"><strong>微信扫码 随时随地阅读~</strong></p>
+<h2 id="技术交流"> 技术交流</h2>
+<p align="center">
+<img width="200" src="https://docker_practice.gitee.io/pic/dpsig-wechat.jpg">
+</p>
+<p align="center"><strong>微信扫码 加入群聊~ 或者微信添加 <code>dpsigs</code> 邀请入群</strong></p>
+<p>欢迎加入 Docker 技术交流 QQ 群，分享 Docker 资源，交流 Docker 技术。</p>
+<ul>
+<li>QQ 群 I   （已满）：341410255</li>
+<li>QQ 群 II  （已满）：419042067</li>
+<li>QQ 群 III （已满）：210028779</li>
+<li>QQ 群 IV  （已满）：483702734</li>
+<li>QQ 群 V   （已满）：460598761</li>
+<li>QQ 群 VI  （已满）：581983671</li>
+<li>QQ 群 VII （已满）：252403484</li>
+<li>QQ 群 VIII（已满）：544818750</li>
+<li>QQ 群 IX  （已满）：571502246</li>
+<li>QQ 群 X   （可加）：145983035</li>
+</ul>
+<blockquote>
+<p>如果有容器技术相关的疑问，请通过 <a href="https://github.com/yeasy/docker_practice/issues/new/choose" target="_blank" rel="noopener noreferrer">Issues</a> 来提出。</p>
+</blockquote>
+<h2 id="进阶学习"> 进阶学习</h2>
+<p><a href="https://union-click.jd.com/jdc?e=&amp;p=JF8AANADIgZlGF0VAxUDVBJdHDISBFAfWRcCGzcRRANLXSJeEF4aVwkMGQ1eD0kdSVJKSQVJHBIEUB9ZFwIbGAxeB0gyS34PbFlHVHNkI0MQEAoIcSxyBWFLRAtZK1olABYHXR9eHAoQN2UbXCVQfN_jrYOwsw7T_5SOnZUiBmUbXBYBFwBVG14UBBAAZRxbHDJJUjscCEEHEQ4FSA4VBhBQZStrFjIiN1UrWCVAfARQT1gQA0cFAEwOEAcRDlMTDEALQAFTEwwRUhMAUR1cJQATBlES" target="_blank" rel="noopener noreferrer"><img src="https://github.com/yeasy/docker_practice/raw/master/_images/docker_primer3.png" alt="" /></a></p>
+<p>《<a href="https://union-click.jd.com/jdc?e=&amp;p=JF8AANADIgZlGF0VAxUDVBJdHDISBFAfWRcCGzcRRANLXSJeEF4aVwkMGQ1eD0kdSVJKSQVJHBIEUB9ZFwIbGAxeB0gyS34PbFlHVHNkI0MQEAoIcSxyBWFLRAtZK1olABYHXR9eHAoQN2UbXCVQfN_jrYOwsw7T_5SOnZUiBmUbXBYBFwBVG14UBBAAZRxbHDJJUjscCEEHEQ4FSA4VBhBQZStrFjIiN1UrWCVAfARQT1gQA0cFAEwOEAcRDlMTDEALQAFTEwwRUhMAUR1cJQATBlES" target="_blank" rel="noopener noreferrer">Docker 技术入门与实战</a>》第三版已经面世，介绍最新的容器技术栈，欢迎大家阅读使用并反馈建议。</p>
+<ul>
+<li><a href="https://union-click.jd.com/jdc?e=&amp;p=JF8AANADIgZlGF0VAxUDVBJdHDISBFAfWRcCGzcRRANLXSJeEF4aVwkMGQ1eD0kdSVJKSQVJHBIEUB9ZFwIbGAxeB0gyS34PbFlHVHNkI0MQEAoIcSxyBWFLRAtZK1olABYHXR9eHAoQN2UbXCVQfN_jrYOwsw7T_5SOnZUiBmUbXBYBFwBVG14UBBAAZRxbHDJJUjscCEEHEQ4FSA4VBhBQZStrFjIiN1UrWCVAfARQT1gQA0cFAEwOEAcRDlMTDEALQAFTEwwRUhMAUR1cJQATBlES" target="_blank" rel="noopener noreferrer">京东图书</a></li>
+<li><a href="http://product.china-pub.com/8052127" target="_blank" rel="noopener noreferrer">China-Pub</a></li>
+</ul>
+<h2 id="鼓励项目"> 鼓励项目</h2>
+<p align="center">
+<img width="200" src="https://github.com/yeasy/docker_practice/raw/master/_images/donate.jpeg">
+</p>
+<p align="center"><strong>欢迎鼓励项目一杯 coffee~</strong></p>
+]]></content:encoded>
+      <enclosure url="https://img.shields.io/github/stars/yeasy/docker_practice.svg?style=social&label=Stars" type="image/"/>
     </item>
     <item>
       <title>Docker — 从入门到实践</title>
@@ -549,83 +626,6 @@ $ <span>git</span> push -f origin master
 </li>
 </ul>
 ]]></content:encoded>
-    </item>
-    <item>
-      <title>Docker — 从入门到实践</title>
-      <link>https://vuepress.mirror.docker-practice.com/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">Docker — 从入门到实践</source>
-      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="docker-从入门到实践"> Docker — 从入门到实践</h1>
-<AdSenseTitle/>
-<p><a href="https://github.com/yeasy/docker_practice" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/stars/yeasy/docker_practice.svg?style=social&label=Stars" alt="" /></a> <a href="https://github.com/yeasy/docker_practice/releases" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/github/release/yeasy/docker_practice/all.svg" alt="" /></a> <a href="https://github.com/docker/docker-ce" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Based-Docker CE v20.10-blue.svg" alt="" /></a> <a href="https://union-click.jd.com/jdc?e=&amp;p=JF8AANADIgZlGF0VAxUDVBJdHDISBFAfWRcCGzcRRANLXSJeEF4aVwkMGQ1eD0kdSVJKSQVJHBIEUB9ZFwIbGAxeB0gyS34PbFlHVHNkI0MQEAoIcSxyBWFLRAtZK1olABYHXR9eHAoQN2UbXCVQfN_jrYOwsw7T_5SOnZUiBmUbXBYBFwBVG14UBBAAZRxbHDJJUjscCEEHEQ4FSA4VBhBQZStrFjIiN1UrWCVAfARQT1gQA0cFAEwOEAcRDlMTDEALQAFTEwwRUhMAUR1cJQATBlES" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Docker 技术入门与实战-jd.com-red.svg" alt="" /></a></p>
-<p><strong>v1.3.0</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">语言</th>
-<th style="text-align:left">-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><a href="https://github.com/yeasy/docker_practice" target="_blank" rel="noopener noreferrer">简体中文</a></td>
-<td style="text-align:left"><a href="https://vuepress.mirror.docker-practice.com/" target="_blank" rel="noopener noreferrer">阅读</a></td>
-</tr>
-</tbody>
-</table>
-<p><a href="https://www.docker.com" target="_blank" rel="noopener noreferrer">Docker</a> 是个划时代的开源项目，它彻底释放了计算虚拟化的威力，极大提高了应用的维护效率，降低了云计算应用开发的成本！使用 Docker，可以让应用的部署、测试和分发都变得前所未有的高效和轻松！</p>
-<p>无论是应用开发者、运维人员、还是其他信息技术从业人员，都有必要认识和掌握 Docker，节约有限的生命。</p>
-<p>本书既适用于具备基础 Linux 知识的 Docker 初学者，也希望可供理解原理和实现的高级用户参考。同时，书中给出的实践案例，可供在进行实际部署时借鉴。前六章为基础内容，供用户理解 Docker 的基本概念和操作；7 ~ 9 章介绍包括数据管理、网络等高级操作；第 10 ~ 12 章介绍了容器生态中的几个核心项目；13、14 章讨论了关于 Docker 安全和实现技术等高级话题。后续章节则分别介绍包括 Etcd、Fedora CoreOS、Kubernetes、容器云等相关热门开源项目。最后，还展示了使用容器技术的典型的应用场景和实践案例。</p>
-<ul>
-<li>在线阅读：<a href="https://vuepress.mirror.docker-practice.com/" target="_blank" rel="noopener noreferrer">docker-practice.com</a>，<a href="https://yeasy.gitbook.io/docker_practice/" target="_blank" rel="noopener noreferrer">GitBook</a>，<a href="https://github.com/yeasy/docker_practice/blob/master/SUMMARY.md" target="_blank" rel="noopener noreferrer">Github</a></li>
-<li><a href="https://github.com/yeasy/docker_practice/wiki/%E7%A6%BB%E7%BA%BF%E9%98%85%E8%AF%BB%E5%8A%9F%E8%83%BD%E8%AF%A6%E8%A7%A3" target="_blank" rel="noopener noreferrer">离线阅读 <code>$ docker run -it --rm -p 4000:80 ccr.ccs.tencentyun.com/dockerpracticesig/docker_practice:vuepress</code></a></li>
-</ul>
-<p>Docker 自身仍在快速发展中，生态环境也在蓬勃成长。建议初学者使用最新稳定版本的 Docker 进行学习实践。欢迎 <a href="./CONTRIBUTING.html">参与项目维护</a>。</p>
-<ul>
-<li><a href="./CHANGELOG.html">修订记录</a></li>
-<li><a href="https://github.com/yeasy/docker_practice/graphs/contributors" target="_blank" rel="noopener noreferrer">贡献者名单</a></li>
-</ul>
-<h2 id="微信小程序"> 微信小程序</h2>
-<p align="center">
-<img width="200" src="https://docker_practice.gitee.io/pic/dp-wechat-miniprogram.jpg">
-</p>
-<p align="center"><strong>微信扫码 随时随地阅读~</strong></p>
-<h2 id="技术交流"> 技术交流</h2>
-<p align="center">
-<img width="200" src="https://docker_practice.gitee.io/pic/dpsig-wechat.jpg">
-</p>
-<p align="center"><strong>微信扫码 加入群聊~ 或者微信添加 <code>dpsigs</code> 邀请入群</strong></p>
-<p>欢迎加入 Docker 技术交流 QQ 群，分享 Docker 资源，交流 Docker 技术。</p>
-<ul>
-<li>QQ 群 I   （已满）：341410255</li>
-<li>QQ 群 II  （已满）：419042067</li>
-<li>QQ 群 III （已满）：210028779</li>
-<li>QQ 群 IV  （已满）：483702734</li>
-<li>QQ 群 V   （已满）：460598761</li>
-<li>QQ 群 VI  （已满）：581983671</li>
-<li>QQ 群 VII （已满）：252403484</li>
-<li>QQ 群 VIII（已满）：544818750</li>
-<li>QQ 群 IX  （已满）：571502246</li>
-<li>QQ 群 X   （可加）：145983035</li>
-</ul>
-<blockquote>
-<p>如果有容器技术相关的疑问，请通过 <a href="https://github.com/yeasy/docker_practice/issues/new/choose" target="_blank" rel="noopener noreferrer">Issues</a> 来提出。</p>
-</blockquote>
-<h2 id="进阶学习"> 进阶学习</h2>
-<p><a href="https://union-click.jd.com/jdc?e=&amp;p=JF8AANADIgZlGF0VAxUDVBJdHDISBFAfWRcCGzcRRANLXSJeEF4aVwkMGQ1eD0kdSVJKSQVJHBIEUB9ZFwIbGAxeB0gyS34PbFlHVHNkI0MQEAoIcSxyBWFLRAtZK1olABYHXR9eHAoQN2UbXCVQfN_jrYOwsw7T_5SOnZUiBmUbXBYBFwBVG14UBBAAZRxbHDJJUjscCEEHEQ4FSA4VBhBQZStrFjIiN1UrWCVAfARQT1gQA0cFAEwOEAcRDlMTDEALQAFTEwwRUhMAUR1cJQATBlES" target="_blank" rel="noopener noreferrer"><img src="https://github.com/yeasy/docker_practice/raw/master/_images/docker_primer3.png" alt="" /></a></p>
-<p>《<a href="https://union-click.jd.com/jdc?e=&amp;p=JF8AANADIgZlGF0VAxUDVBJdHDISBFAfWRcCGzcRRANLXSJeEF4aVwkMGQ1eD0kdSVJKSQVJHBIEUB9ZFwIbGAxeB0gyS34PbFlHVHNkI0MQEAoIcSxyBWFLRAtZK1olABYHXR9eHAoQN2UbXCVQfN_jrYOwsw7T_5SOnZUiBmUbXBYBFwBVG14UBBAAZRxbHDJJUjscCEEHEQ4FSA4VBhBQZStrFjIiN1UrWCVAfARQT1gQA0cFAEwOEAcRDlMTDEALQAFTEwwRUhMAUR1cJQATBlES" target="_blank" rel="noopener noreferrer">Docker 技术入门与实战</a>》第三版已经面世，介绍最新的容器技术栈，欢迎大家阅读使用并反馈建议。</p>
-<ul>
-<li><a href="https://union-click.jd.com/jdc?e=&amp;p=JF8AANADIgZlGF0VAxUDVBJdHDISBFAfWRcCGzcRRANLXSJeEF4aVwkMGQ1eD0kdSVJKSQVJHBIEUB9ZFwIbGAxeB0gyS34PbFlHVHNkI0MQEAoIcSxyBWFLRAtZK1olABYHXR9eHAoQN2UbXCVQfN_jrYOwsw7T_5SOnZUiBmUbXBYBFwBVG14UBBAAZRxbHDJJUjscCEEHEQ4FSA4VBhBQZStrFjIiN1UrWCVAfARQT1gQA0cFAEwOEAcRDlMTDEALQAFTEwwRUhMAUR1cJQATBlES" target="_blank" rel="noopener noreferrer">京东图书</a></li>
-<li><a href="http://product.china-pub.com/8052127" target="_blank" rel="noopener noreferrer">China-Pub</a></li>
-</ul>
-<h2 id="鼓励项目"> 鼓励项目</h2>
-<p align="center">
-<img width="200" src="https://github.com/yeasy/docker_practice/raw/master/_images/donate.jpeg">
-</p>
-<p align="center"><strong>欢迎鼓励项目一杯 coffee~</strong></p>
-]]></content:encoded>
-      <enclosure url="https://img.shields.io/github/stars/yeasy/docker_practice.svg?style=social&label=Stars" type="image/"/>
     </item>
     <item>
       <title>高级网络配置</title>
@@ -5093,30 +5093,6 @@ $ etcdctl member list
 ]]></content:encoded>
     </item>
     <item>
-      <title>使用 Docker 镜像</title>
-      <link>https://vuepress.mirror.docker-practice.com/image/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/image/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">使用 Docker 镜像</source>
-      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="使用-docker-镜像"> 使用 Docker 镜像</h1>
-<AdSenseTitle/>
-<p>在之前的介绍中，我们知道镜像是 Docker 的三大组件之一。</p>
-<p>Docker 运行容器前需要本地存在对应的镜像，如果本地不存在该镜像，Docker 会从镜像仓库下载该镜像。</p>
-<p>本章将介绍更多关于镜像的内容，包括：</p>
-<ul>
-<li>
-<p>从仓库获取镜像；</p>
-</li>
-<li>
-<p>管理本地主机上的镜像；</p>
-</li>
-<li>
-<p>介绍镜像实现的基本原理。</p>
-</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
       <title>使用 Dockerfile 定制镜像</title>
       <link>https://vuepress.mirror.docker-practice.com/image/build/</link>
       <guid>https://vuepress.mirror.docker-practice.com/image/build/</guid>
@@ -5268,6 +5244,30 @@ Successfully built 038ad4142d2b
 ]]></content:encoded>
     </item>
     <item>
+      <title>使用 Docker 镜像</title>
+      <link>https://vuepress.mirror.docker-practice.com/image/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/image/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">使用 Docker 镜像</source>
+      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="使用-docker-镜像"> 使用 Docker 镜像</h1>
+<AdSenseTitle/>
+<p>在之前的介绍中，我们知道镜像是 Docker 的三大组件之一。</p>
+<p>Docker 运行容器前需要本地存在对应的镜像，如果本地不存在该镜像，Docker 会从镜像仓库下载该镜像。</p>
+<p>本章将介绍更多关于镜像的内容，包括：</p>
+<ul>
+<li>
+<p>从仓库获取镜像；</p>
+</li>
+<li>
+<p>管理本地主机上的镜像；</p>
+</li>
+<li>
+<p>介绍镜像实现的基本原理。</p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>利用 commit 理解镜像构成</title>
       <link>https://vuepress.mirror.docker-practice.com/image/commit/</link>
       <guid>https://vuepress.mirror.docker-practice.com/image/commit/</guid>
@@ -5403,43 +5403,6 @@ e43d811ce2f4        <span>4</span> weeks ago         /bin/sh -c <span>#(nop)  CM
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div>]]></content:encoded>
     </item>
     <item>
-      <title>CMD 容器启动命令</title>
-      <link>https://vuepress.mirror.docker-practice.com/image/dockerfile/cmd/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/image/dockerfile/cmd/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">CMD 容器启动命令</source>
-      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="cmd-容器启动命令"> CMD 容器启动命令</h1>
-<AdSenseTitle/>
-<p><code>CMD</code> 指令的格式和 <code>RUN</code> 相似，也是两种格式：</p>
-<ul>
-<li><code>shell</code> 格式：<code>CMD &lt;命令&gt;</code></li>
-<li><code>exec</code> 格式：<code>CMD [&quot;可执行文件&quot;, &quot;参数1&quot;, &quot;参数2&quot;...]</code></li>
-<li>参数列表格式：<code>CMD [&quot;参数1&quot;, &quot;参数2&quot;...]</code>。在指定了 <code>ENTRYPOINT</code> 指令后，用 <code>CMD</code> 指定具体的参数。</li>
-</ul>
-<p>之前介绍容器的时候曾经说过，Docker 不是虚拟机，容器就是进程。既然是进程，那么在启动容器的时候，需要指定所运行的程序及参数。<code>CMD</code> 指令就是用于指定默认的容器主进程的启动命令的。</p>
-<p>在运行时可以指定新的命令来替代镜像设置中的这个默认命令，比如，<code>ubuntu</code> 镜像默认的 <code>CMD</code> 是 <code>/bin/bash</code>，如果我们直接 <code>docker run -it ubuntu</code> 的话，会直接进入 <code>bash</code>。我们也可以在运行时指定运行别的命令，如 <code>docker run -it ubuntu cat /etc/os-release</code>。这就是用 <code>cat /etc/os-release</code> 命令替换了默认的 <code>/bin/bash</code> 命令了，输出了系统版本信息。</p>
-<p>在指令格式上，一般推荐使用 <code>exec</code> 格式，这类格式在解析时会被解析为 JSON 数组，因此一定要使用双引号 <code>&quot;</code>，而不要使用单引号。</p>
-<p>如果使用 <code>shell</code> 格式的话，实际的命令会被包装为 <code>sh -c</code> 的参数的形式进行执行。比如：</p>
-<div><pre><code><span>CMD</span> echo $HOME
-</code></pre>
-<div><span>1</span><br></div></div><p>在实际执行中，会将其变更为：</p>
-<div><pre><code><span>CMD</span> <span>[</span> <span>"sh"</span><span>,</span> <span>"-c"</span><span>,</span> <span>"echo $HOME"</span> <span>]</span>
-</code></pre>
-<div><span>1</span><br></div></div><p>这就是为什么我们可以使用环境变量的原因，因为这些环境变量会被 shell 进行解析处理。</p>
-<p>提到 <code>CMD</code> 就不得不提容器中应用在前台执行和后台执行的问题。这是初学者常出现的一个混淆。</p>
-<p>Docker 不是虚拟机，容器中的应用都应该以前台执行，而不是像虚拟机、物理机里面那样，用 <code>systemd</code> 去启动后台服务，容器内没有后台服务的概念。</p>
-<p>一些初学者将 <code>CMD</code> 写为：</p>
-<div><pre><code><span>CMD</span> service nginx start
-</code></pre>
-<div><span>1</span><br></div></div><p>然后发现容器执行后就立即退出了。甚至在容器内去使用 <code>systemctl</code> 命令结果却发现根本执行不了。这就是因为没有搞明白前台、后台的概念，没有区分容器和虚拟机的差异，依旧在以传统虚拟机的角度去理解容器。</p>
-<p>对于容器而言，其启动程序就是容器应用进程，容器就是为了主进程而存在的，主进程退出，容器就失去了存在的意义，从而退出，其它辅助进程不是它需要关心的东西。</p>
-<p>而使用 <code>service nginx start</code> 命令，则是希望 upstart 来以后台守护进程形式启动 <code>nginx</code> 服务。而刚才说了 <code>CMD service nginx start</code> 会被理解为 <code>CMD [ &quot;sh&quot;, &quot;-c&quot;, &quot;service nginx start&quot;]</code>，因此主进程实际上是 <code>sh</code>。那么当 <code>service nginx start</code> 命令结束后，<code>sh</code> 也就结束了，<code>sh</code> 作为主进程退出了，自然就会令容器退出。</p>
-<p>正确的做法是直接执行 <code>nginx</code> 可执行文件，并且要求以前台形式运行。比如：</p>
-<div><pre><code><span>CMD</span> <span>[</span><span>"nginx"</span><span>,</span> <span>"-g"</span><span>,</span> <span>"daemon off;"</span><span>]</span>
-</code></pre>
-<div><span>1</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
       <title>ARG 构建参数</title>
       <link>https://vuepress.mirror.docker-practice.com/image/dockerfile/arg/</link>
       <guid>https://vuepress.mirror.docker-practice.com/image/dockerfile/arg/</guid>
@@ -5499,6 +5462,75 @@ e43d811ce2f4        <span>4</span> weeks ago         /bin/sh -c <span>#(nop)  CM
 <span>RUN</span> set <span>-</span>x ; echo $<span>{</span>DOCKER_USERNAME<span>}</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>CMD 容器启动命令</title>
+      <link>https://vuepress.mirror.docker-practice.com/image/dockerfile/cmd/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/image/dockerfile/cmd/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">CMD 容器启动命令</source>
+      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="cmd-容器启动命令"> CMD 容器启动命令</h1>
+<AdSenseTitle/>
+<p><code>CMD</code> 指令的格式和 <code>RUN</code> 相似，也是两种格式：</p>
+<ul>
+<li><code>shell</code> 格式：<code>CMD &lt;命令&gt;</code></li>
+<li><code>exec</code> 格式：<code>CMD [&quot;可执行文件&quot;, &quot;参数1&quot;, &quot;参数2&quot;...]</code></li>
+<li>参数列表格式：<code>CMD [&quot;参数1&quot;, &quot;参数2&quot;...]</code>。在指定了 <code>ENTRYPOINT</code> 指令后，用 <code>CMD</code> 指定具体的参数。</li>
+</ul>
+<p>之前介绍容器的时候曾经说过，Docker 不是虚拟机，容器就是进程。既然是进程，那么在启动容器的时候，需要指定所运行的程序及参数。<code>CMD</code> 指令就是用于指定默认的容器主进程的启动命令的。</p>
+<p>在运行时可以指定新的命令来替代镜像设置中的这个默认命令，比如，<code>ubuntu</code> 镜像默认的 <code>CMD</code> 是 <code>/bin/bash</code>，如果我们直接 <code>docker run -it ubuntu</code> 的话，会直接进入 <code>bash</code>。我们也可以在运行时指定运行别的命令，如 <code>docker run -it ubuntu cat /etc/os-release</code>。这就是用 <code>cat /etc/os-release</code> 命令替换了默认的 <code>/bin/bash</code> 命令了，输出了系统版本信息。</p>
+<p>在指令格式上，一般推荐使用 <code>exec</code> 格式，这类格式在解析时会被解析为 JSON 数组，因此一定要使用双引号 <code>&quot;</code>，而不要使用单引号。</p>
+<p>如果使用 <code>shell</code> 格式的话，实际的命令会被包装为 <code>sh -c</code> 的参数的形式进行执行。比如：</p>
+<div><pre><code><span>CMD</span> echo $HOME
+</code></pre>
+<div><span>1</span><br></div></div><p>在实际执行中，会将其变更为：</p>
+<div><pre><code><span>CMD</span> <span>[</span> <span>"sh"</span><span>,</span> <span>"-c"</span><span>,</span> <span>"echo $HOME"</span> <span>]</span>
+</code></pre>
+<div><span>1</span><br></div></div><p>这就是为什么我们可以使用环境变量的原因，因为这些环境变量会被 shell 进行解析处理。</p>
+<p>提到 <code>CMD</code> 就不得不提容器中应用在前台执行和后台执行的问题。这是初学者常出现的一个混淆。</p>
+<p>Docker 不是虚拟机，容器中的应用都应该以前台执行，而不是像虚拟机、物理机里面那样，用 <code>systemd</code> 去启动后台服务，容器内没有后台服务的概念。</p>
+<p>一些初学者将 <code>CMD</code> 写为：</p>
+<div><pre><code><span>CMD</span> service nginx start
+</code></pre>
+<div><span>1</span><br></div></div><p>然后发现容器执行后就立即退出了。甚至在容器内去使用 <code>systemctl</code> 命令结果却发现根本执行不了。这就是因为没有搞明白前台、后台的概念，没有区分容器和虚拟机的差异，依旧在以传统虚拟机的角度去理解容器。</p>
+<p>对于容器而言，其启动程序就是容器应用进程，容器就是为了主进程而存在的，主进程退出，容器就失去了存在的意义，从而退出，其它辅助进程不是它需要关心的东西。</p>
+<p>而使用 <code>service nginx start</code> 命令，则是希望 upstart 来以后台守护进程形式启动 <code>nginx</code> 服务。而刚才说了 <code>CMD service nginx start</code> 会被理解为 <code>CMD [ &quot;sh&quot;, &quot;-c&quot;, &quot;service nginx start&quot;]</code>，因此主进程实际上是 <code>sh</code>。那么当 <code>service nginx start</code> 命令结束后，<code>sh</code> 也就结束了，<code>sh</code> 作为主进程退出了，自然就会令容器退出。</p>
+<p>正确的做法是直接执行 <code>nginx</code> 可执行文件，并且要求以前台形式运行。比如：</p>
+<div><pre><code><span>CMD</span> <span>[</span><span>"nginx"</span><span>,</span> <span>"-g"</span><span>,</span> <span>"daemon off;"</span><span>]</span>
+</code></pre>
+<div><span>1</span><br></div></div>]]></content:encoded>
+    </item>
+    <item>
+      <title>COPY 复制文件</title>
+      <link>https://vuepress.mirror.docker-practice.com/image/dockerfile/copy/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/image/dockerfile/copy/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">COPY 复制文件</source>
+      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="copy-复制文件"> COPY 复制文件</h1>
+<AdSenseTitle/>
+<p>格式：</p>
+<ul>
+<li><code>COPY [--chown=&lt;user&gt;:&lt;group&gt;] &lt;源路径&gt;... &lt;目标路径&gt;</code></li>
+<li><code>COPY [--chown=&lt;user&gt;:&lt;group&gt;] [&quot;&lt;源路径1&gt;&quot;,... &quot;&lt;目标路径&gt;&quot;]</code></li>
+</ul>
+<p>和 <code>RUN</code> 指令一样，也有两种格式，一种类似于命令行，一种类似于函数调用。</p>
+<p><code>COPY</code> 指令将从构建上下文目录中 <code>&lt;源路径&gt;</code> 的文件/目录复制到新的一层的镜像内的 <code>&lt;目标路径&gt;</code> 位置。比如：</p>
+<div><pre><code><span>COPY</span> package.json /usr/src/app/
+</code></pre>
+<div><span>1</span><br></div></div><p><code>&lt;源路径&gt;</code> 可以是多个，甚至可以是通配符，其通配符规则要满足 Go 的 <a href="https://golang.org/pkg/path/filepath/#Match" target="_blank" rel="noopener noreferrer"><code>filepath.Match</code></a> 规则，如：</p>
+<div><pre><code><span>COPY</span> hom* /mydir/
+<span>COPY</span> hom<span>?</span>.txt /mydir/
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><p><code>&lt;目标路径&gt;</code> 可以是容器内的绝对路径，也可以是相对于工作目录的相对路径（工作目录可以用 <code>WORKDIR</code> 指令来指定）。目标路径不需要事先创建，如果目录不存在会在复制文件前先行创建缺失目录。</p>
+<p>此外，还需要注意一点，使用 <code>COPY</code> 指令，源文件的各种元数据都会保留。比如读、写、执行权限、文件变更时间等。这个特性对于镜像定制很有用。特别是构建相关文件都在使用 Git 进行管理的时候。</p>
+<p>在使用该指令的时候还可以加上 <code>--chown=&lt;user&gt;:&lt;group&gt;</code> 选项来改变文件的所属用户及所属组。</p>
+<div><pre><code><span>COPY</span> <span>-</span><span>-</span>chown=55<span>:</span>mygroup files* /mydir/
+<span>COPY</span> <span>-</span><span>-</span>chown=bin files* /mydir/
+<span>COPY</span> <span>-</span><span>-</span>chown=1 files* /mydir/
+<span>COPY</span> <span>-</span><span>-</span>chown=10<span>:</span>11 files* /mydir/
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>如果源路径为文件夹，复制的时候不是直接复制该文件夹，而是将文件夹中的内容复制到目标路径。</p>
+]]></content:encoded>
     </item>
     <item>
       <title>ENTRYPOINT 入口点</title>
@@ -5592,38 +5624,6 @@ Connection: keep-alive
 <span>uid</span><span>=</span><span>0</span><span>(</span>root<span>)</span> <span>gid</span><span>=</span><span>0</span><span>(</span>root<span>)</span> <span>groups</span><span>=</span><span>0</span><span>(</span>root<span>)</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>COPY 复制文件</title>
-      <link>https://vuepress.mirror.docker-practice.com/image/dockerfile/copy/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/image/dockerfile/copy/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">COPY 复制文件</source>
-      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="copy-复制文件"> COPY 复制文件</h1>
-<AdSenseTitle/>
-<p>格式：</p>
-<ul>
-<li><code>COPY [--chown=&lt;user&gt;:&lt;group&gt;] &lt;源路径&gt;... &lt;目标路径&gt;</code></li>
-<li><code>COPY [--chown=&lt;user&gt;:&lt;group&gt;] [&quot;&lt;源路径1&gt;&quot;,... &quot;&lt;目标路径&gt;&quot;]</code></li>
-</ul>
-<p>和 <code>RUN</code> 指令一样，也有两种格式，一种类似于命令行，一种类似于函数调用。</p>
-<p><code>COPY</code> 指令将从构建上下文目录中 <code>&lt;源路径&gt;</code> 的文件/目录复制到新的一层的镜像内的 <code>&lt;目标路径&gt;</code> 位置。比如：</p>
-<div><pre><code><span>COPY</span> package.json /usr/src/app/
-</code></pre>
-<div><span>1</span><br></div></div><p><code>&lt;源路径&gt;</code> 可以是多个，甚至可以是通配符，其通配符规则要满足 Go 的 <a href="https://golang.org/pkg/path/filepath/#Match" target="_blank" rel="noopener noreferrer"><code>filepath.Match</code></a> 规则，如：</p>
-<div><pre><code><span>COPY</span> hom* /mydir/
-<span>COPY</span> hom<span>?</span>.txt /mydir/
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p><code>&lt;目标路径&gt;</code> 可以是容器内的绝对路径，也可以是相对于工作目录的相对路径（工作目录可以用 <code>WORKDIR</code> 指令来指定）。目标路径不需要事先创建，如果目录不存在会在复制文件前先行创建缺失目录。</p>
-<p>此外，还需要注意一点，使用 <code>COPY</code> 指令，源文件的各种元数据都会保留。比如读、写、执行权限、文件变更时间等。这个特性对于镜像定制很有用。特别是构建相关文件都在使用 Git 进行管理的时候。</p>
-<p>在使用该指令的时候还可以加上 <code>--chown=&lt;user&gt;:&lt;group&gt;</code> 选项来改变文件的所属用户及所属组。</p>
-<div><pre><code><span>COPY</span> <span>-</span><span>-</span>chown=55<span>:</span>mygroup files* /mydir/
-<span>COPY</span> <span>-</span><span>-</span>chown=bin files* /mydir/
-<span>COPY</span> <span>-</span><span>-</span>chown=1 files* /mydir/
-<span>COPY</span> <span>-</span><span>-</span>chown=10<span>:</span>11 files* /mydir/
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>如果源路径为文件夹，复制的时候不是直接复制该文件夹，而是将文件夹中的内容复制到目标路径。</p>
-]]></content:encoded>
     </item>
     <item>
       <title>ENV 设置环境变量</title>
@@ -5887,20 +5887,6 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 <span>CMD</span> <span>[</span> <span>"exec"</span><span>,</span> <span>"gosu"</span><span>,</span> <span>"redis"</span><span>,</span> <span>"redis-server"</span> <span>]</span>
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>镜像的实现原理</title>
-      <link>https://vuepress.mirror.docker-practice.com/image/internal/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/image/internal/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">镜像的实现原理</source>
-      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="镜像的实现原理"> 镜像的实现原理</h1>
-<AdSenseTitle/>
-<p>Docker 镜像是怎么实现增量的修改和维护的？</p>
-<p>每个镜像都由很多层次构成，Docker 使用 <a href="https://en.wikipedia.org/wiki/UnionFS" target="_blank" rel="noopener noreferrer">Union FS</a> 将这些不同的层结合到一个镜像中去。</p>
-<p>通常 Union FS 有两个用途, 一方面可以实现不借助 LVM、RAID 将多个 disk 挂到同一个目录下,另一个更常用的就是将一个只读的分支和一个可写的分支联合在一起，Live CD 正是基于此方法可以允许在镜像不变的基础上允许用户在其上进行一些写操作。</p>
-<p>Docker 在 OverlayFS 上构建的容器也是利用了类似的原理。</p>
-]]></content:encoded>
     </item>
     <item>
       <title>列出镜像</title>
@@ -6974,56 +6960,6 @@ For <span>more</span> examples and ideas, visit:
 <div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>]]></content:encoded>
     </item>
     <item>
-      <title>macOS 安装 Docker</title>
-      <link>https://vuepress.mirror.docker-practice.com/install/mac/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/install/mac/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">macOS 安装 Docker</source>
-      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="macos-安装-docker"> macOS 安装 Docker</h1>
-<AdSenseTitle/>
-<h2 id="系统要求"> 系统要求</h2>
-<p><a href="https://docs.docker.com/docker-for-mac/" target="_blank" rel="noopener noreferrer">Docker Desktop for Mac</a> 要求系统最低为 macOS Mojave 10.14。</p>
-<h2 id="安装"> 安装</h2>
-<h3 id="使用-homebrew-安装"> 使用 Homebrew 安装</h3>
-<p><a href="https://brew.sh/" target="_blank" rel="noopener noreferrer">Homebrew</a> 的 <a href="https://github.com/Homebrew/homebrew-cask" target="_blank" rel="noopener noreferrer">Cask</a> 已经支持 Docker Desktop for Mac，因此可以很方便的使用 Homebrew Cask 来进行安装：</p>
-<div><pre><code>$ brew <span>install</span> --cask docker
-</code></pre>
-<div><span>1</span><br></div></div><h3 id="手动下载安装"> 手动下载安装</h3>
-<p>如果需要手动下载，请点击以下 <a href="https://desktop.docker.com/mac/stable/amd64/Docker.dmg" target="_blank" rel="noopener noreferrer">链接</a> 下载 Docker Desktop for Mac。</p>
-<blockquote>
-<p>如果你的电脑搭载的是 M1 芯片（<code>arm64</code> 架构），请点击以下 <a href="https://desktop.docker.com/mac/stable/arm64/Docker.dmg" target="_blank" rel="noopener noreferrer">链接</a> 下载 Docker Desktop for Mac。你可以在 <a href="https://docs.docker.com/docker-for-mac/apple-silicon/" target="_blank" rel="noopener noreferrer">官方文档</a> 查阅已知的问题。</p>
-</blockquote>
-<p>如同 macOS 其它软件一样，安装也非常简单，双击下载的 <code>.dmg</code> 文件，然后将那只叫 <a href="https://www.docker.com/blog/call-me-moby-dock/" target="_blank" rel="noopener noreferrer">Moby</a> 的鲸鱼图标拖拽到 <code>Application</code> 文件夹即可（其间需要输入用户密码）。</p>
-<p><img src="./_images/install-mac-dmg.png" alt="" /></p>
-<h2 id="运行"> 运行</h2>
-<p>从应用中找到 Docker 图标并点击运行。</p>
-<p><img src="./_images/install-mac-apps.png" alt="" /></p>
-<p>运行之后，会在右上角菜单栏看到多了一个鲸鱼图标，这个图标表明了 Docker 的运行状态。</p>
-<p><img src="./_images/install-mac-menubar.png" alt="" /></p>
-<p>每次点击鲸鱼图标会弹出操作菜单。</p>
-<p><img src="./_images/install-mac-menu.png" alt="" /></p>
-<p>之后，你可以在终端通过命令检查安装后的 Docker 版本。</p>
-<div><pre><code>$ docker --version
-Docker version <span>20.10</span>.0, build 7287ab3
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><p>如果 <code>docker version</code>、<code>docker info</code> 都正常的话，可以尝试运行一个 <a href="https://hub.docker.com/_/nginx/" target="_blank" rel="noopener noreferrer">Nginx 服务器</a>：</p>
-<div><pre><code>$ docker run -d -p <span>80</span>:80 --name webserver nginx
-</code></pre>
-<div><span>1</span><br></div></div><p>服务运行后，可以访问 <a href="http://localhost" target="_blank" rel="noopener noreferrer">http://localhost</a>，如果看到了 &quot;Welcome to nginx!&quot;，就说明 Docker Desktop for Mac 安装成功了。</p>
-<p><img src="./_images/install-mac-example-nginx.png" alt="" /></p>
-<p>要停止 Nginx 服务器并删除执行下面的命令：</p>
-<div><pre><code>$ docker stop webserver
-$ docker <span>rm</span> webserver
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h2 id="镜像加速"> 镜像加速</h2>
-<p>如果在使用过程中发现拉取 Docker 镜像十分缓慢，可以配置 Docker <a href="./mirror.html">国内镜像加速</a>。</p>
-<h2 id="参考链接"> 参考链接</h2>
-<ul>
-<li><a href="https://docs.docker.com/docker-for-mac/install/" target="_blank" rel="noopener noreferrer">官方文档</a></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
       <title>Fedora 安装 Docker</title>
       <link>https://vuepress.mirror.docker-practice.com/install/fedora/</link>
       <guid>https://vuepress.mirror.docker-practice.com/install/fedora/</guid>
@@ -7154,93 +7090,66 @@ For <span>more</span> examples and ideas, visit:
 ]]></content:encoded>
     </item>
     <item>
-      <title>镜像加速器</title>
-      <link>https://vuepress.mirror.docker-practice.com/install/mirror/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/install/mirror/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">镜像加速器</source>
+      <title>镜像的实现原理</title>
+      <link>https://vuepress.mirror.docker-practice.com/image/internal/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/image/internal/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">镜像的实现原理</source>
       <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="镜像加速器"> 镜像加速器</h1>
+      <content:encoded><![CDATA[<h1 id="镜像的实现原理"> 镜像的实现原理</h1>
 <AdSenseTitle/>
-<p>国内从 Docker Hub 拉取镜像有时会遇到困难，此时可以配置镜像加速器。国内很多云服务商都提供了国内加速器服务，例如：</p>
-<ul>
-<li><a href="https://www.aliyun.com/product/acr?source=5176.11533457&amp;userCode=8lx5zmtu" target="_blank" rel="noopener noreferrer">阿里云加速器(点击管理控制台 -&gt; 登录账号(淘宝账号) -&gt; 右侧镜像中心 -&gt; 镜像加速器 -&gt; 复制地址)</a></li>
-<li><a href="https://www.163yun.com/help/documents/56918246390157312" target="_blank" rel="noopener noreferrer">网易云加速器 <code>https://hub-mirror.c.163.com</code></a></li>
-<li><a href="https://cloud.baidu.com/doc/CCE/s/Yjxppt74z#%E4%BD%BF%E7%94%A8dockerhub%E5%8A%A0%E9%80%9F%E5%99%A8" target="_blank" rel="noopener noreferrer">百度云加速器 <code>https://mirror.baidubce.com</code></a></li>
-</ul>
-<p><strong>由于镜像服务可能出现宕机，建议同时配置多个镜像。各个镜像站测试结果请到 <a href="https://github.com/docker-practice/docker-registry-cn-mirror-test/actions" target="_blank" rel="noopener noreferrer">docker-practice/docker-registry-cn-mirror-test</a> 查看。</strong></p>
+<p>Docker 镜像是怎么实现增量的修改和维护的？</p>
+<p>每个镜像都由很多层次构成，Docker 使用 <a href="https://en.wikipedia.org/wiki/UnionFS" target="_blank" rel="noopener noreferrer">Union FS</a> 将这些不同的层结合到一个镜像中去。</p>
+<p>通常 Union FS 有两个用途, 一方面可以实现不借助 LVM、RAID 将多个 disk 挂到同一个目录下,另一个更常用的就是将一个只读的分支和一个可写的分支联合在一起，Live CD 正是基于此方法可以允许在镜像不变的基础上允许用户在其上进行一些写操作。</p>
+<p>Docker 在 OverlayFS 上构建的容器也是利用了类似的原理。</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>macOS 安装 Docker</title>
+      <link>https://vuepress.mirror.docker-practice.com/install/mac/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/install/mac/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">macOS 安装 Docker</source>
+      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="macos-安装-docker"> macOS 安装 Docker</h1>
+<AdSenseTitle/>
+<h2 id="系统要求"> 系统要求</h2>
+<p><a href="https://docs.docker.com/docker-for-mac/" target="_blank" rel="noopener noreferrer">Docker Desktop for Mac</a> 要求系统最低为 macOS Mojave 10.14。</p>
+<h2 id="安装"> 安装</h2>
+<h3 id="使用-homebrew-安装"> 使用 Homebrew 安装</h3>
+<p><a href="https://brew.sh/" target="_blank" rel="noopener noreferrer">Homebrew</a> 的 <a href="https://github.com/Homebrew/homebrew-cask" target="_blank" rel="noopener noreferrer">Cask</a> 已经支持 Docker Desktop for Mac，因此可以很方便的使用 Homebrew Cask 来进行安装：</p>
+<div><pre><code>$ brew <span>install</span> --cask docker
+</code></pre>
+<div><span>1</span><br></div></div><h3 id="手动下载安装"> 手动下载安装</h3>
+<p>如果需要手动下载，请点击以下 <a href="https://desktop.docker.com/mac/stable/amd64/Docker.dmg" target="_blank" rel="noopener noreferrer">链接</a> 下载 Docker Desktop for Mac。</p>
 <blockquote>
-<p>国内各大云服务商（腾讯云、阿里云、百度云）均提供了 Docker 镜像加速服务，建议根据运行 Docker 的云平台选择对应的镜像加速服务，具体请参考本页最后一小节。</p>
+<p>如果你的电脑搭载的是 M1 芯片（<code>arm64</code> 架构），请点击以下 <a href="https://desktop.docker.com/mac/stable/arm64/Docker.dmg" target="_blank" rel="noopener noreferrer">链接</a> 下载 Docker Desktop for Mac。你可以在 <a href="https://docs.docker.com/docker-for-mac/apple-silicon/" target="_blank" rel="noopener noreferrer">官方文档</a> 查阅已知的问题。</p>
 </blockquote>
-<p>本节我们以 <a href="https://www.163yun.com/" target="_blank" rel="noopener noreferrer">网易云</a> 镜像服务 <code>https://hub-mirror.c.163.com</code> 为例进行介绍。</p>
-<h2 id="ubuntu-16-04-、debian-8-、centos-7"> Ubuntu 16.04+、Debian 8+、CentOS 7+</h2>
-<p>目前主流 Linux 发行版均已使用 <a href="https://systemd.io/" target="_blank" rel="noopener noreferrer">systemd</a> 进行服务管理，这里介绍如何在使用 systemd 的 Linux 发行版中配置镜像加速器。</p>
-<p>请首先执行以下命令，查看是否在 <code>docker.service</code> 文件中配置过镜像地址。</p>
-<div><pre><code>$ systemctl <span>cat</span> docker <span>|</span> <span>grep</span> <span>'\-\-registry\-mirror'</span>
+<p>如同 macOS 其它软件一样，安装也非常简单，双击下载的 <code>.dmg</code> 文件，然后将那只叫 <a href="https://www.docker.com/blog/call-me-moby-dock/" target="_blank" rel="noopener noreferrer">Moby</a> 的鲸鱼图标拖拽到 <code>Application</code> 文件夹即可（其间需要输入用户密码）。</p>
+<p><img src="./_images/install-mac-dmg.png" alt="" /></p>
+<h2 id="运行"> 运行</h2>
+<p>从应用中找到 Docker 图标并点击运行。</p>
+<p><img src="./_images/install-mac-apps.png" alt="" /></p>
+<p>运行之后，会在右上角菜单栏看到多了一个鲸鱼图标，这个图标表明了 Docker 的运行状态。</p>
+<p><img src="./_images/install-mac-menubar.png" alt="" /></p>
+<p>每次点击鲸鱼图标会弹出操作菜单。</p>
+<p><img src="./_images/install-mac-menu.png" alt="" /></p>
+<p>之后，你可以在终端通过命令检查安装后的 Docker 版本。</p>
+<div><pre><code>$ docker --version
+Docker version <span>20.10</span>.0, build 7287ab3
 </code></pre>
-<div><span>1</span><br></div></div><p>如果该命令有输出，那么请执行 <code>$ systemctl cat docker</code> 查看 <code>ExecStart=</code> 出现的位置，修改对应的文件内容去掉 <code>--registry-mirror</code> 参数及其值，并按接下来的步骤进行配置。</p>
-<p>如果以上命令没有任何输出，那么就可以在 <code>/etc/docker/daemon.json</code> 中写入如下内容（如果文件不存在请新建该文件）：</p>
-<div><pre><code><span>{</span>
-  <span>"registry-mirrors"</span><span>:</span> <span>[</span>
-    <span>"https://hub-mirror.c.163.com"</span><span>,</span>
-    <span>"https://mirror.baidubce.com"</span>
-  <span>]</span>
-<span>}</span>
+<div><span>1</span><br><span>2</span><br></div></div><p>如果 <code>docker version</code>、<code>docker info</code> 都正常的话，可以尝试运行一个 <a href="https://hub.docker.com/_/nginx/" target="_blank" rel="noopener noreferrer">Nginx 服务器</a>：</p>
+<div><pre><code>$ docker run -d -p <span>80</span>:80 --name webserver nginx
 </code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><blockquote>
-<p>注意，一定要保证该文件符合 json 规范，否则 Docker 将不能启动。</p>
-</blockquote>
-<p>之后重新启动服务。</p>
-<div><pre><code>$ <span>sudo</span> systemctl daemon-reload
-$ <span>sudo</span> systemctl restart docker
+<div><span>1</span><br></div></div><p>服务运行后，可以访问 <a href="http://localhost" target="_blank" rel="noopener noreferrer">http://localhost</a>，如果看到了 &quot;Welcome to nginx!&quot;，就说明 Docker Desktop for Mac 安装成功了。</p>
+<p><img src="./_images/install-mac-example-nginx.png" alt="" /></p>
+<p>要停止 Nginx 服务器并删除执行下面的命令：</p>
+<div><pre><code>$ docker stop webserver
+$ docker <span>rm</span> webserver
 </code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h2 id="windows-10"> Windows 10</h2>
-<p>对于使用 <code>Windows 10</code> 的用户，在任务栏托盘 Docker 图标内右键菜单选择 <code>Settings</code>，打开配置窗口后在左侧导航菜单选择 <code>Docker Engine</code>，在右侧像下边一样编辑 json 文件，之后点击 <code>Apply &amp; Restart</code> 保存后 Docker 就会重启并应用配置的镜像地址了。</p>
-<div><pre><code><span>{</span>
-  <span>"registry-mirrors"</span><span>:</span> <span>[</span>
-    <span>"https://hub-mirror.c.163.com"</span><span>,</span>
-    <span>"https://mirror.baidubce.com"</span>
-  <span>]</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="macos"> macOS</h2>
-<p>对于使用 macOS 的用户，在任务栏点击 Docker Desktop 应用图标 -&gt; <code>Perferences</code>，在左侧导航菜单选择 <code>Docker Engine</code>，在右侧像下边一样编辑 json 文件。修改完成之后，点击 <code>Apply &amp; Restart</code> 按钮，Docker 就会重启并应用配置的镜像地址了。</p>
-<div><pre><code><span>{</span>
-  <span>"registry-mirrors"</span><span>:</span> <span>[</span>
-    <span>"https://hub-mirror.c.163.com"</span><span>,</span>
-    <span>"https://mirror.baidubce.com"</span>
-  <span>]</span>
-<span>}</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="检查加速器是否生效"> 检查加速器是否生效</h2>
-<p>执行 <code>$ docker info</code>，如果从结果中看到了如下内容，说明配置成功。</p>
-<div><pre><code>Registry Mirrors:
- https://hub-mirror.c.163.com/
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h2 id="k8s-gcr-io-镜像"> <code>k8s.gcr.io</code> 镜像</h2>
-<p>可以登录 <a href="https://www.aliyun.com/product/acr?source=5176.11533457&amp;userCode=8lx5zmtu&amp;type=copy" target="_blank" rel="noopener noreferrer">阿里云 容器镜像服务</a> <strong>镜像中心</strong> -&gt; <strong>镜像搜索</strong> 查找。</p>
-<p>例如 <code>k8s.gcr.io/coredns:1.6.7</code> 镜像可以用 <code>registry.cn-hangzhou.aliyuncs.com/google_containers/coredns:1.6.7</code> 代替。</p>
-<p>一般情况下有如下对应关系：</p>
-<div><pre><code><span># $ docker pull k8s.gcr.io/xxx</span>
-
-$ docker pull registry.cn-hangzhou.aliyuncs.com/google_containers/xxx
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="不再提供服务的镜像"> 不再提供服务的镜像</h2>
-<p>某些镜像不再提供服务，添加无用的镜像加速器，会拖慢镜像拉取速度，你可以从镜像配置列表中删除它们。</p>
+<div><span>1</span><br><span>2</span><br></div></div><h2 id="镜像加速"> 镜像加速</h2>
+<p>如果在使用过程中发现拉取 Docker 镜像十分缓慢，可以配置 Docker <a href="./mirror.html">国内镜像加速</a>。</p>
+<h2 id="参考链接"> 参考链接</h2>
 <ul>
-<li>https://dockerhub.azk8s.cn <strong>已转为私有</strong></li>
-<li>https://reg-mirror.qiniu.com</li>
-<li>https://registry.docker-cn.com</li>
-</ul>
-<p>建议 <strong>watch（页面右上角）</strong> <a href="https://github.com/docker-practice/docker-registry-cn-mirror-test" target="_blank" rel="noopener noreferrer">镜像测试</a> 这个 GitHub 仓库，我们会在此更新各个镜像地址的状态。</p>
-<h2 id="云服务商"> 云服务商</h2>
-<p>某些云服务商提供了 <strong>仅供内部</strong> 访问的镜像服务，当您的 Docker 运行在云平台时可以选择它们。</p>
-<ul>
-<li>
-<p><a href="https://github.com/Azure/container-service-for-azure-china/blob/master/aks/README.md#22-container-registry-proxy" target="_blank" rel="noopener noreferrer">Azure 中国镜像 <code>https://dockerhub.azk8s.cn</code></a></p>
-</li>
-<li>
-<p><a href="https://cloud.tencent.com/act/cps/redirect?redirect=10058&amp;cps_key=3a5255852d5db99dcd5da4c72f05df61" target="_blank" rel="noopener noreferrer">腾讯云 <code>https://mirror.ccs.tencentyun.com</code></a></p>
-</li>
+<li><a href="https://docs.docker.com/docker-for-mac/install/" target="_blank" rel="noopener noreferrer">官方文档</a></li>
 </ul>
 ]]></content:encoded>
     </item>
@@ -7426,6 +7335,217 @@ EOF</span>
 <div><span>1</span><br><span>2</span><br><span>3</span><br></div></div>]]></content:encoded>
     </item>
     <item>
+      <title>镜像加速器</title>
+      <link>https://vuepress.mirror.docker-practice.com/install/mirror/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/install/mirror/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">镜像加速器</source>
+      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="镜像加速器"> 镜像加速器</h1>
+<AdSenseTitle/>
+<p>国内从 Docker Hub 拉取镜像有时会遇到困难，此时可以配置镜像加速器。国内很多云服务商都提供了国内加速器服务，例如：</p>
+<ul>
+<li><a href="https://www.aliyun.com/product/acr?source=5176.11533457&amp;userCode=8lx5zmtu" target="_blank" rel="noopener noreferrer">阿里云加速器(点击管理控制台 -&gt; 登录账号(淘宝账号) -&gt; 右侧镜像中心 -&gt; 镜像加速器 -&gt; 复制地址)</a></li>
+<li><a href="https://www.163yun.com/help/documents/56918246390157312" target="_blank" rel="noopener noreferrer">网易云加速器 <code>https://hub-mirror.c.163.com</code></a></li>
+<li><a href="https://cloud.baidu.com/doc/CCE/s/Yjxppt74z#%E4%BD%BF%E7%94%A8dockerhub%E5%8A%A0%E9%80%9F%E5%99%A8" target="_blank" rel="noopener noreferrer">百度云加速器 <code>https://mirror.baidubce.com</code></a></li>
+</ul>
+<p><strong>由于镜像服务可能出现宕机，建议同时配置多个镜像。各个镜像站测试结果请到 <a href="https://github.com/docker-practice/docker-registry-cn-mirror-test/actions" target="_blank" rel="noopener noreferrer">docker-practice/docker-registry-cn-mirror-test</a> 查看。</strong></p>
+<blockquote>
+<p>国内各大云服务商（腾讯云、阿里云、百度云）均提供了 Docker 镜像加速服务，建议根据运行 Docker 的云平台选择对应的镜像加速服务，具体请参考本页最后一小节。</p>
+</blockquote>
+<p>本节我们以 <a href="https://www.163yun.com/" target="_blank" rel="noopener noreferrer">网易云</a> 镜像服务 <code>https://hub-mirror.c.163.com</code> 为例进行介绍。</p>
+<h2 id="ubuntu-16-04-、debian-8-、centos-7"> Ubuntu 16.04+、Debian 8+、CentOS 7+</h2>
+<p>目前主流 Linux 发行版均已使用 <a href="https://systemd.io/" target="_blank" rel="noopener noreferrer">systemd</a> 进行服务管理，这里介绍如何在使用 systemd 的 Linux 发行版中配置镜像加速器。</p>
+<p>请首先执行以下命令，查看是否在 <code>docker.service</code> 文件中配置过镜像地址。</p>
+<div><pre><code>$ systemctl <span>cat</span> docker <span>|</span> <span>grep</span> <span>'\-\-registry\-mirror'</span>
+</code></pre>
+<div><span>1</span><br></div></div><p>如果该命令有输出，那么请执行 <code>$ systemctl cat docker</code> 查看 <code>ExecStart=</code> 出现的位置，修改对应的文件内容去掉 <code>--registry-mirror</code> 参数及其值，并按接下来的步骤进行配置。</p>
+<p>如果以上命令没有任何输出，那么就可以在 <code>/etc/docker/daemon.json</code> 中写入如下内容（如果文件不存在请新建该文件）：</p>
+<div><pre><code><span>{</span>
+  <span>"registry-mirrors"</span><span>:</span> <span>[</span>
+    <span>"https://hub-mirror.c.163.com"</span><span>,</span>
+    <span>"https://mirror.baidubce.com"</span>
+  <span>]</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><blockquote>
+<p>注意，一定要保证该文件符合 json 规范，否则 Docker 将不能启动。</p>
+</blockquote>
+<p>之后重新启动服务。</p>
+<div><pre><code>$ <span>sudo</span> systemctl daemon-reload
+$ <span>sudo</span> systemctl restart docker
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h2 id="windows-10"> Windows 10</h2>
+<p>对于使用 <code>Windows 10</code> 的用户，在任务栏托盘 Docker 图标内右键菜单选择 <code>Settings</code>，打开配置窗口后在左侧导航菜单选择 <code>Docker Engine</code>，在右侧像下边一样编辑 json 文件，之后点击 <code>Apply &amp; Restart</code> 保存后 Docker 就会重启并应用配置的镜像地址了。</p>
+<div><pre><code><span>{</span>
+  <span>"registry-mirrors"</span><span>:</span> <span>[</span>
+    <span>"https://hub-mirror.c.163.com"</span><span>,</span>
+    <span>"https://mirror.baidubce.com"</span>
+  <span>]</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="macos"> macOS</h2>
+<p>对于使用 macOS 的用户，在任务栏点击 Docker Desktop 应用图标 -&gt; <code>Perferences</code>，在左侧导航菜单选择 <code>Docker Engine</code>，在右侧像下边一样编辑 json 文件。修改完成之后，点击 <code>Apply &amp; Restart</code> 按钮，Docker 就会重启并应用配置的镜像地址了。</p>
+<div><pre><code><span>{</span>
+  <span>"registry-mirrors"</span><span>:</span> <span>[</span>
+    <span>"https://hub-mirror.c.163.com"</span><span>,</span>
+    <span>"https://mirror.baidubce.com"</span>
+  <span>]</span>
+<span>}</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><h2 id="检查加速器是否生效"> 检查加速器是否生效</h2>
+<p>执行 <code>$ docker info</code>，如果从结果中看到了如下内容，说明配置成功。</p>
+<div><pre><code>Registry Mirrors:
+ https://hub-mirror.c.163.com/
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h2 id="k8s-gcr-io-镜像"> <code>k8s.gcr.io</code> 镜像</h2>
+<p>可以登录 <a href="https://www.aliyun.com/product/acr?source=5176.11533457&amp;userCode=8lx5zmtu&amp;type=copy" target="_blank" rel="noopener noreferrer">阿里云 容器镜像服务</a> <strong>镜像中心</strong> -&gt; <strong>镜像搜索</strong> 查找。</p>
+<p>例如 <code>k8s.gcr.io/coredns:1.6.7</code> 镜像可以用 <code>registry.cn-hangzhou.aliyuncs.com/google_containers/coredns:1.6.7</code> 代替。</p>
+<p>一般情况下有如下对应关系：</p>
+<div><pre><code><span># $ docker pull k8s.gcr.io/xxx</span>
+
+$ docker pull registry.cn-hangzhou.aliyuncs.com/google_containers/xxx
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="不再提供服务的镜像"> 不再提供服务的镜像</h2>
+<p>某些镜像不再提供服务，添加无用的镜像加速器，会拖慢镜像拉取速度，你可以从镜像配置列表中删除它们。</p>
+<ul>
+<li>https://dockerhub.azk8s.cn <strong>已转为私有</strong></li>
+<li>https://reg-mirror.qiniu.com</li>
+<li>https://registry.docker-cn.com</li>
+</ul>
+<p>建议 <strong>watch（页面右上角）</strong> <a href="https://github.com/docker-practice/docker-registry-cn-mirror-test" target="_blank" rel="noopener noreferrer">镜像测试</a> 这个 GitHub 仓库，我们会在此更新各个镜像地址的状态。</p>
+<h2 id="云服务商"> 云服务商</h2>
+<p>某些云服务商提供了 <strong>仅供内部</strong> 访问的镜像服务，当您的 Docker 运行在云平台时可以选择它们。</p>
+<ul>
+<li>
+<p><a href="https://github.com/Azure/container-service-for-azure-china/blob/master/aks/README.md#22-container-registry-proxy" target="_blank" rel="noopener noreferrer">Azure 中国镜像 <code>https://dockerhub.azk8s.cn</code></a></p>
+</li>
+<li>
+<p><a href="https://cloud.tencent.com/act/cps/redirect?redirect=10058&amp;cps_key=3a5255852d5db99dcd5da4c72f05df61" target="_blank" rel="noopener noreferrer">腾讯云 <code>https://mirror.ccs.tencentyun.com</code></a></p>
+</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>树莓派卡片电脑安装 Docker</title>
+      <link>https://vuepress.mirror.docker-practice.com/install/raspberry-pi/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/install/raspberry-pi/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">树莓派卡片电脑安装 Docker</source>
+      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="树莓派卡片电脑安装-docker"> 树莓派卡片电脑安装 Docker</h1>
+<AdSenseTitle/>
+<blockquote>
+<p>警告：切勿在没有配置 Docker APT 源的情况下直接使用 apt 命令安装 Docker.</p>
+</blockquote>
+<h2 id="系统要求"> 系统要求</h2>
+<p>Docker 不仅支持 <code>x86_64</code> 架构的计算机，同时也支持 <code>ARM</code> 架构的计算机，本小节内容以树莓派单片电脑为例讲解 <code>ARM</code> 架构安装 Docker。</p>
+<p>Docker 支持以下版本的 <a href="https://www.raspberrypi.org/software/operating-systems/" target="_blank" rel="noopener noreferrer">Raspberry Pi OS</a> 操作系统：</p>
+<ul>
+<li>Raspberry Pi OS Buster</li>
+</ul>
+<p><em>注：</em> <code>Raspberry Pi OS</code> 由树莓派的开发与维护机构 <a href="https://www.raspberrypi.org/" target="_blank" rel="noopener noreferrer">树莓派基金会</a> 官方支持，并推荐用作树莓派的首选系统，其基于 <code>Debian</code>。</p>
+<h2 id="使用-apt-安装"> 使用 APT 安装</h2>
+<p>由于 apt 源使用 HTTPS 以确保软件下载过程中不被篡改。因此，我们首先需要添加使用 HTTPS 传输的软件包以及 CA 证书。</p>
+<div><pre><code>$ <span>sudo</span> <span>apt-get</span> update
+
+$ <span>sudo</span> <span>apt-get</span> <span>install</span> <span>\</span>
+     apt-transport-https <span>\</span>
+     ca-certificates <span>\</span>
+     <span>curl</span> <span>\</span>
+     gnupg2 <span>\</span>
+     lsb-release <span>\</span>
+     software-properties-common
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>鉴于国内网络问题，强烈建议使用国内源，官方源请在注释中查看。</p>
+<p>为了确认所下载软件包的合法性，需要添加软件源的 GPG 密钥。</p>
+<div><pre><code>$ <span>curl</span> -fsSL https://mirrors.aliyun.com/docker-ce/linux/raspbian/gpg <span>|</span> <span>sudo</span> apt-key <span>add</span> -
+
+
+<span># 官方源</span>
+<span># $ curl -fsSL https://download.docker.com/linux/raspbian/gpg | sudo apt-key add -</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>然后，我们需要向 <code>sources.list</code> 中添加 Docker 软件源：</p>
+<div><pre><code>$ <span>sudo</span> add-apt-repository <span>\</span>
+    <span>"deb [arch=armhf] https://mirrors.aliyun.com/docker-ce/linux/raspbian \
+    <span><span>$(</span>lsb_release -cs<span>)</span></span> \
+    stable"</span>
+
+
+<span># 官方源</span>
+<span># $ sudo add-apt-repository \</span>
+<span>#    "deb [arch=armhf] https://download.docker.com/linux/raspbian \</span>
+<span>#    $(lsb_release -cs) \</span>
+<span>#    stable"</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><blockquote>
+<p>以上命令会添加稳定版本的 Docker APT 源，如果需要测试版本的 Docker 请将 stable 改为 test。</p>
+</blockquote>
+<h3 id="安装-docker"> 安装 Docker</h3>
+<p>更新 apt 软件包缓存，并安装 <code>docker-ce</code>。</p>
+<div><pre><code>$ <span>sudo</span> <span>apt-get</span> update
+
+$ <span>sudo</span> <span>apt-get</span> <span>install</span> docker-ce
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="使用脚本自动安装"> 使用脚本自动安装</h2>
+<p>在测试或开发环境中 Docker 官方为了简化安装流程，提供了一套便捷的安装脚本，Raspberry Pi OS 系统上可以使用这套脚本安装，另外可以通过 <code>--mirror</code> 选项使用国内源进行安装：</p>
+<blockquote>
+<p>若你想安装测试版的 Docker, 请从 test.docker.com 获取脚本</p>
+</blockquote>
+<div><pre><code><span># $ curl -fsSL test.docker.com -o get-docker.sh</span>
+$ <span>curl</span> -fsSL get.docker.com -o get-docker.sh
+$ <span>sudo</span> <span>sh</span> get-docker.sh --mirror Aliyun
+<span># $ sudo sh get-docker.sh --mirror AzureChinaCloud</span>
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>执行这个命令后，脚本就会自动的将一切准备工作做好，并且把 Docker 的稳定(stable)版本安装在系统中。</p>
+<h2 id="启动-docker"> 启动 Docker</h2>
+<div><pre><code>$ <span>sudo</span> systemctl <span>enable</span> docker
+$ <span>sudo</span> systemctl start docker
+</code></pre>
+<div><span>1</span><br><span>2</span><br></div></div><h2 id="建立-docker-用户组"> 建立 docker 用户组</h2>
+<p>默认情况下，<code>docker</code> 命令会使用 <a href="https://en.wikipedia.org/wiki/Unix_domain_socket" target="_blank" rel="noopener noreferrer">Unix socket</a> 与 Docker 引擎通讯。而只有 <code>root</code> 用户和 <code>docker</code> 组的用户才可以访问 Docker 引擎的 Unix socket。出于安全考虑，一般 Linux 系统上不会直接使用 <code>root</code> 用户。因此，更好地做法是将需要使用 <code>docker</code> 的用户加入 <code>docker</code> 用户组。</p>
+<p>建立 <code>docker</code> 组：</p>
+<div><pre><code>$ <span>sudo</span> <span>groupadd</span> docker
+</code></pre>
+<div><span>1</span><br></div></div><p>将当前用户加入 <code>docker</code> 组：</p>
+<div><pre><code>$ <span>sudo</span> <span>usermod</span> -aG docker <span>$USER</span>
+</code></pre>
+<div><span>1</span><br></div></div><p>退出当前终端并重新登录，进行如下测试。</p>
+<h2 id="测试-docker-是否安装正确"> 测试 Docker 是否安装正确</h2>
+<div><pre><code>$ docker run --rm hello-world
+
+Unable to <span>find</span> image <span>'hello-world:latest'</span> locally
+latest: Pulling from library/hello-world
+4ee5c797bcd7: Pull complete
+Digest: sha256:308866a43596e83578c7dfa15e27a73011bdd402185a84c5cd7f32a88b501a24
+Status: Downloaded newer image <span>for</span> hello-world:latest
+
+Hello from Docker<span>!</span>
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ <span>1</span>. The Docker client contacted the Docker daemon.
+ <span>2</span>. The Docker daemon pulled the <span>"hello-world"</span> image from the Docker Hub.
+    <span>(</span>arm32v7<span>)</span>
+ <span>3</span>. The Docker daemon created a new container from that image <span>which</span> runs the
+    executable that produces the output you are currently reading.
+ <span>4</span>. The Docker daemon streamed that output to the Docker client, <span>which</span> sent it
+    to your terminal.
+
+To try something <span>more</span> ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu <span>bash</span>
+
+Share images, automate workflows, and <span>more</span> with a <span>free</span> Docker ID:
+ https://hub.docker.com/
+
+For <span>more</span> examples and ideas, visit:
+ https://docs.docker.com/get-started/
+</code></pre>
+<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br></div></div><p>若能正常输出以上信息，则说明安装成功。</p>
+<p><em>注意：</em> ARM 平台不能使用 <code>x86</code> 镜像，查看 Raspberry Pi OS 可使用镜像请访问 <a href="https://hub.docker.com/u/arm32v7/" target="_blank" rel="noopener noreferrer">arm32v7</a> 或者 <a href="https://hub.docker.com/u/arm64v8/" target="_blank" rel="noopener noreferrer">arm64v8</a>。</p>
+<h2 id="镜像加速"> 镜像加速</h2>
+<p>如果在使用过程中发现拉取 Docker 镜像十分缓慢，可以配置 Docker <a href="./mirror.html">国内镜像加速</a>。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Ubuntu 安装 Docker</title>
       <link>https://vuepress.mirror.docker-practice.com/install/ubuntu/</link>
       <guid>https://vuepress.mirror.docker-practice.com/install/ubuntu/</guid>
@@ -7552,126 +7672,6 @@ For <span>more</span> examples and ideas, visit:
 <ul>
 <li><a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/" target="_blank" rel="noopener noreferrer">Docker 官方 Ubuntu 安装文档</a></li>
 </ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>树莓派卡片电脑安装 Docker</title>
-      <link>https://vuepress.mirror.docker-practice.com/install/raspberry-pi/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/install/raspberry-pi/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">树莓派卡片电脑安装 Docker</source>
-      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="树莓派卡片电脑安装-docker"> 树莓派卡片电脑安装 Docker</h1>
-<AdSenseTitle/>
-<blockquote>
-<p>警告：切勿在没有配置 Docker APT 源的情况下直接使用 apt 命令安装 Docker.</p>
-</blockquote>
-<h2 id="系统要求"> 系统要求</h2>
-<p>Docker 不仅支持 <code>x86_64</code> 架构的计算机，同时也支持 <code>ARM</code> 架构的计算机，本小节内容以树莓派单片电脑为例讲解 <code>ARM</code> 架构安装 Docker。</p>
-<p>Docker 支持以下版本的 <a href="https://www.raspberrypi.org/software/operating-systems/" target="_blank" rel="noopener noreferrer">Raspberry Pi OS</a> 操作系统：</p>
-<ul>
-<li>Raspberry Pi OS Buster</li>
-</ul>
-<p><em>注：</em> <code>Raspberry Pi OS</code> 由树莓派的开发与维护机构 <a href="https://www.raspberrypi.org/" target="_blank" rel="noopener noreferrer">树莓派基金会</a> 官方支持，并推荐用作树莓派的首选系统，其基于 <code>Debian</code>。</p>
-<h2 id="使用-apt-安装"> 使用 APT 安装</h2>
-<p>由于 apt 源使用 HTTPS 以确保软件下载过程中不被篡改。因此，我们首先需要添加使用 HTTPS 传输的软件包以及 CA 证书。</p>
-<div><pre><code>$ <span>sudo</span> <span>apt-get</span> update
-
-$ <span>sudo</span> <span>apt-get</span> <span>install</span> <span>\</span>
-     apt-transport-https <span>\</span>
-     ca-certificates <span>\</span>
-     <span>curl</span> <span>\</span>
-     gnupg2 <span>\</span>
-     lsb-release <span>\</span>
-     software-properties-common
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br></div></div><p>鉴于国内网络问题，强烈建议使用国内源，官方源请在注释中查看。</p>
-<p>为了确认所下载软件包的合法性，需要添加软件源的 GPG 密钥。</p>
-<div><pre><code>$ <span>curl</span> -fsSL https://mirrors.aliyun.com/docker-ce/linux/raspbian/gpg <span>|</span> <span>sudo</span> apt-key <span>add</span> -
-
-
-<span># 官方源</span>
-<span># $ curl -fsSL https://download.docker.com/linux/raspbian/gpg | sudo apt-key add -</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br></div></div><p>然后，我们需要向 <code>sources.list</code> 中添加 Docker 软件源：</p>
-<div><pre><code>$ <span>sudo</span> add-apt-repository <span>\</span>
-    <span>"deb [arch=armhf] https://mirrors.aliyun.com/docker-ce/linux/raspbian \
-    <span><span>$(</span>lsb_release -cs<span>)</span></span> \
-    stable"</span>
-
-
-<span># 官方源</span>
-<span># $ sudo add-apt-repository \</span>
-<span>#    "deb [arch=armhf] https://download.docker.com/linux/raspbian \</span>
-<span>#    $(lsb_release -cs) \</span>
-<span>#    stable"</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br></div></div><blockquote>
-<p>以上命令会添加稳定版本的 Docker APT 源，如果需要测试版本的 Docker 请将 stable 改为 test。</p>
-</blockquote>
-<h3 id="安装-docker"> 安装 Docker</h3>
-<p>更新 apt 软件包缓存，并安装 <code>docker-ce</code>。</p>
-<div><pre><code>$ <span>sudo</span> <span>apt-get</span> update
-
-$ <span>sudo</span> <span>apt-get</span> <span>install</span> docker-ce
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br></div></div><h2 id="使用脚本自动安装"> 使用脚本自动安装</h2>
-<p>在测试或开发环境中 Docker 官方为了简化安装流程，提供了一套便捷的安装脚本，Raspberry Pi OS 系统上可以使用这套脚本安装，另外可以通过 <code>--mirror</code> 选项使用国内源进行安装：</p>
-<blockquote>
-<p>若你想安装测试版的 Docker, 请从 test.docker.com 获取脚本</p>
-</blockquote>
-<div><pre><code><span># $ curl -fsSL test.docker.com -o get-docker.sh</span>
-$ <span>curl</span> -fsSL get.docker.com -o get-docker.sh
-$ <span>sudo</span> <span>sh</span> get-docker.sh --mirror Aliyun
-<span># $ sudo sh get-docker.sh --mirror AzureChinaCloud</span>
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br></div></div><p>执行这个命令后，脚本就会自动的将一切准备工作做好，并且把 Docker 的稳定(stable)版本安装在系统中。</p>
-<h2 id="启动-docker"> 启动 Docker</h2>
-<div><pre><code>$ <span>sudo</span> systemctl <span>enable</span> docker
-$ <span>sudo</span> systemctl start docker
-</code></pre>
-<div><span>1</span><br><span>2</span><br></div></div><h2 id="建立-docker-用户组"> 建立 docker 用户组</h2>
-<p>默认情况下，<code>docker</code> 命令会使用 <a href="https://en.wikipedia.org/wiki/Unix_domain_socket" target="_blank" rel="noopener noreferrer">Unix socket</a> 与 Docker 引擎通讯。而只有 <code>root</code> 用户和 <code>docker</code> 组的用户才可以访问 Docker 引擎的 Unix socket。出于安全考虑，一般 Linux 系统上不会直接使用 <code>root</code> 用户。因此，更好地做法是将需要使用 <code>docker</code> 的用户加入 <code>docker</code> 用户组。</p>
-<p>建立 <code>docker</code> 组：</p>
-<div><pre><code>$ <span>sudo</span> <span>groupadd</span> docker
-</code></pre>
-<div><span>1</span><br></div></div><p>将当前用户加入 <code>docker</code> 组：</p>
-<div><pre><code>$ <span>sudo</span> <span>usermod</span> -aG docker <span>$USER</span>
-</code></pre>
-<div><span>1</span><br></div></div><p>退出当前终端并重新登录，进行如下测试。</p>
-<h2 id="测试-docker-是否安装正确"> 测试 Docker 是否安装正确</h2>
-<div><pre><code>$ docker run --rm hello-world
-
-Unable to <span>find</span> image <span>'hello-world:latest'</span> locally
-latest: Pulling from library/hello-world
-4ee5c797bcd7: Pull complete
-Digest: sha256:308866a43596e83578c7dfa15e27a73011bdd402185a84c5cd7f32a88b501a24
-Status: Downloaded newer image <span>for</span> hello-world:latest
-
-Hello from Docker<span>!</span>
-This message shows that your installation appears to be working correctly.
-
-To generate this message, Docker took the following steps:
- <span>1</span>. The Docker client contacted the Docker daemon.
- <span>2</span>. The Docker daemon pulled the <span>"hello-world"</span> image from the Docker Hub.
-    <span>(</span>arm32v7<span>)</span>
- <span>3</span>. The Docker daemon created a new container from that image <span>which</span> runs the
-    executable that produces the output you are currently reading.
- <span>4</span>. The Docker daemon streamed that output to the Docker client, <span>which</span> sent it
-    to your terminal.
-
-To try something <span>more</span> ambitious, you can run an Ubuntu container with:
- $ docker run -it ubuntu <span>bash</span>
-
-Share images, automate workflows, and <span>more</span> with a <span>free</span> Docker ID:
- https://hub.docker.com/
-
-For <span>more</span> examples and ideas, visit:
- https://docs.docker.com/get-started/
-</code></pre>
-<div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br></div></div><p>若能正常输出以上信息，则说明安装成功。</p>
-<p><em>注意：</em> ARM 平台不能使用 <code>x86</code> 镜像，查看 Raspberry Pi OS 可使用镜像请访问 <a href="https://hub.docker.com/u/arm32v7/" target="_blank" rel="noopener noreferrer">arm32v7</a> 或者 <a href="https://hub.docker.com/u/arm64v8/" target="_blank" rel="noopener noreferrer">arm64v8</a>。</p>
-<h2 id="镜像加速"> 镜像加速</h2>
-<p>如果在使用过程中发现拉取 Docker 镜像十分缓慢，可以配置 Docker <a href="./mirror.html">国内镜像加速</a>。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -8056,6 +8056,29 @@ For <span>more</span> examples and ideas, visit:
 ]]></content:encoded>
     </item>
     <item>
+      <title>项目简介</title>
+      <link>https://vuepress.mirror.docker-practice.com/kubernetes/intro/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/kubernetes/intro/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">项目简介</source>
+      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="项目简介"> 项目简介</h1>
+<AdSenseTitle/>
+<p><img src="./_images/kubernetes_logo.png" alt="" /></p>
+<p>Kubernetes 是 Google 团队发起的开源项目，它的目标是管理跨多个主机的容器，提供基本的部署，维护以及应用伸缩，主要实现语言为 Go 语言。Kubernetes 是：</p>
+<ul>
+<li>易学：轻量级，简单，容易理解</li>
+<li>便携：支持公有云，私有云，混合云，以及多种云平台</li>
+<li>可拓展：模块化，可插拔，支持钩子，可任意组合</li>
+<li>自修复：自动重调度，自动重启，自动复制</li>
+</ul>
+<p>Kubernetes 构建于 Google 数十年经验，一大半来源于 Google 生产环境规模的经验。结合了社区最佳的想法和实践。</p>
+<p>在分布式系统中，部署，调度，伸缩一直是最为重要的也最为基础的功能。Kubernetes 就是希望解决这一序列问题的。</p>
+<p>Kubernetes 目前在<a href="https://github.com/kubernetes/kubernetes" target="_blank" rel="noopener noreferrer">GitHub</a>进行维护。</p>
+<h3 id="kubernetes-能够运行在任何地方"> Kubernetes 能够运行在任何地方！</h3>
+<p>虽然 Kubernetes 最初是为 GCE 定制的，但是在后续版本中陆续增加了其他云平台的支持，以及本地数据中心的支持。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>kubectl 使用</title>
       <link>https://vuepress.mirror.docker-practice.com/kubernetes/kubectl/</link>
       <guid>https://vuepress.mirror.docker-practice.com/kubernetes/kubectl/</guid>
@@ -8104,29 +8127,6 @@ kubectl <span>[</span>command<span>]</span>
 <p>输出服务端和客户端的版本信息</p>
 <h2 id="help"> help</h2>
 <p>显示各个命令的帮助信息</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>项目简介</title>
-      <link>https://vuepress.mirror.docker-practice.com/kubernetes/intro/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/kubernetes/intro/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">项目简介</source>
-      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="项目简介"> 项目简介</h1>
-<AdSenseTitle/>
-<p><img src="./_images/kubernetes_logo.png" alt="" /></p>
-<p>Kubernetes 是 Google 团队发起的开源项目，它的目标是管理跨多个主机的容器，提供基本的部署，维护以及应用伸缩，主要实现语言为 Go 语言。Kubernetes 是：</p>
-<ul>
-<li>易学：轻量级，简单，容易理解</li>
-<li>便携：支持公有云，私有云，混合云，以及多种云平台</li>
-<li>可拓展：模块化，可插拔，支持钩子，可任意组合</li>
-<li>自修复：自动重调度，自动重启，自动复制</li>
-</ul>
-<p>Kubernetes 构建于 Google 数十年经验，一大半来源于 Google 生产环境规模的经验。结合了社区最佳的想法和实践。</p>
-<p>在分布式系统中，部署，调度，伸缩一直是最为重要的也最为基础的功能。Kubernetes 就是希望解决这一序列问题的。</p>
-<p>Kubernetes 目前在<a href="https://github.com/kubernetes/kubernetes" target="_blank" rel="noopener noreferrer">GitHub</a>进行维护。</p>
-<h3 id="kubernetes-能够运行在任何地方"> Kubernetes 能够运行在任何地方！</h3>
-<p>虽然 Kubernetes 最初是为 GCE 定制的，但是在后续版本中陆续增加了其他云平台的支持，以及本地数据中心的支持。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -9298,6 +9298,17 @@ Linux 内核自 2.2 版本起就支持能力机制，它将权限划分为更加
 ]]></content:encoded>
     </item>
     <item>
+      <title>Swarm mode</title>
+      <link>https://vuepress.mirror.docker-practice.com/swarm_mode/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/swarm_mode/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">Swarm mode</source>
+      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="swarm-mode"> Swarm mode</h1>
+<p>Docker 1.12 <a href="https://docs.docker.com/engine/swarm/" target="_blank" rel="noopener noreferrer">Swarm mode</a> 已经内嵌入 Docker 引擎，成为了 docker 子命令 <code>docker swarm</code>。请注意与旧的 <code>Docker Swarm</code> 区分开来。</p>
+<p><code>Swarm mode</code> 内置 kv 存储功能，提供了众多的新特性，比如：具有容错能力的去中心化设计、内置服务发现、负载均衡、路由网格、动态伸缩、滚动更新、安全传输等。使得 Docker 原生的 <code>Swarm</code> 集群具备与 Mesos、Kubernetes 竞争的实力。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>Docker 三剑客之 Docker Swarm</title>
       <link>https://vuepress.mirror.docker-practice.com/swarm/</link>
       <guid>https://vuepress.mirror.docker-practice.com/swarm/</guid>
@@ -9308,17 +9319,6 @@ Linux 内核自 2.2 版本起就支持能力机制，它将权限划分为更加
 <p>Docker Swarm 是 Docker 官方三剑客项目之一，提供 Docker 容器集群服务，是 Docker 官方对容器云生态进行支持的核心方案。</p>
 <p>使用它，用户可以将多个 Docker 主机封装为单个大型的虚拟 Docker 主机，快速打造一套容器云平台。</p>
 <p>注意：Docker 1.12.0+ <a href="https://docs.docker.com/engine/swarm/" target="_blank" rel="noopener noreferrer">Swarm mode</a> 已经内嵌入 Docker 引擎，成为了 docker 子命令 <code>docker swarm</code>，绝大多数用户已经开始使用 <code>Swarm mode</code>，Docker 引擎 API 已经删除 Docker Swarm。为避免大家混淆旧的 <code>Docker Swarm</code> 与新的 <code>Swarm mode</code>，旧的 <code>Docker Swarm</code> 内容已经删除，请查看 <code>Swarm mode</code> 一节。</p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>Swarm mode</title>
-      <link>https://vuepress.mirror.docker-practice.com/swarm_mode/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/swarm_mode/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">Swarm mode</source>
-      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="swarm-mode"> Swarm mode</h1>
-<p>Docker 1.12 <a href="https://docs.docker.com/engine/swarm/" target="_blank" rel="noopener noreferrer">Swarm mode</a> 已经内嵌入 Docker 引擎，成为了 docker 子命令 <code>docker swarm</code>。请注意与旧的 <code>Docker Swarm</code> 区分开来。</p>
-<p><code>Swarm mode</code> 内置 kv 存储功能，提供了众多的新特性，比如：具有容错能力的去中心化设计、内置服务发现、负载均衡、路由网格、动态伸缩、滚动更新、安全传输等。使得 Docker 原生的 <code>Swarm</code> 集群具备与 Mesos、Kubernetes 竞争的实力。</p>
 ]]></content:encoded>
     </item>
     <item>
@@ -9618,6 +9618,24 @@ nzt5xzae4n62  wordpress  replicated  <span>1</span>/1       wordpress:latest
 ]]></content:encoded>
     </item>
     <item>
+      <title>底层实现</title>
+      <link>https://vuepress.mirror.docker-practice.com/underly/</link>
+      <guid>https://vuepress.mirror.docker-practice.com/underly/</guid>
+      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">底层实现</source>
+      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
+      <content:encoded><![CDATA[<h1 id="底层实现"> 底层实现</h1>
+<AdSenseTitle/>
+<p>Docker 底层的核心技术包括 Linux 上的命名空间（Namespaces）、控制组（Control groups）、Union 文件系统（Union file systems）和容器格式（Container format）。</p>
+<p>我们知道，传统的虚拟机通过在宿主主机中运行 hypervisor 来模拟一整套完整的硬件环境提供给虚拟机的操作系统。虚拟机系统看到的环境是可限制的，也是彼此隔离的。
+这种直接的做法实现了对资源最完整的封装，但很多时候往往意味着系统资源的浪费。
+例如，以宿主机和虚拟机系统都为 Linux 系统为例，虚拟机中运行的应用其实可以利用宿主机系统中的运行环境。</p>
+<p>我们知道，在操作系统中，包括内核、文件系统、网络、PID、UID、IPC、内存、硬盘、CPU 等等，所有的资源都是应用进程直接共享的。
+要想实现虚拟化，除了要实现对内存、CPU、网络IO、硬盘IO、存储空间等的限制外，还要实现文件系统、网络、PID、UID、IPC等等的相互隔离。
+前者相对容易实现一些，后者则需要宿主机系统的深入支持。</p>
+<p>随着 Linux 系统对于命名空间功能的完善实现，程序员已经可以实现上面的所有需求，让某些进程在彼此隔离的命名空间中运行。大家虽然都共用一个内核和某些运行时环境（例如一些系统命令和系统库），但是彼此却看不到，都以为系统中只有自己的存在。这种机制就是容器（Container），利用命名空间来做权限的隔离控制，利用 cgroups 来做资源分配。</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>在 Swarm 集群中使用 compose 文件</title>
       <link>https://vuepress.mirror.docker-practice.com/swarm_mode/stack/</link>
       <guid>https://vuepress.mirror.docker-practice.com/swarm_mode/stack/</guid>
@@ -9699,24 +9717,6 @@ Removing network wordpress_overlay
 Removing network wordpress_default
 </code></pre>
 <div><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br></div></div><p>该命令不会移除服务所使用的 <code>数据卷</code>，如果你想移除数据卷请使用 <code>docker volume rm</code></p>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>底层实现</title>
-      <link>https://vuepress.mirror.docker-practice.com/underly/</link>
-      <guid>https://vuepress.mirror.docker-practice.com/underly/</guid>
-      <source url="https://vuepress.mirror.docker-practice.com/rss.xml">底层实现</source>
-      <pubDate>Mon, 31 May 2021 11:42:07 GMT</pubDate>
-      <content:encoded><![CDATA[<h1 id="底层实现"> 底层实现</h1>
-<AdSenseTitle/>
-<p>Docker 底层的核心技术包括 Linux 上的命名空间（Namespaces）、控制组（Control groups）、Union 文件系统（Union file systems）和容器格式（Container format）。</p>
-<p>我们知道，传统的虚拟机通过在宿主主机中运行 hypervisor 来模拟一整套完整的硬件环境提供给虚拟机的操作系统。虚拟机系统看到的环境是可限制的，也是彼此隔离的。
-这种直接的做法实现了对资源最完整的封装，但很多时候往往意味着系统资源的浪费。
-例如，以宿主机和虚拟机系统都为 Linux 系统为例，虚拟机中运行的应用其实可以利用宿主机系统中的运行环境。</p>
-<p>我们知道，在操作系统中，包括内核、文件系统、网络、PID、UID、IPC、内存、硬盘、CPU 等等，所有的资源都是应用进程直接共享的。
-要想实现虚拟化，除了要实现对内存、CPU、网络IO、硬盘IO、存储空间等的限制外，还要实现文件系统、网络、PID、UID、IPC等等的相互隔离。
-前者相对容易实现一些，后者则需要宿主机系统的深入支持。</p>
-<p>随着 Linux 系统对于命名空间功能的完善实现，程序员已经可以实现上面的所有需求，让某些进程在彼此隔离的命名空间中运行。大家虽然都共用一个内核和某些运行时环境（例如一些系统命令和系统库），但是彼此却看不到，都以为系统中只有自己的存在。这种机制就是容器（Container），利用命名空间来做权限的隔离控制，利用 cgroups 来做资源分配。</p>
 ]]></content:encoded>
     </item>
     <item>
